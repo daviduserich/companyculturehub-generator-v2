@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ein Tag im Team bei Hilbrand - Entdecken Sie unsere Unternehmenskultur</title>
+    <meta name="description" content="Erfahren Sie, was uns als Arbeitgeber auszeichnet und wie wir gemeinsam erfolgreich sind. Authentische Einblicke in unseren Arbeitsalltag.">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_META_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_META_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .hero .description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.8;
+        }
+        
+        .hero-image {
+            margin-top: 40px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Culture Section */
+        .culture {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .section-header .description {
+            font-size: 1.2rem;
+            color: #6c757d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .value-card p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        
+        .culture-image {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .culture-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        /* Team Section */
+        .team {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .testimonial {
+            background: #f8f9fa;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: 6rem;
+            color: #667eea;
+            position: absolute;
+            top: 10px;
+            left: 40px;
+            font-family: serif;
+            opacity: 0.3;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .author-info h4 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+        
+        .team-image {
+            text-align: center;
+        }
+        
+        .team-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .benefits .section-header h2,
+        .benefits .section-header .description {
+            color: white;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .benefit-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .benefit-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        /* Career CTA Section */
+        .career-cta {
+            padding: 100px 0;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        
+        .career-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .career-cta .description {
+            font-size: 1.3rem;
+            margin-bottom: 50px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .btn-primary:hover {
+            background: #5a6fd8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #2c3e50;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #667eea;
+        }
+        
+        .footer p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .career-cta h2 {
+                font-size: 2.2rem;
+            }
+            
+            .testimonial {
+                padding: 40px 20px;
+            }
+            
+            .testimonial::before {
+                font-size: 4rem;
+                top: 5px;
+                left: 20px;
+            }
+        }
+        
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ein Tag im Team bei Hilbrand</h1>
+                <p class="subtitle">Entdecken Sie, was uns als Arbeitgeber auszeichnet</p>
+                <p class="description">Tauchen Sie ein in unseren Arbeitsalltag und erleben Sie, wie wir gemeinsam innovative Lösungen entwickeln und dabei eine familiäre Atmosphäre pflegen.</p>
+                
+                <div class="hero-image">
+                    <img src="assets/images/hilbrand-team-hero.jpg" alt="Das Team von Hilbrand bei der gemeinsamen Arbeit in modernen Büroräumen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Unsere Unternehmenskultur</h2>
+                <p class="description">Bei Hilbrand steht der Mensch im Mittelpunkt. Wir schaffen ein Umfeld, in dem sich jeder entfalten kann und gemeinsam Großartiges entstehen lässt.</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card fade-in">
+                    <div class="value-icon">💡</div>
+                    <h3>Innovation & Kreativität</h3>
+                    <p>Wir fördern neue Ideen und schaffen Raum für kreative Lösungsansätze. Jeder Mitarbeiter kann seine Visionen einbringen und verwirklichen.</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">🤝</div>
+                    <h3>Teamgeist & Zusammenhalt</h3>
+                    <p>Unser Erfolg basiert auf starkem Teamwork. Wir unterstützen uns gegenseitig und feiern gemeinsame Erfolge in einer familiären Atmosphäre.</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">⚖️</div>
+                    <h3>Work-Life-Balance</h3>
+                    <p>Flexible Arbeitszeiten und die Möglichkeit zum Homeoffice ermöglichen es unseren Mitarbeitern, Beruf und Privatleben optimal zu vereinbaren.</p>
+                </div>
+            </div>
+            
+            <div class="culture-image fade-in">
+                <img src="assets/images/hilbrand-office-culture.jpg" alt="Moderne Arbeitsplätze und Gemeinschaftsbereiche bei Hilbrand">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Stimmen aus unserem Team</h2>
+                <p class="description">Hören Sie, was unsere Mitarbeiter über das Arbeiten bei Hilbrand sagen und warum sie sich jeden Tag aufs Neue für unser Unternehmen entscheiden.</p>
+            </div>
+            
+            <div class="testimonial fade-in">
+                <p class="testimonial-quote">Bei Hilbrand habe ich nicht nur einen Job gefunden, sondern ein zweites Zuhause. Die Kollegen sind wie eine Familie und die Projekte fordern mich täglich heraus, über mich hinauszuwachsen.</p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Sarah Müller</h4>
+                        <p>Senior Projektmanagerin</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-image fade-in">
+                <img src="assets/images/hilbrand-team-collaboration.jpg" alt="Teammitglieder von Hilbrand bei der Zusammenarbeit an einem Projekt">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Warum Hilbrand der richtige Arbeitgeber für Sie ist</h2>
+                <p class="description">Wir bieten mehr als nur einen Arbeitsplatz. Entdecken Sie die Vorteile, die Hilbrand zu einem besonderen Arbeitgeber machen.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🕐</div>
+                    <h3>Flexible Arbeitszeiten</h3>
+                    <p>Gestalten Sie Ihren Arbeitsalltag nach Ihren Bedürfnissen. Homeoffice, Gleitzeit und individuelle Lösungen sind bei uns selbstverständlich.</p>
+                </div>
+                
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">📚</div>
+                    <h3>Weiterbildung & Entwicklung</h3>
+                    <p>Investieren Sie in Ihre Zukunft. Wir unterstützen Sie mit Schulungen, Konferenzen und individuellen Entwicklungsplänen.</p>
+                </div>
+                
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">{{EB-Sec4-C4-E3}}</div>
+                    <h3>Moderne Ausstattung</h3>
+                    <p>Arbeiten Sie mit neuester Technologie in inspirierenden Räumlichkeiten. Von ergonomischen Arbeitsplätzen bis hin zu modernster IT-Ausstattung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career CTA Section -->
+    <section class="career-cta">
+        <div class="container">
+            <div class="fade-in">
+                <h2>Bereit für den nächsten Karriereschritt?</h2>
+                <p class="description">Werden Sie Teil unseres Teams und gestalten Sie mit uns die Zukunft. Entdecken Sie spannende Karrieremöglichkeiten bei Hilbrand.</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://hilbrand.ch/karriere" class="btn btn-primary" onclick="fbq('track', 'Lead', {content_category: 'career_interest', company: 'hilbrand'});">Aktuelle Stellenausschreibungen</a>
+                    <a href="mailto:karriere@hilbrand.ch" class="btn btn-secondary">Initiativbewerbung</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://hilbrand.ch/impressum">Impressum</a>
+                <a href="https://hilbrand.ch/datenschutz">Datenschutz</a>
+                <a href="https://hilbrand.ch/kontakt">Kontakt</a>
+            </div>
+            <p>© 2025 Hilbrand. Alle Rechte vorbehalten. Powered by CompanyCultureHub.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Scroll Animations and Tracking -->
+    <script>
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Enhanced Pixel Tracking
+        let timeOnPage = 0;
+        let scrollDepth = 0;
+        let maxScrollDepth = 0;
+
+        // Time tracking
+        setInterval(() => {
+            timeOnPage += 1;
+            if (timeOnPage === 30) { // 30 seconds
+                fbq('track', 'CustomEvent', {
+                    event_name: 'engaged_visitor',
+                    time_on_site: 30,
+                    company: 'hilbrand'
+                });
+            }
+        }, 1000);
+
+        // Scroll depth tracking
+        window.addEventListener('scroll', () => {
+            scrollDepth = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            maxScrollDepth = Math.max(maxScrollDepth, scrollDepth);
+            
+            if (maxScrollDepth >= 75 && !window.scrollTracked75) {
+                fbq('track', 'CustomEvent', {
+                    event_name: 'high_engagement_visitor',
+                    engagement_score: 'high',
+                    scroll_depth: 75,
+                    company: 'hilbrand'
+                });
+                window.scrollTracked75 = true;
+            }
+        });
+
+        // Section view tracking
+        const sections = ['culture', 'team', 'benefits', 'career-cta'];
+        sections.forEach(section => {
+            const element = document.querySelector(`.${section}`);
+            if (element) {
+                const sectionObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            fbq('track', 'ViewContent', {
+                                content_name: section,
+                                content_category: 'employer_branding_section',
+                                company: 'hilbrand'
+                            });
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                sectionObserver.observe(element);
+            }
+        });
+    </script>
+</body>
+</html>
+

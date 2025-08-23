@@ -1,0 +1,17 @@
+# CompanyCultureHub Generator Requirements
+# Minimale Dependencies für maximale Kompatibilität
+
+# Keine externen Dependencies erforderlich!
+# Das Script verwendet nur Python Standard Library:
+# - json (JSON-Verarbeitung)
+# - os (Dateisystem-Operationen) 
+# - re (Regular Expressions)
+# - pathlib (Pfad-Handling)
+# - datetime (Zeitstempel)
+# - argparse (Kommandozeilen-Argumente)
+# - shutil (Datei-Operationen)
+
+# Optional: Für erweiterte Features
+# requests>=2.31.0          # Für API-Calls (falls benötigt)
+# pillow>=10.0.0            # Für Bildverarbeitung (falls benötigt)
+# beautifulsoup4>=4.12.0    # Für HTML-Parsing (falls benötigt)

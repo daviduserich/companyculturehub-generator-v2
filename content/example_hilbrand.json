@@ -1,0 +1,71 @@
+{
+  "employer_branding_content": {
+    "meta_data": {
+      "EB-Sec0-C1-E1": "Ein Tag im Team bei Hilbrand - Entdecken Sie unsere Unternehmenskultur",
+      "EB-Sec0-C1-E2": "Erfahren Sie, was uns als Arbeitgeber auszeichnet und wie wir gemeinsam erfolgreich sind. Authentische Einblicke in unseren Arbeitsalltag.",
+      "EB-Sec0-C2-E1": "YOUR_META_PIXEL_ID",
+      "EB-Sec0-C3-E1": "hilbrand"
+    },
+    "hero_section": {
+      "EB-Sec1-C1-E1": "Ein Tag im Team bei Hilbrand",
+      "EB-Sec1-C1-E2": "Entdecken Sie, was uns als Arbeitgeber auszeichnet",
+      "EB-Sec1-C1-E3": "Tauchen Sie ein in unseren Arbeitsalltag und erleben Sie, wie wir gemeinsam innovative Lösungen entwickeln und dabei eine familiäre Atmosphäre pflegen.",
+      "EB-Sec1-C2-E1": "assets/images/hilbrand-team-hero.jpg",
+      "EB-Sec1-C2-E2": "Das Team von Hilbrand bei der gemeinsamen Arbeit in modernen Büroräumen"
+    },
+    "culture_section": {
+      "EB-Sec2-C1-E1": "Unsere Unternehmenskultur",
+      "EB-Sec2-C1-E2": "Bei Hilbrand steht der Mensch im Mittelpunkt. Wir schaffen ein Umfeld, in dem sich jeder entfalten kann und gemeinsam Großartiges entstehen lässt.",
+      "EB-Sec2-C2-E1": "Innovation & Kreativität",
+      "EB-Sec2-C2-E2": "Wir fördern neue Ideen und schaffen Raum für kreative Lösungsansätze. Jeder Mitarbeiter kann seine Visionen einbringen und verwirklichen.",
+      "EB-Sec2-C2-E3": "💡",
+      "EB-Sec2-C3-E1": "Teamgeist & Zusammenhalt",
+      "EB-Sec2-C3-E2": "Unser Erfolg basiert auf starkem Teamwork. Wir unterstützen uns gegenseitig und feiern gemeinsame Erfolge in einer familiären Atmosphäre.",
+      "EB-Sec2-C3-E3": "🤝",
+      "EB-Sec2-C4-E1": "Work-Life-Balance",
+      "EB-Sec2-C4-E2": "Flexible Arbeitszeiten und die Möglichkeit zum Homeoffice ermöglichen es unseren Mitarbeitern, Beruf und Privatleben optimal zu vereinbaren.",
+      "EB-Sec2-C4-E3": "⚖️",
+      "EB-Sec2-C5-E1": "assets/images/hilbrand-office-culture.jpg",
+      "EB-Sec2-C5-E2": "Moderne Arbeitsplätze und Gemeinschaftsbereiche bei Hilbrand"
+    },
+    "team_section": {
+      "EB-Sec3-C1-E1": "Stimmen aus unserem Team",
+      "EB-Sec3-C1-E2": "Hören Sie, was unsere Mitarbeiter über das Arbeiten bei Hilbrand sagen und warum sie sich jeden Tag aufs Neue für unser Unternehmen entscheiden.",
+      "EB-Sec3-C2-E1": "Bei Hilbrand habe ich nicht nur einen Job gefunden, sondern ein zweites Zuhause. Die Kollegen sind wie eine Familie und die Projekte fordern mich täglich heraus, über mich hinauszuwachsen.",
+      "EB-Sec3-C2-E2": "Sarah Müller",
+      "EB-Sec3-C2-E3": "Senior Projektmanagerin",
+      "EB-Sec3-C3-E1": "assets/images/hilbrand-team-collaboration.jpg",
+      "EB-Sec3-C3-E2": "Teammitglieder von Hilbrand bei der Zusammenarbeit an einem Projekt"
+    },
+    "benefits_section": {
+      "EB-Sec4-C1-E1": "Warum Hilbrand der richtige Arbeitgeber für Sie ist",
+      "EB-Sec4-C1-E2": "Wir bieten mehr als nur einen Arbeitsplatz. Entdecken Sie die Vorteile, die Hilbrand zu einem besonderen Arbeitgeber machen.",
+      "EB-Sec4-C2-E1": "Flexible Arbeitszeiten",
+      "EB-Sec4-C2-E2": "Gestalten Sie Ihren Arbeitsalltag nach Ihren Bedürfnissen. Homeoffice, Gleitzeit und individuelle Lösungen sind bei uns selbstverständlich.",
+      "EB-Sec4-C2-E3": "🕐",
+      "EB-Sec4-C3-E1": "Weiterbildung & Entwicklung",
+      "EB-Sec4-C3-E2": "Investieren Sie in Ihre Zukunft. Wir unterstützen Sie mit Schulungen, Konferenzen und individuellen Entwicklungsplänen.",
+      "EB-Sec4-C3-E3": "📚",
+      "EB-Sec4-C4-E1": "Moderne Ausstattung",
+      "EB-Sec4-C4-E2": "Arbeiten Sie mit neuester Technologie in inspirierenden Räumlichkeiten. Von ergonomischen Arbeitsplätzen bis hin zu modernster IT-Ausstattung.",
+      "EB-sec4-C4-E3": "💻"
+    },
+    "career_cta_section": {
+      "EB-Sec5-C1-E1": "Bereit für den nächsten Karriereschritt?",
+      "EB-Sec5-C1-E2": "Werden Sie Teil unseres Teams und gestalten Sie mit uns die Zukunft. Entdecken Sie spannende Karrieremöglichkeiten bei Hilbrand.",
+      "EB-Sec5-C2-E1": "Aktuelle Stellenausschreibungen",
+      "EB-Sec5-C2-E2": "https://hilbrand.ch/karriere",
+      "EB-Sec5-C3-E1": "Initiativbewerbung",
+      "EB-Sec5-C3-E2": "mailto:karriere@hilbrand.ch"
+    },
+    "footer_section": {
+      "EB-Sec6-C1-E1": "https://hilbrand.ch/impressum",
+      "EB-Sec6-C1-E2": "Impressum",
+      "EB-Sec6-C2-E1": "https://hilbrand.ch/datenschutz",
+      "EB-Sec6-C2-E2": "Datenschutz",
+      "EB-Sec6-C3-E1": "https://hilbrand.ch/kontakt",
+      "EB-Sec6-C3-E2": "Kontakt",
+      "EB-Sec6-C4-E1": "© 2025 Hilbrand. Alle Rechte vorbehalten. Powered by CompanyCultureHub."
+    }
+  }
+}

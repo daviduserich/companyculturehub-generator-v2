@@ -1,0 +1,80 @@
+name: Generate CompanyCultureHub Sites
+
+# Trigger: Bei Push in content/ Ordner oder manuell
+on:
+  push:
+    branches:
+      - main  # Nur auf dem main-Branch ausführen
+    paths:
+      - 'content/**'
+      - 'templates/**'
+      - 'scripts/**'
+  workflow_dispatch:  # Manueller Trigger
+
+# Berechtigungen für GitHub Pages
+permissions:
+  contents: write # Nötig, um Änderungen in den docs-Ordner zu pushen
+  pages: write
+  id-token: write
+
+# Nur ein Deployment gleichzeitig
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 1. Repository auschecken
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      
+    # 2. Python Setup
+    - name: 🐍 Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    # 3. Python Dependencies installieren (falls vorhanden)
+    - name: 📦 Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f scripts/requirements.txt ]; then
+          pip install -r scripts/requirements.txt
+        fi
+        
+    # 4. Websites mit unserem Python-Skript generieren
+    - name: 🚀 Generate Websites
+      run: |
+        python scripts/generate_site.py --all
+        
+    # 5. Generierte Dateien zum Repository hinzufügen
+    - name: 💾 Commit and Push Changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add docs/
+        # Prüfen, ob es Änderungen gibt, bevor wir committen
+        if ! git diff --staged --quiet; then
+          git commit -m "Automated build: Generate website from content"
+          git push
+        else
+          echo "No changes to commit."
+        fi
+
+    # 6. GitHub Pages Setup
+    - name: 🔧 Setup Pages
+      uses: actions/configure-pages@v4
+      
+    # 7. Artifacts für Pages vorbereiten
+    - name: 📤 Upload Pages Artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './docs'
+        
+    # 8. Zu GitHub Pages deployen
+    - name: 🌐 Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
