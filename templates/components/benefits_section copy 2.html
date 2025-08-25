@@ -1,0 +1,27 @@
+<section class="benefits">
+    <div class="container">
+        <div class="section-header">
+            <h2>{{benefits_section.headline}}</h2>
+            <p class="description">{{benefits_section.description}}</p>
+        </div>
+        <div class="benefits-grid">
+            <!-- BEGIN_LIST_ITEM:benefits_section.benefits_list -->
+            <div class="benefit-card">
+                <div class="benefit-icon">{{icon}}</div>
+                <h3>{{title}}</h3>
+                <p>{{text}}</p>
+            </div>
+            <!-- END_LIST_ITEM:benefits_section.benefits_list -->
+        </div>
+    </div>
+</section>
+<style>
+    .benefits { padding: var(--spacing-section-large) 0; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; }
+    .benefits .section-header h2, .benefits .section-header .description { color: white; }
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+    .benefit-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 40px 30px; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.3s ease; }
+    .benefit-card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.15); }
+    .benefit-icon { font-size: 3.5rem; margin-bottom: 25px; opacity: 0.9; }
+    .benefit-card h3 { font-size: 1.6rem; margin-bottom: 20px; font-weight: 600; }
+    .benefit-card p { font-size: 1.1rem; line-height: 1.6; opacity: 0.9; }
+</style>
