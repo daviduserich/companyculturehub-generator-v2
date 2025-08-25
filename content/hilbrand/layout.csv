@@ -1,0 +1,9 @@
+order,component,data_source,enabled
+10,header,global_settings,true
+15,logo_header_section,global_settings,true
+20,hero_section,hero_section,true
+30,culture_section,culture_section,true
+40,team_section,team_section,true
+50,benefits_section,benefits_section,true
+60,career_cta_section,career_cta_section,true
+70,footer,global_settings,true

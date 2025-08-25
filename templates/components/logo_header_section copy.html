@@ -1,0 +1,61 @@
+<!-- Sichtbarer Header-Bereich mit Logo -->
+<div class="page-logo-section">
+  <div class="page-logo">
+    <img src="{{logo.url}}" alt="{{identity.company_name}} Logo" id="site-logo">
+  </div>
+</div>
+
+<style>
+  .page-logo-section {
+    width: 100%;
+    padding: 20px 0; /* Standard-Padding */
+    display: flex;
+    align-items: center;
+    position: sticky; /* Das ist der Schlüssel für das "Klebenbleiben" */
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff; /* Hintergrund, damit der Inhalt nicht durchscheint */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Leichter Schatten, wenn gescrollt wird */
+    transition: padding 0.3s ease; /* Sanfter Übergang für das Padding */
+  }
+
+  .page-logo {
+    margin-left: 20px;
+  }
+
+  .page-logo img {
+    height: 80px; /* Standard-Höhe */
+    width: auto;
+    transition: height 0.3s ease; /* Sanfter Übergang für die Höhe */
+  }
+
+  /* Dieser Stil wird per JavaScript hinzugefügt, wenn der User scrollt */
+  .page-logo-section.scrolled {
+    padding: 10px 0; /* Kleineres Padding beim Scrollen */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .page-logo-section.scrolled .page-logo img {
+    height: 60px; /* Kleineres Logo beim Scrollen */
+  }
+</style>
+
+<script>
+  // Dieser Code läuft, sobald die Seite geladen ist
+  document.addEventListener("DOMContentLoaded", function() {
+    const logoSection = document.querySelector('.page-logo-section');
+
+    if (logoSection) {
+      window.addEventListener('scroll', function() {
+        // Wenn der User mehr als 20 Pixel nach unten gescrollt hat...
+        if (window.scrollY > 20) {
+          // ...füge die "scrolled"-Klasse hinzu.
+          logoSection.classList.add('scrolled');
+        } else {
+          // ...sonst entferne sie wieder.
+          logoSection.classList.remove('scrolled');
+        }
+      });
+    }
+  });
+</script>

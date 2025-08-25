@@ -1,0 +1,35 @@
+<section class="team">
+    <div class="container">
+        <div class="section-header">
+            <h2>{{team_section.headline}}</h2>
+            <p class="description">{{team_section.description}}</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-quote">{{team_section.testimonial_quote}}</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>{{team_section.testimonial_author_name}}</h4>
+                    <p>{{team_section.testimonial_author_title}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-image">
+            <img src="{{team_section.image_url}}" alt="{{team_section.image_alt_text}}">
+        </div>
+    </div>
+</section>
+<style>
+    .team { padding: var(--spacing-section-large) 0; background: white; }
+    .testimonial { background: #f8f9fa; padding: 60px 40px; border-radius: 20px; text-align: center; margin-bottom: var(--spacing-section-medium); position: relative; }
+    .testimonial::before { content: '"'; font-size: 6rem; color: var(--color-primary); position: absolute; top: 10px; left: 40px; font-family: serif; opacity: 0.3; }
+    .testimonial-quote { font-size: 1.4rem; font-style: italic; color: var(--color-secondary); margin-bottom: 30px; position: relative; z-index: 1; }
+    .testimonial-author { display: flex; align-items: center; justify-content: center; gap: 20px; }
+    .author-info h4 { font-size: 1.2rem; color: var(--color-secondary); margin-bottom: 5px; }
+    .author-info p { color: #6c757d; font-size: 1rem; }
+    .team-image { text-align: center; }
+    .team-image img { max-width: 100%; border-radius: var(--border-radius-card); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+    @media (max-width: 768px) {
+        .testimonial { padding: 40px 20px; }
+        .testimonial::before { font-size: 4rem; top: 5px; left: 20px; }
+    }
+</style>

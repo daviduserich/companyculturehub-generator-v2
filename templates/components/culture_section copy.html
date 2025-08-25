@@ -1,0 +1,102 @@
+<!-- Culture Section -->
+<section class="culture">
+    <div class="container">
+        <div class="section-header">
+            <h2>{{EB-Sec2-C1-E1}}</h2>
+            <p class="description">{{EB-Sec2-C1-E2}}</p>
+        </div>
+        
+        <div class="values-grid">
+            <!-- HIER KOMMT UNSERE NEUE LISTEN-LOGIK -->
+            <!-- Das Python-Skript wird diesen Kommentar-Block finden und durch die generierten Karten ersetzen. -->
+            
+            <!-- BEGIN_LIST_ITEM:EB-Sec2-C2 -->
+            <div class="value-card">
+                <div class="value-icon">{{EB-Sec2-C2-E3}}</div>
+                <h3>{{EB-Sec2-C2-E1}}</h3>
+                <p>{{EB-Sec2-C2-E2}}</p>
+            </div>
+            <!-- END_LIST_ITEM:EB-Sec2-C2 -->
+
+        </div>
+        
+        <div class="culture-image">
+            <img src="{{EB-Sec2-C5-E1}}" alt="{{EB-Sec2-C5-E2}}">
+        </div>
+    </div>
+</section>
+
+<style>
+    .culture {
+        padding: var(--spacing-section-large) 0;
+        background: #f8f9fa;
+    }
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: var(--spacing-section-medium);
+    }
+    
+    .section-header h2 {
+        font-size: var(--font-size-h2);
+        color: var(--color-secondary);
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    
+    .section-header .description {
+        font-size: 1.2rem;
+        color: #6c757d;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        margin-bottom: var(--spacing-section-medium);
+    }
+    
+    .value-card {
+        background: white;
+        padding: 40px 30px;
+        border-radius: var(--border-radius-card);
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .value-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .value-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: var(--color-primary);
+    }
+    
+    .value-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: var(--color-secondary);
+    }
+    
+    .value-card p {
+        color: #6c757d;
+        line-height: 1.6;
+    }
+    
+    .culture-image {
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .culture-image img {
+        max-width: 100%;
+        border-radius: var(--border-radius-card);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+</style>

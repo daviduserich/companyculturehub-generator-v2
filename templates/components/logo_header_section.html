@@ -1,0 +1,41 @@
+<header class="logo-header-section">
+    <div class="container">
+        <div class="logo">
+            <a href="{{project_config.canonical_url}}">
+                <img src="{{design.logo.url}}" alt="{{identity.company_name}} Logo">
+            </a>
+        </div>
+    </div>
+</header>
+<style>
+    .logo-header-section {
+        padding: 20px 0;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: padding 0.3s ease;
+    }
+    .logo-header-section .logo img {
+        height: 50px; /* Standardhöhe */
+        width: auto;
+        transition: height 0.3s ease;
+    }
+    body.scrolled .logo-header-section {
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    body.scrolled .logo-header-section .logo img {
+        height: 40px; /* Kleinere Höhe beim Scrollen */
+    }
+</style>
+<script>
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            document.body.classList.add('scrolled');
+        } else {
+            document.body.classList.remove('scrolled');
+        }
+    });
+</script>

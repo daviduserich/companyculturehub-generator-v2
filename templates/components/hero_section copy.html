@@ -1,0 +1,80 @@
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{EB-Sec1-C1-E1}}</h1>
+            <p class="subtitle">{{EB-Sec1-C1-E2}}</p>
+            <p class="description">{{EB-Sec1-C1-E3}}</p>
+            
+            <div class="hero-image">
+                <img src="{{EB-Sec1-C2-E1}}" alt="{{EB-Sec1-C2-E2}}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        /* Wir verwenden hier unsere CSS-Variable aus dem Header! */
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        color: white;
+        padding: var(--spacing-section-large) 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .hero h1 {
+        font-size: var(--font-size-h1);
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .hero .subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        opacity: 0.9;
+    }
+    
+    .hero .description {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.8;
+    }
+    
+    .hero-image {
+        margin-top: 40px;
+        border-radius: var(--border-radius-card);
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>

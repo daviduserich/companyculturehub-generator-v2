@@ -1,0 +1,19 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="{{links.imprint_url}}">{{labels.imprint_text}}</a>
+            <a href="{{links.privacy_url}}">{{labels.privacy_text}}</a>
+            <a href="{{links.contact_url}}">{{labels.contact_text}}</a>
+        </div>
+        <p>{{footer_section.copyright_text}}</p>
+    </div>
+</footer>
+</body>
+</html>
+<style>
+    .footer { background: #1a1a1a; color: #ccc; padding: 40px 0; text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 40px; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-links a { color: #ccc; text-decoration: none; transition: color 0.3s ease; }
+    .footer-links a:hover { color: var(--color-primary); }
+    .footer p { font-size: 0.9rem; opacity: 0.7; }
+</style>

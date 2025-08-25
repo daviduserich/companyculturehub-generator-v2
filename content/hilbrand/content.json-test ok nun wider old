@@ -1,0 +1,30 @@
+{
+  "global_settings": {
+    "project_config": { "canonical_url": "https://v2.test" },
+    "identity": { "company_name": "Hiltosbrandus-MINIMAL" },
+    "links": {
+      "imprint_url": "https://v2.test/impressum",
+      "privacy_url": "https://v2.test/datenschutz",
+      "contact_url": "https://v2.test/kontakt"
+    },
+    "design": {
+      "branding": {
+        "primary_color": "#FF0000",
+        "secondary_color": "#00FF00",
+        "text_color": "#0000FF",
+        "font_family": "Arial, sans-serif"
+      },
+      "logo": {
+        "url": "assets/images/company_xxy_ag-logo.svg",
+        "favicon_url": "assets/images/company_xxy_ag-favicon.png"
+      }
+    },
+    "labels": {
+      "imprint_text": "Impressum TEST",
+      "privacy_text": "Datenschutz TEST",
+      "contact_text": "Kontakt TEST"
+    },
+    "integrations": { "meta_pixel_id": "PIXEL_TEST" }
+  },
+  "page_content": {}
+}
