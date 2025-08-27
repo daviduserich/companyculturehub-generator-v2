@@ -1,0 +1,51 @@
+<section class="career-cta">
+    <div class="container">
+        <div>
+            <h2>{{career_cta_section.headline}}</h2>
+            <p class="description">{{career_cta_section.description}}</p>
+            <div class="cta-buttons">
+                <a href="{{links.career_page_url}}" class="btn btn-primary">{{labels.career_button_text}}</a>
+                <a href="{{links.application_form_url}}" class="btn btn-secondary">{{labels.application_button_text}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* KORREKTUR 1: Textfarbe der Sektion dynamisch machen */
+    .career-cta { padding: var(--spacing-section-large) 0; background: var(--color-secondary); color: var(--text-on-secondary); text-align: center; }
+    
+    .career-cta h2 { font-size: 3rem; margin-bottom: 25px; font-weight: 600; }
+    .career-cta .description { font-size: 1.3rem; margin-bottom: 50px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid transparent; cursor: pointer; }
+    
+    /* KORREKTUR 2: Button-Hintergrund an Akzentfarbe koppeln */
+    .btn-primary { 
+        background: var(--color-accent, var(--color-primary)); /* Nutzt --color-accent, wenn vorhanden, sonst --color-primary */
+        color: var(--text-on-primary); /* Annahme: Text auf Akzentfarbe ist derselbe wie auf Primary */
+        border-color: transparent; /* Rahmen ist nicht mehr nötig oder kann auf Akzentfarbe gesetzt werden */
+    }
+
+    /* Optional: Hover-Effekt ebenfalls dynamisch machen */
+    .btn-primary:hover { 
+        filter: brightness(110%); /* Macht die Farbe beim Hover leicht heller */
+        transform: translateY(-3px); 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Generischerer Schatten */
+    }
+
+    .btn-secondary { 
+        background: transparent; 
+        color: var(--text-on-secondary); /* Stellt sicher, dass der Text die richtige Farbe hat */
+        border-color: var(--text-on-secondary); 
+    }
+    .btn-secondary:hover { 
+        background: var(--text-on-secondary); 
+        color: var(--color-secondary); 
+        transform: translateY(-3px); 
+    }
+
+    @media (max-width: 768px) {
+        .cta-buttons { flex-direction: column; align-items: center; }
+        .career-cta h2 { font-size: 2.2rem; }
+    }
+</style>

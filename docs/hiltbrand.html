@@ -6,7 +6,7 @@
     <title>Ein Tagus im Team bei Hiltosbrandus-fidibus-v77 - Entdecken Sie unsere Kultur</title>
     <meta name="description" content="Erfahren Sie, was uns als Arbeitgeberus auszeichnet und wie wir bei Hiltosbrandus-fidibus-v77 gemeinsam erfolgreich sind.">
     <link rel="canonical" href="https://hilbrand.culture.localhost/ein-tag-im-team" />
-    <link rel="icon" href="assets/images/company_xxy_ag-favicon.png">
+    <link rel="icon" href="{{design.logo.favicon_url}}">
     <script>
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -19,14 +19,14 @@
     <script src=""></script>
     <style>
         :root {
-            --color-primary: #4A5568;
-            --color-secondary: #2c3e50;
-            --color-text: #333333;
-            --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            --color-accent: #3182CE;
+            --color-primary: #24241C;
+            --color-secondary: #181813;
+            --color-text: #000000;
+            --font-family-base: {{design.branding.font_family}};
+            --color-accent: #EF746C;
             --text-on-primary: #FFFFFF;
             --text-on-secondary: #FFFFFF;
-            --benefits-gradient: linear-gradient(135deg, #4A5568, #3182CE);
+            --benefits-gradient: linear-gradient(135deg, #24241C, #EF746C);
             --spacing-section-large: 100px;
             --spacing-section-medium: 60px;
             --border-radius-card: 15px;
@@ -43,13 +43,13 @@
     </style>
 </head>
 <!-- KORREKTUR: Der Body-Tag wird dynamisch mit den Stil-Klassen befüllt -->
-<body class="bg-solid card-shadow btn-rounded anim-subtle">
+<body class="bg-gradient card-glass btn-pill anim-playful">
 
 <header class="logo-header-section">
     <div class="container">
         <div class="logo">
             <a href="https://hilbrand.culture.localhost/ein-tag-im-team">
-                <img src="assets/images/company_xxy_ag-logo.svg" alt="Hiltosbrandus-fidibus-v77 Logo">
+                <img src="{{design.logo.url}}" alt="Hiltosbrandus-fidibus-v77 Logo">
             </a>
         </div>
     </div>

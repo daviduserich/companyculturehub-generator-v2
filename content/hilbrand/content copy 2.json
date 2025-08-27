@@ -1,12 +1,12 @@
 {
   "global_settings": {
     "project_config": {
-      "project_id": "hiltosbrandus_v77",
+      "project_id": "hiltosbrandus",
       "primary_domain": "hilbrand.culture.localhost",
       "canonical_url": "https://hilbrand.culture.localhost/ein-tag-im-team"
     },
     "identity": {
-      "company_name": "Hiltosbrandus-fidibus-v77",
+      "company_name": "Hiltosbrandus-fidibus-a1",
       "company_slogan": "Wir gestalten Zukunft. Gemeinsam. wuffel . waffel"
     },
     "links": {
@@ -16,26 +16,18 @@
       "career_page_url": "https://hilbrand.ch/karriere",
       "application_form_url": "mailto:karriere@hilbrand.ch"
     },
-
-	"design": {
-	  "branding": {
-		"primary_color": "#4A5568",
-		"secondary_color": "#2c3e50",
-		"text_color": "#333333",
-		"accent_color": "#3182CE",
-		"text_on_primary": "#FFFFFF",
-		"text_on_secondary": "#FFFFFF",
-		"benefits_gradient": {
-		  "type": "dynamic_fallback",
-		  "css_value": "linear-gradient(135deg, #4A5568, #3182CE)"
-		},
-		"font_family": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
-	  },
-	  "logo": {
-		"url": "assets/images/company_xxy_ag-logo.svg",
-		"favicon_url": "assets/images/company_xxy_ag-favicon.png"
-	  }
-	},
+    "design": {
+      "branding": {
+        "primary_color": "#667eea",
+        "secondary_color": "#2c3e50",
+        "text_color": "#333",
+        "font_family": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+      },
+      "logo": {
+        "url": "assets/images/company_xxy_ag-logo.svg",
+        "favicon_url": "assets/images/company_xxy_ag-favicon.png"
+      }
+    },
     "labels": {
       "imprint_text": "Impressum",
       "privacy_text": "Datenschutz",

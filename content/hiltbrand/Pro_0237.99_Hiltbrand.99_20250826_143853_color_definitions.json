@@ -1,0 +1,34 @@
+{
+  "design": {
+    "branding": {
+      "primary_color": "#24241C",
+      "secondary_color": "#181813",
+      "text_color": "#000000",
+      "accent_color": "#EF746C",
+      "text_on_primary": "#FFFFFF",
+      "text_on_secondary": "#FFFFFF",
+      "benefits_gradient": {
+        "type": "dynamic_customer",
+        "css_value": "linear-gradient(135deg, #24241C, #EF746C)"
+      }
+    },
+    "presentation_style": "stylish"
+  },
+  "decision_log": [
+    "Starte 8-stufigen Veredelungs-Prozess...",
+    "Stufe 1: Basis-Zuweisung abgeschlossen. Primary: #1E1E1C, Secondary: #E9413F, Accent: #EF4035",
+    "Stufe 2: 'Schwarz-Filter' nicht ausgelöst. Farben sind hell genug.",
+    "Stufe 3: 'Harmonie-Notfallschalter' ausgelöst. #1E1E1C und #E9413F sind disharmonisch.",
+    "--> Aktion: Wähle #1E1E1C als Basis und erstelle einen monochromatischen Verlauf.",
+    "Stufe 4: Starte Sättigungs-Harmonisierung...",
+    "--> Aktion: Sättigung angeglichen. Neu: P=#24241C, S=#181813, A=#EF746C",
+    "Stufe 5: Berechne kontextsensitive Textfarben...",
+    "--> Ergebnis: Text auf Primary: #FFFFFF, Text auf Secondary: #FFFFFF",
+    "Stufe 6: Generiere `benefits`-Verlauf...",
+    "--> Palette als 'Lebhaft' eingestuft (Sättigung 0.55 > 0.4).",
+    "--> Aktion: Verlauf aus Kundenfarben (Primary -> Accent) erstellt.",
+    "Stufe 7: Bestimme automatische Stil-Empfehlung...",
+    "--> Entscheidung: Palette ist 'Lebhaft'. Empfehle 'stylish' als Präsentations-Stil.",
+    "Stufe 8: Alle Veredelungen abgeschlossen. Stelle finales Output-Objekt zusammen."
+  ]
+}

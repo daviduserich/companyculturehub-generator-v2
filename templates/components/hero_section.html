@@ -11,14 +11,64 @@
     </div>
 </section>
 <style>
-    /* KORREKTUR: Textfarbe der Sektion dynamisch machen */
-    .hero { background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%); color: var(--text-on-primary); padding: var(--spacing-section-large) 0; text-align: center; position: relative; overflow: hidden; }
+    /* --- Gemeinsame Basis-Stile für die Hero-Sektion --- */
+    .hero {
+        color: var(--text-on-primary); /* Dynamische Textfarbe für beide Stile */
+        padding: var(--spacing-section-large) 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.5s ease; /* Sanfter Übergang, falls sich Stile ändern */
+    }
     
-    .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); z-index: 1; }
     .hero-content { position: relative; z-index: 2; }
-    .hero h1 { font-size: var(--font-size-h1); font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    .hero h1 { font-size: var(--font-size-h1); font-weight: 700; margin-bottom: 20px; }
     .hero .subtitle { font-size: 1.4rem; margin-bottom: 15px; opacity: 0.9; }
     .hero .description { font-size: 1.1rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.8; }
-    .hero-image { margin-top: 40px; border-radius: var(--border-radius-card); overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3); max-width: 800px; margin-left: auto; margin-right: auto; }
+    .hero-image { margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
     .hero-image img { width: 100%; height: auto; display: block; }
+
+    /* --- Stil-spezifische Anpassungen (Der Baukasten) --- */
+
+    /* Hintergrund-Stile */
+    .bg-solid .hero {
+        background: var(--color-primary);
+    }
+    .bg-gradient .hero {
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    }
+
+    /* Karten-Stile (betrifft das Bild in der Hero-Sektion) */
+    .card-shadow .hero-image {
+        border-radius: var(--border-radius-card);
+        overflow: hidden;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .card-glass .hero-image {
+        border-radius: var(--border-radius-card);
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .card-flat .hero-image {
+        border-radius: 4px; /* Etwas eckiger für einen flachen Stil */
+        box-shadow: none;
+    }
+
+    /* Animations-Stile (subtile Effekte für den Text) */
+    .anim-subtle .hero h1, .anim-subtle .hero p {
+        /* Keine Animation für den klassischen Stil */
+    }
+    .anim-playful .hero h1 {
+        /* Beispiel: Leichter Schatten für mehr Tiefe im stylischen Modus */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .anim-playful .hero::before {
+        /* Der abdunkelnde Overlay-Effekt nur im stylischen Modus */
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+
 </style>

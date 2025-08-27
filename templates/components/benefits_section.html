@@ -2,33 +2,32 @@
 <section class="benefits">
     <div class="container">
         <div class="section-header">
-            <h2>{{EB-Sec4-C1-E1}}</h2>
-            <p class="description">{{EB-Sec4-C1-E2}}</p>
+            <h2>{{benefits_section.headline}}</h2>
+            <p class="description">{{benefits_section.description}}</p>
         </div>
         
         <div class="benefits-grid">
-            <!-- BEGIN_LIST_ITEM:EB-Sec4-C2 -->
+            <!-- BEGIN_LIST_ITEM:benefits_section.benefits_list -->
             <div class="benefit-card">
-                <div class="benefit-icon">{{EB-Sec4-C2-E3}}</div>
-                <h3>{{EB-Sec4-C2-E1}}</h3>
-                <p>{{EB-Sec4-C2-E2}}</p>
+                <div class="benefit-icon">{{icon}}</div>
+                <h3>{{title}}</h3>
+                <p>{{text}}</p>
             </div>
-            <!-- END_LIST_ITEM:EB-Sec4-C2 -->
+            <!-- END_LIST_ITEM:benefits_section.benefits_list -->
         </div>
     </div>
 </section>
 
 <style>
+    /* --- Gemeinsame Basis-Stile für die Benefits-Sektion --- */
     .benefits {
         padding: var(--spacing-section-large) 0;
-        /* KORREKTUR: Hintergrund an die dynamische Variable koppeln */
-        background: var(--benefits-gradient);
-        color: white; /* Annahme: Die generierten Verläufe sind meist dunkel genug für weissen Text */
+        color: white; /* Text ist in beiden Varianten weiss */
     }
     
     .benefits .section-header h2,
     .benefits .section-header .description {
-        color: white; /* Behält weisse Schrift für die Überschriften bei */
+        color: white;
     }
     
     .benefits-grid {
@@ -36,37 +35,52 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 40px;
     }
-    
+
     .benefit-card {
-        background: rgba(255,255,255,0.1);
-        backdrop-filter: blur(10px);
         padding: 40px 30px;
-        border-radius: 20px;
         text-align: center;
-        border: 1px solid rgba(255,255,255,0.2);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, background-color 0.3s ease;
     }
     
-    .benefit-card:hover {
-        transform: translateY(-10px);
+    .benefit-icon { font-size: 3.5rem; margin-bottom: 25px; opacity: 0.9; }
+    .benefit-card h3 { font-size: 1.6rem; margin-bottom: 20px; font-weight: 600; }
+    .benefit-card p { font-size: 1.1rem; line-height: 1.6; opacity: 0.9; }
+
+    /* --- Stil-spezifische Anpassungen (Der Baukasten) --- */
+
+    /* Hintergrund-Stile */
+    .bg-solid .benefits {
+        background: var(--color-primary); /* Klassisch: Einfarbiger Hintergrund */
+    }
+    .bg-gradient .benefits {
+        background: var(--benefits-gradient); /* Stylisch: Der coole Verlauf */
+    }
+
+    /* Karten-Stile */
+    .card-flat .benefit-card {
+        background: transparent;
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 4px;
+    }
+    .card-shadow .benefit-card {
+        background: rgba(0,0,0,0.15); /* Dunkelt den Hintergrund leicht ab */
+        border-radius: var(--border-radius-card);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+    .card-glass .benefit-card {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px); /* Der "Glass"-Effekt */
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Animations-Stile (betrifft den Hover-Effekt) */
+    .anim-subtle .benefit-card:hover {
+        background: rgba(0,0,0,0.25); /* Klassisch: Wird beim Hover einfach etwas dunkler */
+    }
+    .anim-playful .benefit-card:hover {
+        transform: translateY(-10px); /* Stylisch: Die "Schwebe"-Animation */
         background: rgba(255,255,255,0.15);
     }
-    
-    .benefit-icon {
-        font-size: 3.5rem;
-        margin-bottom: 25px;
-        opacity: 0.9;
-    }
-    
-    .benefit-card h3 {
-        font-size: 1.6rem;
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
-    
-    .benefit-card p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        opacity: 0.9;
-    }
+
 </style>
