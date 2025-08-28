@@ -1,0 +1,38 @@
+{
+  "design": {
+    "branding": {
+      "primary_color": "#23171A",
+      "secondary_color": "#E95655",
+      "text_color": "#000000",
+      "accent_color": "#EF5A51",
+      "text_on_primary": "#FFFFFF",
+      "text_on_secondary": "#000000",
+      "benefits_gradient": {
+        "type": "dynamic_customer",
+        "css_value": "linear-gradient(135deg, #23171A, #EF5A51)"
+      },
+      "primary_color_comment": "Visuelle Vorschau: #23171A",
+      "secondary_color_comment": "Visuelle Vorschau: #E95655",
+      "text_color_comment": "Visuelle Vorschau: #000000",
+      "accent_color_comment": "Visuelle Vorschau: #EF5A51",
+      "text_on_primary_comment": "Visuelle Vorschau: #FFFFFF",
+      "text_on_secondary_comment": "Visuelle Vorschau: #000000"
+    },
+    "presentation_style": "stylish"
+  },
+  "decision_log": [
+    "Starte finalen Veredelungs-Prozess...",
+    "Stufe 1: Basis-Zuweisung: P=#231F20, S=#E9413F, A=#EF4035",
+    "Stufe 2: 'Schwarz-Filter' nicht ausgelöst.",
+    "Stufe 3: Farben sind harmonisch.",
+    "Stufe 4: Starte Sättigungs-Harmonisierung...",
+    "--> Aktion: Sättigung angeglichen. Neu: P=#23171A, S=#E95655, A=#EF5A51",
+    "Stufe 5: Berechne kontextsensitive Textfarben...",
+    "--> Ergebnis: Text auf Primary: #FFFFFF, Text auf Secondary: #000000",
+    "Stufe 6: Generiere `benefits`-Verlauf...",
+    "--> `benefits`-Verlauf erstellt (Typ: dynamic_customer).",
+    "Stufe 7: Bestimme automatische Stil-Empfehlung...",
+    "--> Entscheidung: Palette ist 'Lebhaft'. Empfehle Preset 'stylish'.",
+    "Stufe 8: Alle Veredelungen abgeschlossen."
+  ]
+}
