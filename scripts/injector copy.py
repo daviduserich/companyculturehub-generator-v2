@@ -87,19 +87,12 @@ def main():
 
     if args.project:
         inject_data(args.project, base_dir)
-
     elif args.all:
         print("--- STARTING INJECTION FOR ALL PROJECTS ---")
         for project_dir in content_dir.iterdir():
             if project_dir.is_dir():
-                # Überspringe bereits verarbeitete/archivierte Ordner
-                if project_dir.name.startswith(('processed_', 'proceed_')):
-                    print(f"   - 🟡 SKIPPING: '{project_dir.name}' (bereits verarbeitet/archiviert)")
-                    continue
                 inject_data(project_dir.name, base_dir)
         print("-" * 40)
-
-
     else:
         print("Please specify a project with --project <name> or use --all to process all projects.")
 

@@ -1,0 +1,167 @@
+{
+  "global_settings": {
+    "project_config": {
+      "project_id": "hiltosbrandus_v77",
+      "primary_domain": "hilbrand.culture.localhost",
+      "canonical_url": "https://hilbrand.culture.localhost/ein-tag-im-team"
+    },
+    "identity": {
+      "company_name": "Hiltosbrandus-fidibus-v77",
+      "company_slogan": "Wir gestalten Zukunft. Gemeinsam. wuffel . waffel"
+    },
+    "links": {
+      "imprint_url": "https://hilbrand.ch/impressum",
+      "privacy_url": "https://hilbrand.ch/datenschutz",
+      "contact_url": "https://hilbrand.ch/kontakt",
+      "career_page_url": "https://hilbrand.ch/karriere",
+      "application_form_url": "mailto:karriere@hilbrand.ch"
+    },
+
+	"design": {
+	  "branding": {
+		"primary_color": "#4A5568",
+		"secondary_color": "#2c3e50",
+		"text_color": "#333333",
+		"accent_color": "#3182CE",
+		"text_on_primary": "#FFFFFF",
+		"text_on_secondary": "#FFFFFF",
+		"benefits_gradient": {
+		  "type": "dynamic_fallback",
+		  "css_value": "linear-gradient(135deg, #4A5568, #3182CE)"
+		},
+		"font_family": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+	  },
+	  "logo": {
+		"url": "assets/images/company_xxy_ag-logo.svg",
+		"favicon_url": "assets/images/company_xxy_ag-favicon.png"
+	  }
+	},
+    "labels": {
+      "imprint_text": "Impressum",
+      "privacy_text": "Datenschutz",
+      "contact_text": "Kontakt",
+      "career_button_text": "Aktuelle Stellenausschreibungen",
+      "application_button_text": "Initiativbewerbung"
+    },
+    "integrations": {
+      "meta_pixel_id": "YOUR_META_PIXEL_ID_HERE",
+      "tracking_script_url": ""
+    }
+  },
+  "page_content": {
+    "meta_data": [
+      {
+        "id": "EB-Sec0-C1-E1",
+        "name": "page_title",
+        "value": "Ein Tagus im Team bei {{identity.company_name}} - Entdecken Sie unsere Kultur"
+      },
+      {
+        "id": "EB-Sec0-C1-E2",
+        "name": "meta_description",
+        "value": "Erfahren Sie, was uns als Arbeitgeberus auszeichnet und wie wir bei {{identity.company_name}} gemeinsam erfolgreich sind."
+      }
+    ],
+    "hero_section": [
+      { "id": "EB-Sec1-C1-E1", "name": "headline", "value": "Ein Tag im Team bei {{identity.company_name}}" },
+      { "id": "EB-Sec1-C1-E2", "name": "subheadline", "value": "Entdecken Sie, was uns als Arbeitgeber auszeichnet" },
+      { "id": "EB-Sec1-C1-E3", "name": "description", "value": "Tauchen Sie ein in unseren Arbeitsalltag und erleben Sie, wie wir gemeinsam innovative Lösungen entwickeln und dabei eine familiäre Atmosphäre pflegen." },
+      { "id": "EB-Sec1-C2-E1", "name": "image_url", "value": "assets/images/EB-Sec1-C2-E1_Specimen.png" },
+      { "id": "EB-Sec1-C2-E2", "name": "image_alt_text", "value": "Das Team von {{identity.company_name}} bei der gemeinsamen Arbeit in modernen Büroräumen" }
+    ],
+    "culture_section": [
+      { "id": "EB-Sec2-C1-E1", "name": "headline", "value": "Unsere Unternehmenskultur" },
+      { "id": "EB-Sec2-C1-E2", "name": "description", "value": "Bei {{identity.company_name}} steht der Mensch im Mittelpunkt. Wir schaffen ein Umfeld, in dem sich jeder entfalten kann." },
+      {
+        "id": "EB-Sec2-C2",
+        "name": "values_list",
+        "type": "list",
+        "value": [
+          {
+            "id": "item1",
+            "elements": [
+              { "id": "EB-Sec2-C2-E3", "name": "icon", "value": "💡" },
+              { "id": "EB-Sec2-C2-E1", "name": "title", "value": "Innovation & Kreativität" },
+              { "id": "EB-Sec2-C2-E2", "name": "text", "value": "Wir fördern neue Ideen und schaffen Raum für kreative Lösungsansätze." }
+            ]
+          },
+          {
+            "id": "item2",
+            "elements": [
+              { "id": "EB-Sec2-C3-E3", "name": "icon", "value": "🤝" },
+              { "id": "EB-Sec2-C3-E1", "name": "title", "value": "Teamgeist & Zusammenhalt" },
+              { "id": "EB-Sec2-C3-E2", "name": "text", "value": "Unser Erfolg basiert auf starkem Teamwork und gegenseitiger Unterstützung." }
+            ]
+          },
+          {
+            "id": "item3",
+            "elements": [
+              { "id": "EB-Sec2-C4-E3", "name": "icon", "value": "⚖️" },
+              { "id": "EB-Sec2-C4-E1", "name": "title", "value": "Work-Life-Balance" },
+              { "id": "EB-Sec2-C4-E2", "name": "text", "value": "Flexible Arbeitszeiten und die Möglichkeit zum Homeoffice sind bei uns selbstverständlich." }
+            ]
+          }
+        ]
+      },
+      { "id": "EB-Sec2-C5-E1", "name": "image_url", "value": "assets/images/EB-Sec2-C5-E1_Specimen.png" },
+      { "id": "EB-Sec2-C5-E2", "name": "image_alt_text", "value": "Moderne Arbeitsplätze und Gemeinschaftsbereiche bei {{identity.company_name}}" }
+    ],
+    "team_section": [
+      { "id": "EB-Sec3-C1-E1", "name": "headline", "value": "Stimmen aus unserem Team" },
+      { "id": "EB-Sec3-C1-E2", "name": "description", "value": "Hören Sie, was unsere Mitarbeiter über das Arbeiten bei {{identity.company_name}} sagen." },
+      { "id": "EB-Sec3-C2-E1", "name": "testimonial_quote", "value": "Bei {{identity.company_name}} habe ich nicht nur einen Job gefunden, sondern ein zweites Zuhause. Die Kollegen sind wie eine Familie." },
+      { "id": "EB-Sec3-C2-E2", "name": "testimonial_author_name", "value": "Sarah Müller" },
+      { "id": "EB-Sec3-C2-E3", "name": "testimonial_author_title", "value": "Senior Projektmanagerin" },
+      { "id": "EB-Sec3-C3-E1", "name": "image_url", "value": "assets/images/EB-Sec3-C3-E1_Specimen.png" },
+      { "id": "EB-Sec3-C3-E2", "name": "image_alt_text", "value": "Teammitglieder von {{identity.company_name}} bei der Zusammenarbeit" }
+    ],
+
+	"benefits_section": [
+	  { "id": "EB-Sec4-C1-E1", "name": "headline", "value": "Warum {{identity.company_name}} der richtige Arbeitgeber für Sie ist" },
+	  { "id": "EB-Sec4-C1-E2", "name": "description", "value": "Wir bieten mehr als nur einen Arbeitsplatz. Entdecken Sie die Vorteile, die uns besonders machen." },
+	  {
+		"id": "EB-Sec4-C2",
+		"name": "benefits_list",
+		"type": "list",
+		"value": [
+		  {
+			"id": "item1",
+			"elements": [
+			  { "id": "EB-Sec4-C2-E3", "name": "icon", "value": "🕐" },
+			  { "id": "EB-Sec4-C2-E1", "name": "title", "value": "Flexible Arbeitszeiten" },
+			  { "id": "EB-Sec4-C2-E2", "name": "text", "value": "Gestalten Sie Ihren Arbeitsalltag nach Ihren Bedürfnissen. Homeoffice und Gleitzeit sind bei uns selbstverständlich." }
+			]
+		  },
+		  {
+			"id": "item2",
+			"elements": [
+			  { "id": "EB-Sec4-C3-E3", "name": "icon", "value": "📚" },
+			  { "id": "EB-Sec4-C3-E1", "name": "title", "value": "Weiterbildung & Entwicklung" },
+			  { "id": "EB-Sec4-C3-E2", "name": "text", "value": "Investieren Sie in Ihre Zukunft. Wir unterstützen Sie mit Schulungen, Konferenzen und individuellen Entwicklungsplänen." }
+			]
+		  },
+		  {
+			"id": "item3",
+			"elements": [
+			  { "id": "EB-Sec4-C4-E3", "name": "icon", "value": "💻" },
+			  { "id": "EB-Sec4-C4-E1", "name": "title", "value": "Moderne Ausstattung" },
+			  { "id": "EB-Sec4-C4-E2", "name": "text", "value": "Arbeiten Sie mit neuester Technologie in inspirierenden Räumlichkeiten, von ergonomischen Arbeitsplätzen bis hin zu modernster IT." }
+			]
+		  }
+		]
+	  }
+	],
+
+
+
+
+
+
+    "career_cta_section": [
+        { "id": "EB-Sec5-C1-E1", "name": "headline", "value": "Bereit für den nächsten Karriereschritt?" },
+        { "id": "EB-Sec5-C1-E2", "name": "description", "value": "Werden Sie Teil unseres Teams und gestalten Sie mit uns die Zukunft." }
+    ],
+    "footer_section": [
+        { "id": "EB-Sec6-C4-E1", "name": "copyright_text", "value": "© {{current_year}} {{identity.company_name}}. Alle Rechte vorbehalten. Powered by CompanyCultureHub." }
+    ]
+  }
+}

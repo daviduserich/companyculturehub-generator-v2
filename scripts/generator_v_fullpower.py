@@ -6,6 +6,13 @@ import json, csv, re, argparse, shutil
 from pathlib import Path
 from datetime import datetime
 
+# Import der Injektor-Funktion
+import sys
+sys.path.append(str(Path(__file__).parent))
+from injector import inject_data
+
+
+
 def flatten_dict(d, parent_key='', sep='.'):
     items = []
     for k, v in d.items():
@@ -61,12 +68,21 @@ def main():
         print("   - ℹ️ Keine neuen Projekte zur Verarbeitung gefunden. Prozess beendet.")
         return
 
+
     for project_dir in projects_to_process:
         project_name = project_dir.name
         print(f"🚀 Verarbeite Projekt: {project_name}")
         
-        # ... (Der gesamte mittlere Teil des Codes bleibt exakt gleich) ...
-        injected_content_file = project_dir / "content_color_injected.json"
+        # NEU: Injektor-Aufruf VOR der HTML-Generierung
+        print(f"   - 💉 Starte Farb-Injektion...")
+        try:
+            inject_data(project_name, base_dir)
+            print(f"   - ✅ Farb-Injektion abgeschlossen")
+        except Exception as e:
+            print(f"   - ⚠️ Farb-Injektion fehlgeschlagen: {e}")
+        
+        # Bestehender Code (bleibt unverändert)
+        injected_content_file = project_dir / "content_color_injected.json"    
         original_content_file = project_dir / "content.json"
         if injected_content_file.exists(): content_file = injected_content_file
         elif original_content_file.exists(): content_file = original_content_file
