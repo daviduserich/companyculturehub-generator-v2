@@ -19,4 +19,5 @@ python3 -m http.server 8080 --directory docs
 
 >>> CTRL+C zum beenden********************
 
-
+ls -R
+>>> listet unterordner inkl Dateien auf
