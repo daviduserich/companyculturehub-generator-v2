@@ -1,0 +1,25 @@
+<!-- Values Section -->
+<section class="values">
+    <div class="container">
+        <h2>{{values_section.headline}}</h2>
+        <div class="values-grid">
+            <!-- BEGIN_LIST_ITEM:values_section.values_list -->
+            <div class="value-item">
+                <div class="value-icon">{{icon}}</div>
+                <h3>{{title}}</h3>
+                <p>{{text}}</p>
+            </div>
+            <!-- END_LIST_ITEM:values_section.values_list -->
+        </div>
+    </div>
+</section>
+
+<style>
+    .values { padding: var(--spacing-section-medium) 0; background: var(--color-background); }
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .value-item { text-align: center; }
+
+    /* Varianten */
+    .bg-gradient .values { background: var(--values-gradient); }
+    .card-glass .value-item { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 15px; }
+</style>

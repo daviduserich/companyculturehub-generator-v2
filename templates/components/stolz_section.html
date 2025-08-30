@@ -1,0 +1,25 @@
+<!-- Stolz Section -->
+<section class="stolz">
+    <div class="container">
+        <h2>{{stolz_section.headline}}</h2>
+        <p>{{stolz_section.description}}</p>
+        <div class="highlights-grid">
+            <!-- BEGIN_LIST_ITEM:stolz_section.highlights_list -->
+            <div class="highlight-item">
+                <h3>{{title}}</h3>
+                <p>{{text}}</p>
+            </div>
+            <!-- END_LIST_ITEM:stolz_section.highlights_list -->
+        </div>
+    </div>
+</section>
+
+<style>
+    .stolz { padding: var(--spacing-section-medium) 0; background: var(--color-primary); color: white; }
+    .highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .highlight-item { padding: 20px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; }
+
+    /* Varianten */
+    .card-shadow .highlight-item { box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .bg-gradient .stolz { background: var(--stolz-gradient); }
+</style>

@@ -1,0 +1,17 @@
+<!-- Location Section -->
+<section class="location">
+    <div class="container">
+        <h2>{{location_section.headline}}</h2>
+        <p>{{location_section.description}}</p>
+        <img src="{{map_url}}" alt="{{image_alt_text}}">
+    </div>
+</section>
+
+<style>
+    .location { padding: var(--spacing-section-medium) 0; text-align: center; }
+    .location img { max-width: 80%; }
+
+    /* Varianten */
+    .bg-gradient .location { background: var(--location-gradient); }
+    .card-flat .location { border: 1px solid var(--color-accent); border-radius: 10px; }
+</style>

@@ -1,0 +1,17 @@
+<!-- Diversity Section -->
+<section class="diversity">
+    <div class="container">
+        <h2>{{diversity_section.headline}}</h2>
+        <p>{{diversity_section.description}}</p>
+        <img src="{{image_url}}" alt="{{image_alt_text}}">
+    </div>
+</section>
+
+<style>
+    .diversity { padding: var(--spacing-section-large) 0; text-align: center; }
+    .diversity img { max-width: 100%; border-radius: 10px; }
+
+    /* Varianten */
+    .bg-solid .diversity { background: var(--color-accent); color: var(--text-on-accent); }
+    .anim-playful .diversity:hover img { transform: scale(1.05); transition: 0.3s; }
+</style>

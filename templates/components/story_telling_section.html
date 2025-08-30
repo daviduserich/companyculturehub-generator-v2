@@ -1,0 +1,17 @@
+<!-- Story Telling Section -->
+<section class="story-telling">
+    <div class="container">
+        <h2>{{story_telling_section.headline}}</h2>
+        <p>{{story_telling_section.text}}</p>
+        <img src="{{image_url}}" alt="{{image_alt_text}}">
+    </div>
+</section>
+
+<style>
+    .story-telling { padding: var(--spacing-section-large) 0; }
+    .story-telling img { max-width: 100%; }
+
+    /* Varianten (für Multi-Instanzen: Styles per Instance anpassen) */
+    .bg-solid .story-telling { background: var(--color-secondary); }
+    .anim-subtle .story-telling:hover { opacity: 0.9; transition: 0.3s; }
+</style>

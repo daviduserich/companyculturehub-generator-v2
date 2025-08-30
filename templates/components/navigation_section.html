@@ -1,0 +1,18 @@
+<!-- Navigation Section -->
+<nav class="navigation">
+    <ul class="nav-list">
+        <!-- BEGIN_LIST_ITEM:navigation.nav_items -->
+        <li><a href="{{url}}">{{label}}</a></li>
+        <!-- END_LIST_ITEM:navigation.nav_items -->
+    </ul>
+</nav>
+
+<style>
+    .navigation { background: var(--color-secondary); padding: 10px 0; }
+    .nav-list { display: flex; list-style: none; justify-content: center; gap: 20px; }
+    .nav-list a { color: var(--text-on-secondary); text-decoration: none; }
+
+    /* Varianten */
+    .bg-solid .navigation { background: var(--color-primary); }
+    .bg-gradient .navigation { background: var(--nav-gradient); }
+</style>
