@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-30T15:34:23.483403",
+    "generator_version": "v2.0",
+    "csv_source": "content_template_new_project/layout_extended_v2.csv"
+  },
+  "global_settings": {
+    "project_config": {
+      "project_id": "example_project_v1",
+      "primary_domain": "example.culture.localhost",
+      "canonical_url": "https://example.culture.localhost/employer-branding"
+    },
+    "identity": {
+      "company_name": "Example AG",
+      "company_slogan": "Innovation trifft Teamgeist"
+    },
+    "links": {
+      "imprint_url": "https://example.com/impressum",
+      "privacy_url": "https://example.com/datenschutz",
+      "contact_url": "https://example.com/kontakt",
+      "career_page_url": "https://example.com/karriere",
+      "application_form_url": "mailto:karriere@example.com"
+    },
+    "design": {
+      "branding": {
+        "primary_color": "#4A5568",
+        "secondary_color": "#2c3e50",
+        "text_color": "#333333",
+        "accent_color": "#3182CE",
+        "text_on_primary": "#FFFFFF",
+        "text_on_secondary": "#FFFFFF",
+        "benefits_gradient": {
+          "type": "dynamic_fallback",
+          "css_value": "linear-gradient(135deg, #4A5568, #3182CE)"
+        },
+        "font_family": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+      },
+      "logo": {
+        "url": "assets/images/example_logo.svg",
+        "favicon_url": "assets/images/example_favicon.png"
+      }
+    },
+    "labels": {
+      "imprint_text": "Impressum",
+      "privacy_text": "Datenschutz",
+      "contact_text": "Kontakt",
+      "career_button_text": "Aktuelle Stellen",
+      "application_button_text": "Initiativbewerbung"
+    },
+    "integrations": {
+      "meta_pixel_id": "YOUR_META_PIXEL_ID_HERE",
+      "tracking_script_url": ""
+    }
+  },
+  "page_content": {
+    "header": [
+      {
+        "id": "EB-Header-C1-primary_color",
+        "name": "primary_color",
+        "value": "Beispiel-primary_color für header"
+      },
+      {
+        "id": "EB-Header-C1-favicon_url",
+        "name": "favicon_url",
+        "value": "Beispiel-favicon_url für header"
+      },
+      {
+        "id": "EB-Header-C1-text_color",
+        "name": "text_color",
+        "value": "Beispiel-text_color für header"
+      },
+      {
+        "id": "EB-Header-C1-meta_pixel_id",
+        "name": "meta_pixel_id",
+        "value": "Beispiel-meta_pixel_id für header"
+      },
+      {
+        "id": "EB-Header-C1-text_on_primary",
+        "name": "text_on_primary",
+        "value": "Beispiel-text_on_primary für header"
+      },
+      {
+        "id": "EB-Header-C1-tracking_script_url",
+        "name": "tracking_script_url",
+        "value": "Beispiel-tracking_script_url für header"
+      },
+      {
+        "id": "EB-Header-C1-text_on_secondary",
+        "name": "text_on_secondary",
+        "value": "Beispiel-text_on_secondary für header"
+      },
+      {
+        "id": "EB-Header-C1-meta_description",
+        "name": "meta_description",
+        "value": "Beispiel-meta_description für header"
+      },
+      {
+        "id": "EB-Header-C1-theme_classes",
+        "name": "theme_classes",
+        "value": "Beispiel-theme_classes für header"
+      },
+      {
+        "id": "EB-Header-C1-canonical_url",
+        "name": "canonical_url",
+        "value": "Beispiel-canonical_url für header"
+      },
+      {
+        "id": "EB-Header-C1-font_family",
+        "name": "font_family",
+        "value": "Beispiel-font_family für header"
+      },
+      {
+        "id": "EB-Header-C1-css_value",
+        "name": "css_value",
+        "value": "Beispiel-css_value für header"
+      },
+      {
+        "id": "EB-Header-C1-page_title",
+        "name": "page_title",
+        "value": "Beispiel-page_title für header"
+      },
+      {
+        "id": "EB-Header-C1-accent_color",
+        "name": "accent_color",
+        "value": "Beispiel-accent_color für header"
+      },
+      {
+        "id": "EB-Header-C1-secondary_color",
+        "name": "secondary_color",
+        "value": "Beispiel-secondary_color für header"
+      }
+    ],
+    "logo_header_section": [
+      {
+        "id": "EB-Logo_header_section-C1-url",
+        "name": "url",
+        "value": "Beispiel-url für logo_header_section"
+      },
+      {
+        "id": "EB-Logo_header_section-C1-company_name",
+        "name": "company_name",
+        "value": "Beispiel-company_name für logo_header_section"
+      },
+      {
+        "id": "EB-Logo_header_section-C1-canonical_url",
+        "name": "canonical_url",
+        "value": "Beispiel-canonical_url für logo_header_section"
+      }
+    ],
+    "navigation": [
+      {
+        "id": "EB-Navigation-C1-E1",
+        "name": "placeholder",
+        "value": "Content for navigation"
+      }
+    ],
+    "hero_section": [
+      {
+        "id": "EB-Hero_section-C1-image_url",
+        "name": "image_url",
+        "value": "assets/images/hero_section_image_url.png"
+      },
+      {
+        "id": "EB-Hero_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für hero_section"
+      },
+      {
+        "id": "EB-Hero_section-C1-subheadline",
+        "name": "subheadline",
+        "value": "Beispiel-subheadline für hero_section"
+      },
+      {
+        "id": "EB-Hero_section-C1-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Bild für hero_section"
+      },
+      {
+        "id": "EB-Hero_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für hero_section"
+      }
+    ],
+    "culture_section": [
+      {
+        "id": "EB-Culture_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für culture_section"
+      },
+      {
+        "id": "EB-Culture_section-C1-image_url",
+        "name": "image_url",
+        "value": "assets/images/culture_section_image_url.png"
+      },
+      {
+        "id": "EB-Culture_section-C1-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Bild für culture_section"
+      },
+      {
+        "id": "EB-Culture_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für culture_section"
+      }
+    ],
+    "values_section": [
+      {
+        "id": "EB-Values_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für values_section"
+      }
+    ],
+    "team_section": [
+      {
+        "id": "EB-Team_section-C1-testimonial_author_name",
+        "name": "testimonial_author_name",
+        "value": "Hans Muster"
+      },
+      {
+        "id": "EB-Team_section-C1-testimonial_author_title",
+        "name": "testimonial_author_title",
+        "value": "Beispiel-Position"
+      },
+      {
+        "id": "EB-Team_section-C1-testimonial_quote",
+        "name": "testimonial_quote",
+        "value": "Beispiel-testimonial_quote für team_section"
+      },
+      {
+        "id": "EB-Team_section-C1-image_url",
+        "name": "image_url",
+        "value": "assets/images/team_section_image_url.png"
+      },
+      {
+        "id": "EB-Team_section-C1-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Bild für team_section"
+      },
+      {
+        "id": "EB-Team_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für team_section"
+      },
+      {
+        "id": "EB-Team_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für team_section"
+      }
+    ],
+    "diversity_section": [
+      {
+        "id": "EB-Diversity_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für diversity_section"
+      },
+      {
+        "id": "EB-Diversity_section-C1-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Bild für diversity_section"
+      },
+      {
+        "id": "EB-Diversity_section-C1-image_url",
+        "name": "image_url",
+        "value": "assets/images/diversity_section_image_url.png"
+      },
+      {
+        "id": "EB-Diversity_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für diversity_section"
+      }
+    ],
+    "stolz_section": [
+      {
+        "id": "EB-Stolz_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für stolz_section"
+      },
+      {
+        "id": "EB-Stolz_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für stolz_section"
+      }
+    ],
+    "story_telling_section": [
+      {
+        "instance": 1,
+        "id": "EB-Story_telling_section-1-C1-E1",
+        "name": "image_url",
+        "value": "Beispiel-image_url Instanz 1 für story_telling_section"
+      },
+      {
+        "instance": 1,
+        "id": "EB-Story_telling_section-1-C1-E1",
+        "name": "text",
+        "value": "Beispiel-text Instanz 1 für story_telling_section"
+      },
+      {
+        "instance": 1,
+        "id": "EB-Story_telling_section-1-C1-E1",
+        "name": "image_alt_text",
+        "value": "Beispiel-image_alt_text Instanz 1 für story_telling_section"
+      },
+      {
+        "instance": 1,
+        "id": "EB-Story_telling_section-1-C1-E1",
+        "name": "headline",
+        "value": "Beispiel-headline Instanz 1 für story_telling_section"
+      },
+      {
+        "instance": 2,
+        "id": "EB-Story_telling_section-2-C1-E1",
+        "name": "image_url",
+        "value": "Beispiel-image_url Instanz 2 für story_telling_section"
+      },
+      {
+        "instance": 2,
+        "id": "EB-Story_telling_section-2-C1-E1",
+        "name": "text",
+        "value": "Beispiel-text Instanz 2 für story_telling_section"
+      },
+      {
+        "instance": 2,
+        "id": "EB-Story_telling_section-2-C1-E1",
+        "name": "image_alt_text",
+        "value": "Beispiel-image_alt_text Instanz 2 für story_telling_section"
+      },
+      {
+        "instance": 2,
+        "id": "EB-Story_telling_section-2-C1-E1",
+        "name": "headline",
+        "value": "Beispiel-headline Instanz 2 für story_telling_section"
+      }
+    ],
+    "location_section": [
+      {
+        "id": "EB-Location_section-C1-map_url",
+        "name": "map_url",
+        "value": "assets/images/location_section_map_url.png"
+      },
+      {
+        "id": "EB-Location_section-C1-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Bild für location_section"
+      },
+      {
+        "id": "EB-Location_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für location_section"
+      },
+      {
+        "id": "EB-Location_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für location_section"
+      }
+    ],
+    "benefits_section": [
+      {
+        "id": "EB-Benefits_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für benefits_section"
+      },
+      {
+        "id": "EB-Benefits_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für benefits_section"
+      }
+    ],
+    "career_cta_section": [
+      {
+        "id": "EB-Career_cta_section-C1-career_button_text",
+        "name": "career_button_text",
+        "value": "Beispiel-career_button_text für career_cta_section"
+      },
+      {
+        "id": "EB-Career_cta_section-C1-description",
+        "name": "description",
+        "value": "Beispiel-description für career_cta_section"
+      },
+      {
+        "id": "EB-Career_cta_section-C1-career_page_url",
+        "name": "career_page_url",
+        "value": "Beispiel-career_page_url für career_cta_section"
+      },
+      {
+        "id": "EB-Career_cta_section-C1-application_form_url",
+        "name": "application_form_url",
+        "value": "Beispiel-application_form_url für career_cta_section"
+      },
+      {
+        "id": "EB-Career_cta_section-C1-application_button_text",
+        "name": "application_button_text",
+        "value": "Beispiel-application_button_text für career_cta_section"
+      },
+      {
+        "id": "EB-Career_cta_section-C1-headline",
+        "name": "headline",
+        "value": "Beispiel-headline für career_cta_section"
+      }
+    ],
+    "footer": [
+      {
+        "id": "EB-Footer-C1-contact_url",
+        "name": "contact_url",
+        "value": "Beispiel-contact_url für footer"
+      },
+      {
+        "id": "EB-Footer-C1-privacy_url",
+        "name": "privacy_url",
+        "value": "Beispiel-privacy_url für footer"
+      },
+      {
+        "id": "EB-Footer-C1-privacy_text",
+        "name": "privacy_text",
+        "value": "Beispiel-privacy_text für footer"
+      },
+      {
+        "id": "EB-Footer-C1-imprint_url",
+        "name": "imprint_url",
+        "value": "Beispiel-imprint_url für footer"
+      },
+      {
+        "id": "EB-Footer-C1-imprint_text",
+        "name": "imprint_text",
+        "value": "Beispiel-imprint_text für footer"
+      },
+      {
+        "id": "EB-Footer-C1-copyright_text",
+        "name": "copyright_text",
+        "value": "Beispiel-copyright_text für footer"
+      },
+      {
+        "id": "EB-Footer-C1-contact_text",
+        "name": "contact_text",
+        "value": "Beispiel-contact_text für footer"
+      }
+    ]
+  }
+}

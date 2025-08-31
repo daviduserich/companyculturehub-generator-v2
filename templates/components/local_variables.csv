@@ -1,0 +1,28 @@
+component,key,value
+hero_section,headline,Eine aussagekräftige Überschrift
+hero_section,subheadline,Eine interessante Unterzeile
+hero_section,description,Ein beschreibender Text, der die Vorteile hervorhebt.
+hero_section,image_url,assets/images/hero_section_image.png
+hero_section,image_alt_text,Ein beschreibender Alternativtext für das Bild
+culture_section,headline,Eine aussagekräftige Überschrift
+culture_section,description,Ein beschreibender Text, der die Vorteile hervorhebt.
+culture_section,image_url,assets/images/culture_section_image.png
+culture_section,image_alt_text,Ein beschreibender Alternativtext für das Bild
+team_section,headline,Eine aussagekräftige Überschrift
+team_section,description,Ein beschreibender Text, der die Vorteile hervorhebt.
+team_section,testimonial_quote,Ein inspirierendes Zitat eines Team-Mitglieds.
+team_section,testimonial_author_name,Max Mustermann
+team_section,testimonial_author_title,Senior Entwickler
+team_section,image_url,assets/images/team_section_image.png
+team_section,image_alt_text,Ein beschreibender Alternativtext für das Bild
+benefits_section,headline,Eine aussagekräftige Überschrift
+benefits_section,description,Ein beschreibender Text, der die Vorteile hervorhebt.
+career_cta_section,headline,Eine aussagekräftige Überschrift
+career_cta_section,description,Ein beschreibender Text, der die Vorteile hervorhebt.
+footer_section,copyright_text,© 2025 {{identity.company_name}}
+logo_header_section,logo_alt,Logo von {{identity.company_name}}
+header,page_title,Karriereseite von {{identity.company_name}}
+header,meta_description,Werden Sie Teil unseres Teams.
+technik_header,page_title,Karriereseite von {{identity.company_name}}
+technik_header,meta_description,Werden Sie Teil unseres Teams.
+footer,copyright_text,© 2025 {{identity.company_name}}

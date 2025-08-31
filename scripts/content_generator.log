@@ -1,0 +1,33 @@
+2025-08-30 16:56:08,722 - INFO - Starte Content-Generierungsprozess...
+2025-08-30 16:56:08,722 - INFO - Layout-CSV '/workspaces/companyculturehub-generator-v2/content_template_new_project/layout_extended_v2.csv' erfolgreich geladen.
+2025-08-30 16:56:08,722 - INFO - Globale Variablen aus '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' erfolgreich geladen.
+2025-08-30 16:56:08,723 - INFO - Verarbeite Komponente: 'header'
+2025-08-30 16:56:08,723 - WARNING - Kein HTML-Template für 'header' unter '/workspaces/companyculturehub-generator-v2/templates/components/header.html' gefunden. Komponente wird übersprungen.
+2025-08-30 16:56:08,723 - INFO - Verarbeite Komponente: 'logo_header_section'
+2025-08-30 16:56:08,723 - INFO - Komponente 'navigation' ist deaktiviert und wird übersprungen.
+2025-08-30 16:56:08,723 - INFO - Verarbeite Komponente: 'hero_section'
+2025-08-30 16:56:08,723 - INFO - Verarbeite Komponente: 'culture_section'
+2025-08-30 16:56:08,723 - WARNING - Platzhalter '{{icon}}' in 'culture_section.html' ist nicht in 'valid_local_placeholders' für 'culture_section' definiert und wird ignoriert.
+2025-08-30 16:56:08,723 - WARNING - Platzhalter '{{text}}' in 'culture_section.html' ist nicht in 'valid_local_placeholders' für 'culture_section' definiert und wird ignoriert.
+2025-08-30 16:56:08,723 - WARNING - Platzhalter '{{title}}' in 'culture_section.html' ist nicht in 'valid_local_placeholders' für 'culture_section' definiert und wird ignoriert.
+2025-08-30 16:56:08,723 - INFO - Komponente 'values_section' ist deaktiviert und wird übersprungen.
+2025-08-30 16:56:08,723 - INFO - Verarbeite Komponente: 'team_section'
+2025-08-30 16:56:08,723 - INFO - Komponente 'diversity_section' ist deaktiviert und wird übersprungen.
+2025-08-30 16:56:08,723 - INFO - Komponente 'stolz_section' ist deaktiviert und wird übersprungen.
+2025-08-30 16:56:08,724 - INFO - Komponente 'story_telling_section' ist deaktiviert und wird übersprungen.
+2025-08-30 16:56:08,724 - INFO - Komponente 'location_section' ist deaktiviert und wird übersprungen.
+2025-08-30 16:56:08,724 - INFO - Verarbeite Komponente: 'benefits_section'
+2025-08-30 16:56:08,724 - WARNING - Platzhalter '{{icon}}' in 'benefits_section.html' ist nicht in 'valid_local_placeholders' für 'benefits_section' definiert und wird ignoriert.
+2025-08-30 16:56:08,724 - WARNING - Platzhalter '{{text}}' in 'benefits_section.html' ist nicht in 'valid_local_placeholders' für 'benefits_section' definiert und wird ignoriert.
+2025-08-30 16:56:08,724 - WARNING - Platzhalter '{{title}}' in 'benefits_section.html' ist nicht in 'valid_local_placeholders' für 'benefits_section' definiert und wird ignoriert.
+2025-08-30 16:56:08,724 - INFO - Verarbeite Komponente: 'career_cta_section'
+2025-08-30 16:56:08,724 - INFO - Verarbeite Komponente: 'footer'
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'project_config.canonical_url' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'team_section.description' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'team_section.headline' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'team_section.image_alt_text' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'team_section.image_url' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'team_section.testimonial_author_name' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'team_section.testimonial_author_title' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,724 - INFO - Fehlender globaler Schlüssel 'team_section.testimonial_quote' wurde zu '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' hinzugefügt.
+2025-08-30 16:56:08,725 - INFO - Prozess abgeschlossen. JSON-Datei wurde hier gespeichert: '/workspaces/companyculturehub-generator-v2/content_template_nach_update_modules/content_template_20250830_165608.json'

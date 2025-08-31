@@ -1,0 +1,24 @@
+2025-08-31 14:55:59,873 - INFO - Starte Content-Generierungsprozess...
+2025-08-31 14:55:59,874 - INFO - Layout-CSV '/workspaces/companyculturehub-generator-v2/content_template_new_project/layout_extended_v2.csv' erfolgreich geladen.
+2025-08-31 14:55:59,874 - INFO - Globale Variablen aus '/workspaces/companyculturehub-generator-v2/templates/components/global_variables.csv' erfolgreich geladen.
+2025-08-31 14:55:59,874 - INFO - Lokale Variablen aus '/workspaces/companyculturehub-generator-v2/templates/components/local_variables.csv' erfolgreich geladen.
+2025-08-31 14:55:59,875 - INFO - Verarbeite Komponente: 'header'
+2025-08-31 14:55:59,875 - WARNING - Kein HTML-Template für 'header' unter '/workspaces/companyculturehub-generator-v2/templates/components/header.html' gefunden. Komponente wird übersprungen.
+2025-08-31 14:55:59,875 - INFO - Verarbeite Komponente: 'logo_header_section'
+2025-08-31 14:55:59,887 - INFO - Komponente 'navigation' ist deaktiviert und wird übersprungen.
+2025-08-31 14:55:59,887 - INFO - Verarbeite Komponente: 'hero_section'
+2025-08-31 14:55:59,923 - INFO - Verarbeite Komponente: 'culture_section'
+2025-08-31 14:55:59,924 - WARNING - Unabgedeckte Platzhalter in 'culture_section': {'title', 'icon', 'text'}
+2025-08-31 14:55:59,924 - ERROR - Validierung fehlgeschlagen für Komponente 'culture_section'. Überprüfen Sie die Platzhalter.
+2025-08-31 14:55:59,924 - INFO - Komponente 'values_section' ist deaktiviert und wird übersprungen.
+2025-08-31 14:55:59,924 - INFO - Verarbeite Komponente: 'team_section'
+2025-08-31 14:55:59,925 - INFO - Komponente 'diversity_section' ist deaktiviert und wird übersprungen.
+2025-08-31 14:55:59,925 - INFO - Komponente 'stolz_section' ist deaktiviert und wird übersprungen.
+2025-08-31 14:55:59,925 - INFO - Komponente 'story_telling_section' ist deaktiviert und wird übersprungen.
+2025-08-31 14:55:59,925 - INFO - Komponente 'location_section' ist deaktiviert und wird übersprungen.
+2025-08-31 14:55:59,925 - INFO - Verarbeite Komponente: 'benefits_section'
+2025-08-31 14:55:59,926 - WARNING - Unabgedeckte Platzhalter in 'benefits_section': {'title', 'icon', 'text'}
+2025-08-31 14:55:59,926 - ERROR - Validierung fehlgeschlagen für Komponente 'benefits_section'. Überprüfen Sie die Platzhalter.
+2025-08-31 14:55:59,926 - INFO - Verarbeite Komponente: 'career_cta_section'
+2025-08-31 14:55:59,927 - INFO - Verarbeite Komponente: 'footer'
+2025-08-31 14:55:59,928 - INFO - Prozess abgeschlossen. JSON-Datei wurde hier gespeichert: '/workspaces/companyculturehub-generator-v2/content_template_nach_update_modules/content_template_20250831_145559.json'

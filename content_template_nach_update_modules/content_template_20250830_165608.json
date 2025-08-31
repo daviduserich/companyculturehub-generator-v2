@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-30T16:56:08.723038",
+    "generator_version": "v3.1-final",
+    "csv_source": "/workspaces/companyculturehub-generator-v2/content_template_new_project/layout_extended_v2.csv"
+  },
+  "global_settings": {
+    "benefits_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "career_cta_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "culture_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "design": {
+      "logo": {
+        "url": "BITTE HIER WERT ERGÄNZEN > fLUMMBERTA"
+      }
+    },
+    "footer_section": {
+      "copyright_text": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "hero_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN",
+      "subheadline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "identity": {
+      "company_name": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "labels": {
+      "application_button_text": "BITTE HIER WERT ERGÄNZEN",
+      "career_button_text": "BITTE HIER WERT ERGÄNZEN",
+      "contact_text": "BITTE HIER WERT ERGÄNZEN",
+      "imprint_text": "BITTE HIER WERT ERGÄNZEN",
+      "privacy_text": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "links": {
+      "application_form_url": "BITTE HIER WERT ERGÄNZEN",
+      "career_page_url": "BITTE HIER WERT ERGÄNZEN",
+      "contact_url": "BITTE HIER WERT ERGÄNZEN",
+      "imprint_url": "BITTE HIER WERT ERGÄNZEN",
+      "privacy_url": "BITTE HIER WERT ERGÄNZEN"
+    }
+  },
+  "page_content": {
+    "logo_header_section": [],
+    "hero_section": [],
+    "culture_section": [],
+    "team_section": [],
+    "benefits_section": [],
+    "career_cta_section": [],
+    "footer": []
+  }
+}
