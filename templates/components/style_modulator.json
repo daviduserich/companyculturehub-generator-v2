@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "classic": {
+      "alternating_backgrounds": ["#FFFFFF", "#F5F5F5"],
+      "element_styles": {
+        "image_frame": {"style": "solid", "border": "1px solid {{colors.accent_color}}"},
+        "card": {"style": "shadow", "border-radius": "8px", "box-shadow": "0 4px 8px rgba(0,0,0,0.1)"},
+        "button": {"style": "solid", "background": "{{colors.secondary_color}}", "border-radius": "5px", "hover": "box-shadow: 0 2px 4px rgba(0,0,0,0.2)"}
+      }
+    },
+    "stylish": {
+      "alternating_backgrounds": ["#FFFFFF", "rgba({{colors.accent_color_rgb}}, 0.2)"],
+      "element_styles": {
+        "image_frame": {"style": "accent-gradient", "border": "1px solid {{colors.accent_color}}", "background": "{{colors.image_frame_gradient}}"},
+        "card": {"style": "glass", "border-radius": "15px", "backdrop-filter": "blur(10px)", "hover": "transform: scale(1.05)"},
+        "button": {"style": "gradient", "background": "linear-gradient(45deg, {{colors.primary_color}}, {{colors.secondary_color}})", "border-radius": "10px", "hover": "filter: brightness(1.1)"}
+      }
+    },
+    "classic_accents": {
+      "alternating_backgrounds": ["#FFFFFF", "#F5F5F5"],
+      "element_styles": {
+        "image_frame": {"style": "solid", "border": "1px solid {{colors.accent_color}}"},
+        "card": {"style": "shadow", "border-radius": "8px", "box-shadow": "0 4px 8px rgba(0,0,0,0.1)"},
+        "button": {"style": "solid", "background": "{{colors.accent_color}}", "border-radius": "5px", "hover": "box-shadow: 0 2px 4px rgba(0,0,0,0.2)"}
+      }
+    },
+    "hyper_stylish": {
+      "alternating_backgrounds": ["#FFFFFF", "rgba({{colors.accent_color_rgb}}, 0.3)"],
+      "element_styles": {
+        "image_frame": {"style": "accent-gradient", "border": "2px solid {{colors.accent_color}}", "background": "{{colors.image_frame_gradient}}"},
+        "card": {"style": "glass", "border-radius": "20px", "backdrop-filter": "blur(15px)", "hover": "transform: rotate(5deg) scale(1.05)"},
+        "button": {"style": "gradient", "background": "linear-gradient(90deg, {{colors.primary_color}}, {{colors.accent_color}})", "border-radius": "15px", "hover": "filter: brightness(1.2) transform: scale(1.1)"}
+      }
+    }
+  }
+}

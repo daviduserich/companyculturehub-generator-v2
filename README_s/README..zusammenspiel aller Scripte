@@ -1,0 +1,143 @@
+Company Culture Hub Generator v2
+This repository (companyculturehub-generator-v2) generates multiple design variants (classic, stylish, classic with accents, hyper-stylish) for employer branding websites, based on modular color, style, and layout configurations. It uses a layered architecture with interpreter scripts to process colors, styles, and text colors, injecting them into a template for customizable HTML output.
+Directory Structure
+
+content/<project_name>/: Project-specific folder (e.g., content/new-project-bitte_befuellen or content_template_new_project).
+Inputs:
+content_template_max.json: Template for content and structure.
+layout_extended_v2.csv: Defines module order, styling, and components.
+color_definitions.json: Branding colors (primary, secondary, accent).
+customer_style_config.json: Specifies preferred design variants.
+
+
+Generated:
+layout_rules.json: Fixed layout rules (auto-generated if absent).
+interpreted_colors.json: Processed colors and gradients.
+interpreted_styles_<variant>.json: Styles for each variant (e.g., classic, stylish).
+interpreted_text_colors.json: Text colors for accessibility.
+content_color_injected_<variant>.json: Final templates with injected styles.
+
+
+
+
+templates/:
+customer_style_config.json: Default configuration for new projects.
+components/:
+style_modulator.json: Global styling variants (classic, stylish, etc.).
+Component HTML files (e.g., hero_section.html, footer_section.html).
+
+
+
+
+
+Scripts and Dependencies
+1. init_new_project.py
+
+Purpose: Initializes a new project by copying content_template_new_project to content/<project_name>.
+Inputs: None (hardcoded template: content_template_new_project).
+Outputs: New project folder (e.g., content/new-project-bitte_befuellen) with:
+content_template_max.json
+layout_extended_v2.csv
+customer_style_config.json
+
+
+Dependencies: Python standard libraries (shutil, pathlib).
+Usage:python init_new_project.py
+
+
+Notes: Update content_template_max.json, layout_extended_v2.csv, and color_definitions.json after creation.
+
+2. Interpret_colors_v1.0.py
+
+Purpose: Processes color_definitions.json to determine gradients, style recommendations, and accent effects.
+Inputs: content/<project_name>/color_definitions.json (e.g., {"design": {"branding": {"primary_color": "#FF5733"}}}).
+Outputs: content/<project_name>/interpreted_colors.json (includes gradient_type, style_recommendation, image_frame_gradient).
+Dependencies: Python standard libraries (json, os, argparse, colorsys).
+Usage:python Interpret_colors_v1.0.py --project new-project-bitte_befuellen
+
+
+
+3. Interpret_styles_v1.0.py
+
+Purpose: Generates styles and text colors for each variant based on layout_extended_v2.csv, interpreted_colors.json, layout_rules.json, and style_modulator.json.
+Inputs:
+content/<project_name>/layout_extended_v2.csv
+content/<project_name>/interpreted_colors.json
+content/<project_name>/layout_rules.json (auto-generated if absent)
+templates/components/style_modulator.json
+content/<project_name>/customer_style_config.json
+
+
+Outputs:
+content/<project_name>/interpreted_styles_<variant>.json (e.g., interpreted_styles_classic.json)
+content/<project_name>/interpreted_text_colors.json
+
+
+Dependencies: Python standard libraries (json, csv, os, argparse).
+Usage:python Interpret_styles_v1.0.py --project new-project-bitte_befuellen
+
+
+
+4. Inject_styles_v1.0.py
+
+Purpose: Injects colors, styles, and text colors into content_template_max.json to create variant-specific templates.
+Inputs:
+content/<project_name>/content_template_max.json
+content/<project_name>/interpreted_colors.json
+content/<project_name>/interpreted_styles_<variant>.json
+content/<project_name>/interpreted_text_colors.json
+content/<project_name>/customer_style_config.json
+
+
+Outputs: content/<project_name>/content_color_injected_<variant>.json (e.g., content_color_injected_stylish.json).
+Dependencies: Python standard libraries (json, os, argparse).
+Usage:python Inject_styles_v1.0.py --project new-project-bitte_befuellen
+
+
+
+Workflow
+
+Initialize Project:
+python init_new_project.py
+
+
+Creates content/new-project-bitte_befuellen with default files.
+Edit color_definitions.json, content_template_max.json, and layout_extended_v2.csv as needed.
+Optionally adjust customer_style_config.json to select variants (default: ["classic", "stylish", "classic_accents", "hyper_stylish"]).
+
+
+Interpret Colors:
+python Interpret_colors_v1.0.py --project new-project-bitte_befuellen
+
+
+Generates interpreted_colors.json.
+
+
+Interpret Styles:
+python Interpret_styles_v1.0.py --project new-project-bitte_befuellen
+
+
+Generates layout_rules.json (if absent), interpreted_styles_<variant>.json, and interpreted_text_colors.json.
+
+
+Inject Styles:
+python Inject_styles_v1.0.py --project new-project-bitte_befuellen
+
+
+Generates content_color_injected_<variant>.json for each variant.
+
+
+
+Customization
+
+Variants: Add new variants in templates/components/style_modulator.json (e.g., new effects for hyper_stylish).
+Customer Config: Edit customer_style_config.json to limit variants (e.g., ["stylish", "classic_accents"]).
+Layouts: Adjust layout_rules.json for project-specific fixed layouts (rare cases).
+Manual Tweaking: Post-process content_color_injected_<variant>.json or HTML for custom adjustments (billed hourly).
+
+Notes
+
+Ensure color_definitions.json contains valid hex colors.
+layout_extended_v2.csv must have columns: order, styling_default, component, enabled.
+Run scripts sequentially, as each depends on the previous output.
+Deprecated files (e.g., content.json, layout.csv) are not used.

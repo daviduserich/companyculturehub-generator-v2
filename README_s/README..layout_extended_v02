@@ -1,0 +1,144 @@
+README: layout_extended_v2.csv
+Version: 1.0Datum: 31. August 2025Autor: Grok (basierend auf Diskussionen)
+Dieses Dokument beschreibt die Struktur und Verwendung der Datei layout_extended_v2.csv, die im Verzeichnis content/<project_name> (z. B. content/new-project-bitte_befuellen) liegt. Sie definiert, welche Module (HTML-Komponenten) für ein Projekt verwendet werden, ihre Reihenfolge, Constraints (z. B. Mindest-/Höchstanzahl) und Styling-Informationen. Es erklärt auch, wie man mehrere Instanzen eines Moduls (z. B. zwei story_telling_section) oder mehrere Items innerhalb einer Modul-Liste (z. B. drei Geschichten in einer story_telling_section) handhabt.
+1. Zweck
+Die layout_extended_v2.csv steuert die Struktur der generierten JSON-Vorlage (content_template_max.json), die später von der Interpreter-Schicht (Farben/Styling) und dem Generator (HTML-Erstellung) genutzt wird. Sie definiert:
+
+Welche Module aktiviert sind (enabled).
+Die Reihenfolge der Module (order).
+Constraints für Instanzen oder Listen (min_count, max_count).
+Standard-Styling (styling_default, z. B. fade-up, gradient).
+
+2. Struktur der CSV
+
+Pflicht-Spalten:
+order: Numerischer Wert (z. B. 10, 20), definiert die Reihenfolge der Module.
+component: Name des Moduls (z. B. hero_section, story_telling_section). Muss mit HTML-Datei in templates/components/ übereinstimmen (z. B. hero_section.html).
+data_source: Normalerweise identisch mit component, aber kann für Instanzen angepasst werden (z. B. story_telling_section_1).
+enabled: TRUE oder FALSE, aktiviert/deaktiviert das Modul.
+
+
+Optionale Spalten:
+Must or Possibility: M (Pflicht) oder P (optional).
+min_count, max_count: Grenzen für Instanzen (z. B. max. 2 story_telling_section) oder Listenelemente (z. B. max. 3 Geschichten in stories_list).
+recommended_count: Empfohlene Anzahl (z. B. 1 für hero_section).
+description: Dokumentation des Moduls.
+styling_default: Standard-CSS-Klasse (z. B. fade-up, gradient, pill-buttons).
+position_constraints: Reihenfolge-Regeln (z. B. after:40 before:100).
+integration_status: core (Standard) oder andere (z. B. experimental).
+
+
+
+Beispiel:
+order,component,data_source,enabled,Must or Possibility,min_count,max_count,recommended_count,description,styling_default,position_constraints,integration_status
+10,logo_header_section,logo_header_section,TRUE,M,1,1,1,Header mit Logo,neutral,first,core
+20,hero_section,hero_section,TRUE,M,1,1,1,Hero-Bereich,fade-up,after:10 before:40,core
+50,culture_section,culture_section,TRUE,P,0,2,1,Kultursektion,gradient,after:40 before:110,core
+80,story_telling_section,story_telling_section_1,TRUE,P,1,3,1,Motivierende Geschichten,subtle,after:40 before:110,core
+90,story_telling_section,story_telling_section_2,FALSE,P,1,3,1,Weitere Geschichten,subtle,after:40 before:110,core
+100,footer,footer,TRUE,M,1,1,1,Footer-Bereich,neutral,after:90,core
+
+3. Multiple Instanzen vs. Listen in Modulen
+Die CSV unterstützt zwei Möglichkeiten, mehrere Inhalte zu handhaben:
+
+Multiple Instanzen eines Moduls: Für separate Sektionen (z. B. zwei unabhängige story_telling_section).
+Listen innerhalb eines Moduls: Für gruppierte Inhalte in einer Sektion (z. B. drei Geschichten in einer story_telling_section).
+
+3.1. Multiple Instanzen eines Moduls
+
+Wann verwenden?: Wenn du separate Sektionen mit eigenem Styling brauchst (z. B. zwei story_telling_section mit unterschiedlichen Geschichten und Layouts).
+Wie definieren?:
+Füge mehrere Zeilen für dasselbe Modul in die CSV ein, mit unterschiedlicher order und data_source.
+Verwende data_source zur Unterscheidung (z. B. story_telling_section_1, story_telling_section_2).
+Beispiel:80,story_telling_section,story_telling_section_1,TRUE,P,1,3,1,Erste Geschichte,subtle,after:40 before:110,core
+90,story_telling_section,story_telling_section_2,TRUE,P,1,3,1,Zweite Geschichte,subtle,after:40 before:110,core
+
+
+Auswirkung:
+Das Skript generiert separate page_content-Einträge (z. B. page_content["story_telling_section_1"], page_content["story_telling_section_2"]).
+Jede Instanz hat eigene Platzhalter (z. B. headline, text) und Styling (z. B. styling_default: subtle).
+Der Generator rendert zwei <section>-Blöcke.
+
+
+
+
+Constraints:
+min_count/max_count beziehen sich auf die Anzahl der Instanzen (z. B. max. 3 story_telling_section).
+Beispiel: max_count: 3 erlaubt bis zu drei Instanzen.
+
+
+
+3.2. Listen innerhalb eines Moduls
+
+Wann verwenden?: Wenn du mehrere ähnliche Inhalte in einer Sektion gruppieren möchtest (z. B. drei Geschichten in einer story_telling_section).
+Wie definieren?:
+Im Modul-HTML: Definiere eine Liste mit <!-- BEGIN_LIST_ITEM:story_telling_section.stories_list --> und <!-- END_LIST_ITEM -->.
+Beispiel (story_telling_section.html):<section class="story-telling">
+    <h2>{{headline}}</h2>
+    <!-- BEGIN_LIST_ITEM:story_telling_section.stories_list -->
+    <div class="story">
+        <h3>{{title}}</h3>
+        <p>{{text}}</p>
+    </div>
+    <!-- END_LIST_ITEM:story_telling_section.stories_list -->
+</section>
+
+
+
+
+In der JSON: Liste erscheint als nested Array in page_content["story_telling_section"]:{
+  "name": "stories_list",
+  "type": "list",
+  "value": [
+    {"title": "Geschichte 1", "text": "Text 1"},
+    {"title": "Geschichte 2", "text": "Text 2"},
+    {"title": "Geschichte 3", "text": "Text 3"}
+  ]
+}
+
+
+In der CSV: Nur eine Zeile für story_telling_section nötig.80,story_telling_section,story_telling_section,TRUE,P,1,3,1,Motivierende Geschichten,subtle,after:40 before:110,core
+
+
+
+
+Constraints:
+min_count/max_count beziehen sich auf die Anzahl der Listenelemente (z. B. max. 3 Geschichten in stories_list).
+Beispiel: max_count: 3 erlaubt bis zu drei Einträge in stories_list.
+
+
+
+3.3. Empfehlung: Instanzen vs. Listen
+
+Listen: Verwende für gruppierte Inhalte in einer Sektion (z. B. drei Geschichten in einer story_telling_section). Vorteil: Einheitliches Styling, weniger Overhead.
+Instanzen: Verwende für separate Sektionen mit unterschiedlichem Styling oder Inhalt (z. B. zwei story_telling_section mit je eigener headline). Vorteil: Flexibilität.
+Tipp: Für drei Geschichten empfehlen wir eine Liste (stories_list), da es kompakter ist. Für zwei thematisch getrennte Geschichten (z. B. "Unsere Geschichte" und "Kundengeschichte") nutze zwei Instanzen.
+
+4. Hinzufügen eines neuen Moduls
+
+Modul erstellen: Erstelle new_section.html in templates/components/ (siehe README_modules.md).
+CSV aktualisieren:
+Füge eine Zeile hinzu, z. B.:70,new_section,new_section,TRUE,P,1,2,1,Neue Sektion,glass,after:40 before:100,core
+
+
+Für multiple Instanzen: Dupliziere die Zeile mit anderer order und data_source (z. B. new_section_1, new_section_2).
+
+
+Skript ausführen: python scripts/Content_template_generator_nach_modulupdates_v07.py.
+Neue Platzhalter werden in local_variables.csv oder global_variables.csv ergänzt.
+
+
+Prüfen: JSON enthält page_content["new_section"] mit Defaults.
+
+5. Best Practices
+
+Konsistenz: Verwende klare data_source-Namen (z. B. story_telling_section_1 für Instanzen).
+Constraints: Setze sinnvolle min_count/max_count (z. B. 1,1 für hero_section, 1,3 für Listen).
+Styling: Nutze styling_default für Interpreter-kompatible Klassen (z. B. fade-up, gradient).
+Dokumentation: Fülle description für Klarheit.
+
+6. Troubleshooting
+
+Fehlende Module: Prüfe enabled=TRUE und korrekten component-Namen.
+Listen nicht generiert: Stelle sicher, dass BEGIN_LIST_ITEM im HTML korrekt ist.
+Constraints ignoriert: Überprüfe min_count/max_count in CSV.
