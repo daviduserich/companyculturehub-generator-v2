@@ -1,0 +1,24 @@
+{
+  "fixed_layouts": {
+    "logo_header_section": {
+      "gradient_type": "{{colors.gradient_type}}",
+      "background_color": "{{colors.primary_color}}",
+      "class": "neutral"
+    },
+    "hero_section": {
+      "gradient_type": "{{colors.gradient_type}}",
+      "background_color": "{{colors.primary_color}}",
+      "class": "fade-up"
+    },
+    "career_cta_section": {
+      "gradient_type": "none",
+      "background_color": "{{colors.secondary_color}}",
+      "class": "pill-buttons"
+    },
+    "footer": {
+      "gradient_type": "none",
+      "background_color": "{{colors.primary_color}}",
+      "class": "neutral"
+    }
+  }
+}

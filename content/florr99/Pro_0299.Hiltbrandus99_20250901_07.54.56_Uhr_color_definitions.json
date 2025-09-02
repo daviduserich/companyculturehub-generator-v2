@@ -1,0 +1,143 @@
+{
+  "design": {
+    "branding": {
+      "proposed_primary_color": "#231F20",
+      "proposed_secondary_color": "#E9413F",
+      "proposed_text_color": "#000000",
+      "proposed_accent_color": "#EF4035",
+      "proposed_text_on_primary": "#FFFFFF",
+      "proposed_text_on_secondary": "#000000",
+      "font_family": "Montserrat",
+      "font_css_value": "Montserrat, Arial, Helvetica, sans-serif",
+      "google_fonts_link": "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap",
+      "font_metadata": {
+        "category": "sans-serif",
+        "confidence": 0.9,
+        "source": "intelligent_fallback",
+        "fallback_fonts": [
+          "Arial",
+          "Helvetica",
+          "sans-serif"
+        ]
+      },
+      "benefits_gradient": {
+        "type": "dynamic_customer",
+        "css_value": "linear-gradient(135deg, #231F20, #EF4035)"
+      }
+    },
+    "proposed_presentation_style": "stylish",
+    "hero_style": "default"
+  },
+  "raw_extraction": {
+    "extracted_colors": {
+      "extracted_primary": "#231F20",
+      "extracted_secondary": "#E9413F",
+      "extracted_accent": "#EF4035",
+      "extracted_background": "#F6F8F9",
+      "extracted_text": "#000000",
+      "all_website_colors": [
+        [
+          "#231F20",
+          0.35343440177496727
+        ],
+        [
+          "#E9413F",
+          0.33125688155507343
+        ],
+        [
+          "#F6F8F9",
+          0.31111574861522334
+        ],
+        [
+          "#EF4035",
+          0.004192968054735978
+        ]
+      ]
+    },
+    "full_most_frequent": [
+      [
+        "#231F20",
+        0.35343440177496727
+      ],
+      [
+        "#E9413F",
+        0.33125688155507343
+      ],
+      [
+        "#F6F8F9",
+        0.31111574861522334
+      ],
+      [
+        "#EF4035",
+        0.004192968054735978
+      ]
+    ],
+    "processing_steps": {
+      "schwarz_filter_needed": false,
+      "harmony_correction_needed": false,
+      "saturation_harmonization_needed": true,
+      "contrast_correction_needed": true
+    },
+    "decision_log": [
+      "🚀 Starte erweiterten Veredelungs-Prozess mit Schriftart-Intelligenz...",
+      "🎨 Starte vollständige Farb-Veredelung...",
+      "Stufe 1: Basis-Zuweisung: P=#231F20, S=#E9413F, A=#EF4035",
+      "Stufe 2: Prüfe Helligkeit - Primary: 12.7%, Secondary: 45.1%",
+      "--> Schwellenwert: 15.0% (Fade-up aktiviert wenn BEIDE darunter)",
+      "--> Primary (12.7%) < Schwelle (15.0%): ✅",
+      "--> Secondary (45.1%) < Schwelle (15.0%): ❌",
+      "🎨 FADE-UP NICHT NÖTIG: Mindestens eine Farbe ist hell genug.",
+      "Stufe 3: Farben sind harmonisch.",
+      "Stufe 4: Prüfe Sättigungs-Harmonisierung...",
+      "--> Sättigungs-Differenz hoch (0.66). Empfehle Harmonisierung (Flag gesetzt, aber nicht angewendet).",
+      "Stufe 4.5: Prüfe visuellen Kontrast zwischen Button (Accent) und Sektions-Hintergrund (Secondary)...",
+      "--> KONTRAST-ALARM: Unterschied nur 11.704699910719626. Empfehle Accent durch Primary zu ersetzen (Flag gesetzt, aber nicht angewendet).",
+      "Stufe 5: Berechne kontextsensitive Textfarben...",
+      "--> Ergebnis: Text auf Primary: #FFFFFF, Text auf Secondary: #000000",
+      "Stufe 6: Generiere `benefits`-Verlauf...",
+      "--> `benefits`-Verlauf erstellt (Typ: dynamic_customer).",
+      "Stufe 7: Bestimme automatische Stil-Empfehlung...",
+      "--> Vorschlag: Palette ist 'Lebhaft'. Empfehle Preset 'stylish'.",
+      "Stufe 8: Farb-Veredelung abgeschlossen.",
+      "🚀 Starte erweiterten Veredelungs-Prozess mit Schriftart-Intelligenz...",
+      "🎨 Starte vollständige Farb-Veredelung...",
+      "Stufe 1: Basis-Zuweisung: P=#231F20, S=#E9413F, A=#EF4035",
+      "Stufe 2: Prüfe Helligkeit - Primary: 12.7%, Secondary: 45.1%",
+      "--> Schwellenwert: 15.0% (Fade-up aktiviert wenn BEIDE darunter)",
+      "--> Primary (12.7%) < Schwelle (15.0%): ✅",
+      "--> Secondary (45.1%) < Schwelle (15.0%): ❌",
+      "🎨 FADE-UP NICHT NÖTIG: Mindestens eine Farbe ist hell genug.",
+      "Stufe 3: Farben sind harmonisch.",
+      "Stufe 4: Prüfe Sättigungs-Harmonisierung...",
+      "--> Sättigungs-Differenz hoch (0.66). Empfehle Harmonisierung (Flag gesetzt, aber nicht angewendet).",
+      "Stufe 4.5: Prüfe visuellen Kontrast zwischen Button (Accent) und Sektions-Hintergrund (Secondary)...",
+      "--> KONTRAST-ALARM: Unterschied nur 11.704699910719626. Empfehle Accent durch Primary zu ersetzen (Flag gesetzt, aber nicht angewendet).",
+      "Stufe 5: Berechne kontextsensitive Textfarben...",
+      "--> Ergebnis: Text auf Primary: #FFFFFF, Text auf Secondary: #000000",
+      "Stufe 6: Generiere `benefits`-Verlauf...",
+      "--> `benefits`-Verlauf erstellt (Typ: dynamic_customer).",
+      "Stufe 7: Bestimme automatische Stil-Empfehlung...",
+      "--> Vorschlag: Palette ist 'Lebhaft'. Empfehle Preset 'stylish'.",
+      "Stufe 8: Farb-Veredelung abgeschlossen.",
+      "🎉 Erweiterte Veredelung abgeschlossen - Farben UND Schriftarten optimiert!",
+      "📝 Verwende extrahierte Schriftart-Daten: Exo",
+      "✅ Schriftart-Integration abgeschlossen: Montserrat (Stil: stylish)"
+    ],
+    "extracted_fonts": {}
+  },
+  "extraction_metadata": {
+    "timestamp": "2025-09-01T07:54:56.930820",
+    "version": "v2.0_with_fonts_corrected_and_raw_data",
+    "features": [
+      "color_extraction",
+      "font_intelligence",
+      "google_fonts_integration",
+      "raw_data_inclusion"
+    ],
+    "confidence_scores": {
+      "colors": 0.8,
+      "fonts": 0.9
+    },
+    "note": "Raw data included for deferred decision-making. Use 'proposed_' fields as suggestions only, now based on raw colors."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "styles": {
+    "header": {
+      "gradient_type": "none",
+      "background_color": "#FFFFFF",
+      "class": "neutral",
+      "image_frame": "accent-gradient",
+      "card_style": "glass",
+      "button_style": "gradient"
+    },
+    "logo_header_section": {
+      "gradient_type": "horizontal",
+      "background_color": "#FF5733",
+      "class": "neutral"
+    },
+    "hero_section": {
+      "gradient_type": "horizontal",
+      "background_color": "#FF5733",
+      "class": "fade-up"
+    },
+    "culture_section": {
+      "gradient_type": "none",
+      "background_color": "#FFFFFF",
+      "class": "gradient",
+      "image_frame": "accent-gradient",
+      "card_style": "glass",
+      "button_style": "gradient"
+    },
+    "team_section": {
+      "gradient_type": "none",
+      "background_color": "#FFFFFF",
+      "class": "shadow",
+      "image_frame": "accent-gradient",
+      "card_style": "glass",
+      "button_style": "gradient"
+    },
+    "benefits_section": {
+      "gradient_type": "none",
+      "background_color": "#FFFFFF",
+      "class": "gradient",
+      "image_frame": "accent-gradient",
+      "card_style": "glass",
+      "button_style": "gradient"
+    },
+    "career_cta_section": {
+      "gradient_type": "none",
+      "background_color": "#C70039",
+      "class": "pill-buttons"
+    },
+    "footer": {
+      "gradient_type": "none",
+      "background_color": "#FF5733",
+      "class": "neutral"
+    }
+  }
+}

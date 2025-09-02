@@ -1,0 +1,36 @@
+{
+  "text_colors": {
+    "header": {
+      "default": "#000000",
+      "heading": "#900C3F"
+    },
+    "logo_header_section": {
+      "default": "#000000",
+      "heading": "#000000"
+    },
+    "hero_section": {
+      "default": "#000000",
+      "heading": "#000000"
+    },
+    "culture_section": {
+      "default": "#000000",
+      "heading": "#900C3F"
+    },
+    "team_section": {
+      "default": "#000000",
+      "heading": "#900C3F"
+    },
+    "benefits_section": {
+      "default": "#000000",
+      "heading": "#900C3F"
+    },
+    "career_cta_section": {
+      "default": "#000000",
+      "heading": "#000000"
+    },
+    "footer": {
+      "default": "#000000",
+      "heading": "#000000"
+    }
+  }
+}
