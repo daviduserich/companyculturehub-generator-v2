@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "company_name": "Ihre Firma AG"
+  },
+  "design": {
+    "logo": {
+      "url": ""
+    }
+  },
+  "links": {
+    "career_page_url": "#",
+    "application_form_url": "#",
+    "imprint_url": "#",
+    "privacy_url": "#",
+    "contact_url": "#"
+  },
+  "labels": {
+    "career_button_text": "Offene Stellen",
+    "application_button_text": "Initiativbewerbung",
+    "imprint_text": "Impressum",
+    "privacy_text": "Datenschutz",
+    "contact_text": "Kontakt"
+  },
+  "project_config": {
+    "canonical_url": "#"
+  }
+}
