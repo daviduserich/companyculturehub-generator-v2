@@ -1,0 +1,25 @@
+{
+  "headline": {
+    "description": "Eine selbstbewusste Überschrift, die zeigt, an welchen beeindruckenden Projekten Du mitarbeiten kannst.",
+    "example_value": "Projekte, die Deine Handschrift tragen werden.",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein kurzer Text, der den Kontext für die Highlights gibt und zeigt, dass hier Arbeit mit echtem 'Impact' geleistet wird.",
+    "example_value": "Wir setzen Maßstäbe in unserer Branche. Hier sind einige der Projekte, bei denen Du Deine Fähigkeiten einsetzen und stolz auf Deine Arbeit sein kannst:",
+    "value": ""
+  },
+  "highlights_list": {
+    "description": "Eine Liste von konkreten Erfolgen, die für einen neuen Mitarbeiter attraktiv sind.",
+    "title": {
+      "description": "Der Titel des Highlights, der den Erfolg auf den Punkt bringt.",
+      "example_value": "Open-Source-Tool mit 10.000+ Nutzern",
+      "value": ""
+    },
+    "text": {
+      "description": "Eine kurze Beschreibung, die den Beitrag des Teams und die Relevanz des Erfolgs hervorhebt.",
+      "example_value": "Unser Team hat ein Tool entwickelt, das heute von Entwicklern weltweit genutzt wird. Du hast die Chance, an solchen Projekten mitzuwirken.",
+      "value": ""
+    }
+  }
+}

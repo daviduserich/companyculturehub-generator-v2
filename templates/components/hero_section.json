@@ -1,0 +1,27 @@
+{
+  "headline": {
+    "description": "Die emotionale Hauptüberschrift. Soll den Bewerber als Held positionieren und sein Potenzial ansprechen. Fokus: Wirkung, nicht Beschreibung.",
+    "example_value": "Gestalte Deine Zukunft. Und die unserer Branche.",
+    "value": ""
+  },
+  "subheadline": {
+    "description": "Eine unterstützende Unterzeile, die das Versprechen der Headline konkretisiert und den Nutzen für den Bewerber hervorhebt.",
+    "example_value": "Bei uns findest Du die Werkzeuge, das Team und die Freiheit, um wirklich etwas zu bewegen.",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein kurzer, einladender Absatz, der den Bewerber direkt anspricht und ihm zeigt, was er auf dieser Seite für sich entdecken kann.",
+    "example_value": "Bist Du bereit, Deine Ideen in die Tat umzusetzen? Entdecke hier, wie wir Dich dabei unterstützen, Deine beruflichen Ziele zu erreichen und über Dich hinauszuwachsen.",
+    "value": ""
+  },
+  "image_url": {
+    "description": "URL zu einem hochwertigen, authentischen Bild, das Kollaboration und Erfolg zeigt. Sollte Energie und eine positive Atmosphäre ausstrahlen.",
+    "example_value": "assets/images/placeholder_hero.jpg",
+    "value": ""
+  },
+  "image_alt_text": {
+    "description": "Ein beschreibender Alternativtext, der den Bildinhalt aus der Perspektive von Teamarbeit und Erfolg beschreibt.",
+    "example_value": "Ein Team von Experten arbeitet gemeinsam an einer innovativen Lösung.",
+    "value": ""
+  }
+}

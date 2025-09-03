@@ -1,0 +1,37 @@
+{
+  "headline": {
+    "description": "Überschrift, die ein authentisches Testimonial ankündigt.",
+    "example_value": "Was Deine zukünftigen Kollegen sagen.",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein kurzer einleitender Satz, der den Kontext für das folgende Zitat gibt.",
+    "example_value": "Niemand kann besser beschreiben, wie es ist, bei uns zu arbeiten, als das Team selbst:",
+    "value": ""
+  },
+  "testimonial_quote": {
+    "description": "Ein authentisches Zitat, das einen spezifischen Vorteil für den Mitarbeiter hervorhebt.",
+    "example_value": "Ich kam mit einer Idee und dachte, sie sei zu verrückt. Heute ist sie ein Kernprodukt. Diese Art von Vertrauen und Freiheit habe ich noch nirgends sonst erlebt.",
+    "value": ""
+  },
+  "testimonial_author_name": {
+    "description": "Der vollständige Name des Mitarbeiters.",
+    "example_value": "Maria Schmidt",
+    "value": ""
+  },
+  "testimonial_author_title": {
+    "description": "Die Berufsbezeichnung des Mitarbeiters.",
+    "example_value": "Senior Software Engineer",
+    "value": ""
+  },
+  "image_url": {
+    "description": "URL zu einem professionellen Foto des zitierten Mitarbeiters oder einem Team-Bild.",
+    "example_value": "assets/images/placeholder_testimonial.jpg",
+    "value": ""
+  },
+  "image_alt_text": {
+    "description": "Alternativtext für das Bild.",
+    "example_value": "Porträt von Maria Schmidt, einer erfahrenen Software-Entwicklerin in unserem Team.",
+    "value": ""
+  }
+}

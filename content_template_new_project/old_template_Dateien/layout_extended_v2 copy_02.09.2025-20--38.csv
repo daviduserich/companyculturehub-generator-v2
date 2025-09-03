@@ -1,0 +1,15 @@
+order,component,data_source,enabled,Must or Possibility,min_count,max_count,recommended_count,list_type,max_list_items,description,styling_default,position_constraints,integration_status
+10,header,global_settings,TRUE,M,1,1,1,none,0,Technischer Header-Bereich inkl. Tracking-Infos etc.,neutral,,core
+20,logo_header_section,global_settings,TRUE,M,1,1,1,none,0,Logo-Header-Bereich.,neutral,,core
+30,navigation_section,global_settings,FALSE,P,0,1,1,Nav-Items,4?,Optionale Navigation im Style der Firmenwebsite.,neutral,after:20 before:40,ausbau
+40,hero_section,hero_section,TRUE,M,1,1,1,none,0,Einladender Einstiegsbereich.,fade-up,,core
+50,culture_section,culture_section,TRUE,M,1,2,1,Value-Karten,3,Unternehmenskultur-Beschreibung mit Werten.,gradient,after:40 before:110,core
+55,values_section,values_section,FALSE,P,0,1,1,Value-Karten,6?,Kernwerte des Unternehmens mit Icons (falls separat von Culture Section genutzt).,icon-grid,after:40 before:110,core
+60,team_section,team_section,TRUE,P,0,3,1-2,none,0,Infos ueber das Team mit integrierten Mitarbeiter-Testimonials.,shadow,after:40 before:110,core
+65,diversity_section,diversity_section,FALSE,P,0,1,1,none,0,Vielfalt und Inklusion im Team.,neutral-with-accents,after:40 before:110,core
+70,stolz_section,stolz_section,FALSE,P,0,2,1,Highlight-Karten,3?,Highlights von Projekten oder Erfolgen auf die Firma stolz ist.,glass,after:40 before:110,core
+80,story_telling_section,story_telling_section,FALSE,P,0,3,1,none,0,Motivierende Geschichten rund um Company-Culture (jede Instanz ist eine Story).,subtle,after:40 before:110,core
+95,location_section,location_section,FALSE,P,0,1,1,none,0,Standorte und Arbeitsumfeld mit Bildern.,map-or-image,after:40 before:110,core
+100,benefits_section,benefits_section,TRUE,M,1,2,1,Benefit-Karten,3,Vorteile als Arbeitgeber.,gradient,after:40 before:110,core
+110,career_cta_section,career_cta_section,TRUE,M,1,1,1,none,0,Aufruf zum Bewerben.,pill-buttons,,core
+120,footer,global_settings,TRUE,M,1,1,1,none,0,Footer-Bereich mit Links und Copyright.,neutral,,core

@@ -1,0 +1,12 @@
+{
+  "headline": {
+    "description": "Die finale, aktivierende Überschrift, die Dich direkt anspricht.",
+    "example_value": "Bereit, Deine Karriere zu starten?",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein kurzer, motivierender Satz, der Dich zum nächsten Schritt ermutigt.",
+    "example_value": "Wir sind immer auf der Suche nach talentierten Menschen wie Dir. Wir freuen uns darauf, von Dir zu hören.",
+    "value": ""
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "headline": {
+    "description": "Die Überschrift einer narrativen Geschichte, die den Bewerber inspiriert.",
+    "example_value": "Vom Nebenprojekt zur Erfolgsgeschichte.",
+    "value": ""
+  },
+  "text": {
+    "description": "Eine Geschichte, die zeigt, wie Mitarbeiter bei uns wachsen und ihre Ideen verwirklichen können.",
+    "example_value": "Alles begann mit einer kleinen Idee in einer Kaffeepause. Markus, einer unserer Entwickler, wollte einen internen Prozess optimieren. Er bekam nicht nur die Zeit, daran zu arbeiten, sondern auch ein kleines Team. Heute wird dieses Tool von tausenden Kunden genutzt. Das ist nur eine von vielen Geschichten, die zeigen: Bei uns kannst Du wirklich etwas erschaffen.",
+    "value": ""
+  },
+  "image_url": {
+    "description": "URL zu einem Bild, das die Geschichte visuell unterstützt.",
+    "example_value": "assets/images/placeholder_story.jpg",
+    "value": ""
+  },
+  "image_alt_text": {
+    "description": "Ein Alternativtext, der die Szene der Geschichte beschreibt.",
+    "example_value": "Markus präsentiert stolz den Prototyp seiner Idee vor dem gesamten Team.",
+    "value": ""
+  }
+}

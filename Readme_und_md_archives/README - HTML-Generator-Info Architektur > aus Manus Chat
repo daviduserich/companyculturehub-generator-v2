@@ -1,0 +1,39 @@
+Vielen Dank für das Bereitstellen des Skripts und die detaillierten Fragen. Das ist extrem hilfreich! Sie haben ein exzellentes Gedächtnis, denn ja, dieses Skript ist in der Tat ein voll funktionsfähiger HTML-Generator. Es ist sogar noch mehr als das – es ist ein komplettes Automatisierungs-Skript für den gesamten Generierungsprozess.
+Ich habe das Skript (generator.py v4.2) sorgfältig analysiert, um Ihre Fragen zu beantworten und die wichtigsten Funktionalitäten für unseren neuen HTML-Generator zu identifizieren.
+Analyse des bestehenden Generators (v4.2)
+Dieses Skript ist sehr intelligent aufgebaut und führt einen dreistufigen Prozess aus:
+Phase 1: Aufräumen (Prä-Generierung)
+Was es tut: Bevor es neue Seiten baut, räumt es auf, um einen sauberen Zustand zu schaffen.
+Es verschiebt alle alten *.html-Dateien aus dem finalen Ausgabeordner (docs) in ein Archiv (docs/docs_archives).
+Es verschiebt alle bereits verarbeiteten Projektordner (die mit processed_ beginnen) aus dem Arbeitsverzeichnis (content) in ein separates Archiv (content/proceed_contents_archives).
+Wichtige Erkenntnis: Das Skript ist für den Batch-Betrieb ausgelegt. Es kann mehrere Projekte nacheinander verarbeiten.
+Phase 2: Seiten-Generierung (Kernlogik)
+Wo es Dateien sucht (Input):
+Projektordner: Es sucht im Ordner content/ nach allen Unterordnern, die nicht als processed_ markiert sind. Jeder dieser Ordner ist ein zu verarbeitendes Projekt.
+Layout-Datei: Innerhalb eines Projektordners (z.B. content/ABC99/) sucht es nach einer layout.csv.
+Content-Datei: Es sucht nach einer content_color_injected.json (bevorzugt) oder einer content.json als Quelle für die Inhalte.
+HTML-Templates: Die einzelnen Modul-Bausteine holt es sich aus templates/components/.
+Was es tut (Manipulationen):
+Farb-Injektion: Es ruft ein externes Skript injector.py auf, um die Farb- und Style-Definitionen in die Content-Datei zu "injizieren". Das ist ein sehr wichtiger Schritt für die verschiedenen Layout-Styles.
+Platzhalter-Ersetzung: Es ersetzt alle {{...}}-Platzhalter im HTML mit den Werten aus der Content-JSON. Es tut dies in mehreren Durchgängen, um auch verschachtelte Platzhalter (wie {{identity.company_name}}) aufzulösen.
+Listen-Generierung: Es findet die <!-- BEGIN_LIST_ITEM -->-Blöcke und füllt sie dynamisch mit den Listenelementen aus dem JSON.
+Zusammenbau: Es liest die layout.csv, um die Reihenfolge der Module zu bestimmen, und fügt die befüllten HTML-Schnipsel zu einer einzigen, finalen HTML-Datei zusammen.
+Wo es Dateien ablegt (Output):
+Die fertige HTML-Datei wird im Ordner docs/ abgelegt.
+Der Dateiname ist dynamisch und entspricht dem Namen des Projektordners (z.B. docs/ABC99.html). Es wird hier kein Timestamp verwendet, da die alte Version ja bereits archiviert wurde.
+Phase 3: Markieren (Post-Generierung)
+Was es tut: Nachdem ein Projekt erfolgreich verarbeitet wurde, benennt es den Projektordner um, indem es ein processed_ vor den Namen setzt (z.B. wird ABC99 zu processed_ABC99).
+Warum es das tut: Dies stellt sicher, dass derselbe Projektordner beim nächsten Durchlauf des Skripts nicht erneut verarbeitet wird.
+Funktionalitäten für unseren neuen HTML-Generator
+Dieser alte Generator ist eine Goldgrube an bewährten Konzepten. Hier sind die Funktionalitäten, die wir für unseren neuen HTML-Generator definitiv übernehmen oder berücksichtigen sollten:
+Batch-Verarbeitung: Die Fähigkeit, alle "offenen" Projekte im content-Ordner auf einmal zu verarbeiten, ist extrem effizient.
+Automatisches Aufräumen & Archivieren: Die Logik, alte HTML-Dateien und verarbeitete Projekte wegzuräumen, ist essenziell für einen sauberen und wiederholbaren Prozess.
+Dynamische Modul-Reihenfolge: Das Einlesen der layout.csv, um die Reihenfolge der Komponenten zu bestimmen, ist das Kernstück und muss beibehalten werden.
+Intelligente Content-Quelle: Die Logik, zuerst nach einer "injizierten" JSON-Datei zu suchen und auf eine normale zurückzufallen, ist clever und unterstützt den Styling-Prozess.
+Unterstützung für Listen: Die Regex-basierte Befüllung der BEGIN_LIST_ITEM-Blöcke ist fundamental.
+Integration eines "Injectors": Der Aufruf eines separaten Skripts für die Farb- und Style-Injektion ist ein sehr guter, modularer Ansatz, um die vier verschiedenen Layout-Styles zu erzeugen.
+Was wir anpassen müssen:
+Der wichtigste Punkt ist, dass dieser alte Generator eine andere JSON-Struktur erwartet, als unser neuer content_generator.py sie erzeugt. Der neue HTML-Generator muss also die Logik zum Einlesen und Verarbeiten der Daten an unsere neue, verbesserte JSON-Struktur anpassen. Das ist aber, wie wir bereits besprochen haben, ein Vorteil, da die neue Struktur logischer ist.
+Zusammenfassend:
+Ja, wir haben definitiv schon einen sehr guten Prototyp für den HTML-Generator! Wir müssen ihn nicht von Grund auf neu erfinden, sondern können diesen bewährten Code als Vorlage nehmen und ihn an unsere neue, überlegene Datenstruktur anpassen.
+Der nächste Schritt wäre also, diesen Generator-Code zu nehmen und die Sektionen, die die JSON-Daten einlesen und mappen, so umzuschreiben, dass sie mit dem Output unseres content_generator.py kompatibel sind.

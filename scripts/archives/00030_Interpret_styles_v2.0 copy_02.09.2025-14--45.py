@@ -2,8 +2,6 @@ import json
 import csv
 import os
 import argparse
-from datetime import datetime
-
 
 def read_csv(file_path):
     """Read CSV file and return list of rows."""
@@ -65,6 +63,10 @@ def interpret_styles(project_name):
         for row in layout_data:
             component = row["component"]
             order = int(row["order"])
+            enabled = row["enabled"].lower() == "true"
+
+            if not enabled:
+                continue
 
             # Apply fixed layout if exists
             if component in fixed_layouts:
@@ -73,8 +75,7 @@ def interpret_styles(project_name):
                     style[key] = value.replace("{{colors.gradient_type}}", colors["gradient_type"]).replace("{{colors.primary_color}}", colors["primary_color"]).replace("{{colors.secondary_color}}", colors["secondary_color"])
             else:
                 # Alternating layouts
-                #is_last_before_footer = (order == max(int(r["order"]) for r in layout_data if r["enabled"].lower() == "true") and component != "footer")
-                is_last_before_footer = (order == max(int(r["order"]) for r in layout_data) and component != "footer")
+                is_last_before_footer = (order == max(int(r["order"]) for r in layout_data if r["enabled"].lower() == "true") and component != "footer")
                 bg_index = 0 if order % 2 == 0 else 1
                 bg_color = alt_backgrounds[bg_index]
                 if is_last_before_footer and len([r for r in layout_data if r["enabled"].lower() == "true"]) % 2 == 1:
@@ -110,18 +111,11 @@ def interpret_styles(project_name):
 
     # Write outputs
     os.makedirs(project_dir, exist_ok=True)
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
     for variant, data in styles_output.items():
-        with open(f"{project_dir}/interpreted_styles_{variant}_{timestamp}.json", 'w') as f:
+        with open(f"{project_dir}/interpreted_styles_{variant}.json", 'w') as f:
             json.dump(data, f, indent=2)
-    with open(f"{project_dir}/interpreted_text_colors_{timestamp}.json", 'w') as f:
+    with open(f"{project_dir}/interpreted_text_colors.json", 'w') as f:
         json.dump({"text_colors": text_colors}, f, indent=2)
-
-
-
-
-
 
 def hex_to_rgb(hex_color):
     """Convert hex color to RGB tuple."""

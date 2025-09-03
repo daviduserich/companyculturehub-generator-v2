@@ -1,18 +1,72 @@
 <!-- Navigation Section -->
 <nav class="navigation">
-    <ul class="nav-list">
-        <!-- BEGIN_LIST_ITEM:navigation.nav_items -->
-        <li><a href="{{url}}">{{label}}</a></li>
-        <!-- END_LIST_ITEM:navigation.nav_items -->
-    </ul>
+    <div class="container">
+        <ul class="nav-list">
+            <!-- BEGIN_LIST_ITEM:navigation.nav_items -->
+            <li><a href="{{url}}">{{label}}</a></li>
+            <!-- END_LIST_ITEM:navigation.nav_items -->
+        </ul>
+    </div>
 </nav>
 
 <style>
-    .navigation { background: var(--color-secondary); padding: 10px 0; }
-    .nav-list { display: flex; list-style: none; justify-content: center; gap: 20px; }
-    .nav-list a { color: var(--text-on-secondary); text-decoration: none; }
+    /* Basis-Stile für die Navigation */
+    .navigation {
+        background: var(--color-secondary);
+        padding: var(--spacing-section-medium) 0;
+    }
+    .nav-list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 20px;
+    }
+    .nav-list a {
+        color: var(--text-on-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-body);
+        padding: 8px 16px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-    /* Varianten */
-    .bg-solid .navigation { background: var(--color-primary); }
-    .bg-gradient .navigation { background: var(--nav-gradient); }
+    /* Varianten für Hintergrund */
+    .bg-solid .navigation {
+        background: var(--color-primary); /* Einfarbiger Hintergrund */
+    }
+    .bg-gradient .navigation {
+        background: var(--nav-gradient); /* Verlaufshintergrund */
+    }
+
+    /* Button-Stile für Links */
+    .button-solid .nav-list a {
+        background: var(--color-primary);
+        border: 1px solid var(--color-accent);
+        border-radius: 4px;
+        color: var(--text-on-primary);
+    }
+    .button-gradient .nav-list a {
+        background: var(--nav-gradient);
+        border: none;
+        border-radius: 4px;
+        color: var(--text-on-secondary);
+    }
+    .button-solid .nav-list a:hover,
+    .button-gradient .nav-list a:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+
+    /* Responsive Anpassungen */
+    @media (max-width: 768px) {
+        .nav-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-list a {
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    }
 </style>

@@ -13,6 +13,14 @@
       "background_color": "#FF5733",
       "class": "neutral"
     },
+    "navigation_section": {
+      "gradient_type": "none",
+      "background_color": "#FFFFFF",
+      "class": "neutral",
+      "image_frame": "solid",
+      "card_style": "shadow",
+      "button_style": "solid"
+    },
     "hero_section": {
       "gradient_type": "horizontal",
       "background_color": "#FF5733",
@@ -26,10 +34,50 @@
       "card_style": "shadow",
       "button_style": "solid"
     },
+    "values_section": {
+      "gradient_type": "none",
+      "background_color": "#F5F5F5",
+      "class": "icon-grid",
+      "image_frame": "solid",
+      "card_style": "shadow",
+      "button_style": "solid"
+    },
     "team_section": {
       "gradient_type": "none",
       "background_color": "#FFFFFF",
       "class": "shadow",
+      "image_frame": "solid",
+      "card_style": "shadow",
+      "button_style": "solid"
+    },
+    "diversity_section": {
+      "gradient_type": "none",
+      "background_color": "#F5F5F5",
+      "class": "neutral-with-accents",
+      "image_frame": "solid",
+      "card_style": "shadow",
+      "button_style": "solid"
+    },
+    "stolz_section": {
+      "gradient_type": "none",
+      "background_color": "#FFFFFF",
+      "class": "glass",
+      "image_frame": "solid",
+      "card_style": "shadow",
+      "button_style": "solid"
+    },
+    "story_telling_section": {
+      "gradient_type": "none",
+      "background_color": "#FFFFFF",
+      "class": "subtle",
+      "image_frame": "solid",
+      "card_style": "shadow",
+      "button_style": "solid"
+    },
+    "location_section": {
+      "gradient_type": "none",
+      "background_color": "#F5F5F5",
+      "class": "map-or-image",
       "image_frame": "solid",
       "card_style": "shadow",
       "button_style": "solid"

@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "generated_at": "2025-09-02T11:34:32.797882",
+    "generator_version": "v3.1-final",
+    "csv_source": "/workspaces/companyculturehub-generator-v2/content_template_new_project/layout_extended_v2.csv"
+  },
+  "global_settings": {
+    "benefits_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "career_cta_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "culture_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "design": {
+      "logo": {
+        "url": "BITTE HIER WERT ERGÄNZEN > fLUMMBERTA"
+      }
+    },
+    "footer_section": {
+      "copyright_text": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "hero_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN",
+      "subheadline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "identity": {
+      "company_name": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "labels": {
+      "application_button_text": "BITTE HIER WERT ERGÄNZEN",
+      "career_button_text": "BITTE HIER WERT ERGÄNZEN",
+      "contact_text": "BITTE HIER WERT ERGÄNZEN",
+      "imprint_text": "BITTE HIER WERT ERGÄNZEN",
+      "privacy_text": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "links": {
+      "application_form_url": "BITTE HIER WERT ERGÄNZEN",
+      "career_page_url": "BITTE HIER WERT ERGÄNZEN",
+      "contact_url": "BITTE HIER WERT ERGÄNZEN",
+      "imprint_url": "BITTE HIER WERT ERGÄNZEN",
+      "privacy_url": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "project_config": {
+      "canonical_url": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "team_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN",
+      "testimonial_author_name": "BITTE HIER WERT ERGÄNZEN",
+      "testimonial_author_title": "BITTE HIER WERT ERGÄNZEN",
+      "testimonial_quote": "BITTE HIER WERT ERGÄNZEN"
+    }
+  },
+  "page_content": {
+    "logo_header_section": [
+      {
+        "id": "EB-Logo_header_section-styling",
+        "name": "styling_default",
+        "value": "neutral"
+      },
+      {
+        "id": "EB-Logo_header_section-logo_alt",
+        "name": "logo_alt",
+        "value": "Logo von BITTE HIER WERT ERGÄNZEN"
+      }
+    ],
+    "hero_section": [
+      {
+        "id": "EB-Hero_section-styling",
+        "name": "styling_default",
+        "value": "fade-up"
+      },
+      {
+        "id": "EB-Hero_section-headline",
+        "name": "headline",
+        "value": "Eine aussagekräftige Überschrift"
+      },
+      {
+        "id": "EB-Hero_section-subheadline",
+        "name": "subheadline",
+        "value": "Eine interessante Unterzeile"
+      },
+      {
+        "id": "EB-Hero_section-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Ein beschreibender Alternativtext für das Bild"
+      },
+      {
+        "id": "EB-Hero_section-description",
+        "name": "description",
+        "value": "Ein beschreibender Text"
+      },
+      {
+        "id": "EB-Hero_section-image_url",
+        "name": "image_url",
+        "value": "assets/images/hero_section_image.png"
+      }
+    ],
+    "culture_section": [
+      {
+        "id": "EB-Culture_section-styling",
+        "name": "styling_default",
+        "value": "gradient"
+      },
+      {
+        "id": "EB-Culture_section-headline",
+        "name": "headline",
+        "value": "Eine aussagekräftige Überschrift"
+      },
+      {
+        "id": "EB-Culture_section-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Ein beschreibender Alternativtext für das Bild"
+      },
+      {
+        "id": "EB-Culture_section-description",
+        "name": "description",
+        "value": "Ein beschreibender Text"
+      },
+      {
+        "id": "EB-Culture_section-image_url",
+        "name": "image_url",
+        "value": "assets/images/culture_section_image.png"
+      },
+      {
+        "id": "EB-Culture_section-culture_section.values_list",
+        "name": "values_list",
+        "type": "list",
+        "value": [
+          {
+            "title": "Beispielwert für title",
+            "text": "Beispielwert für text",
+            "icon": "Beispielwert für icon"
+          }
+        ]
+      }
+    ],
+    "team_section": [
+      {
+        "id": "EB-Team_section-styling",
+        "name": "styling_default",
+        "value": "shadow"
+      },
+      {
+        "id": "EB-Team_section-headline",
+        "name": "headline",
+        "value": "Eine aussagekräftige Überschrift"
+      },
+      {
+        "id": "EB-Team_section-image_alt_text",
+        "name": "image_alt_text",
+        "value": "Ein beschreibender Alternativtext für das Bild"
+      },
+      {
+        "id": "EB-Team_section-testimonial_quote",
+        "name": "testimonial_quote",
+        "value": "Ein inspirierendes Zitat eines Team-Mitglieds."
+      },
+      {
+        "id": "EB-Team_section-testimonial_author_title",
+        "name": "testimonial_author_title",
+        "value": "Senior Entwickler"
+      },
+      {
+        "id": "EB-Team_section-testimonial_author_name",
+        "name": "testimonial_author_name",
+        "value": "Max Mustermann"
+      },
+      {
+        "id": "EB-Team_section-description",
+        "name": "description",
+        "value": "Ein beschreibender Text"
+      },
+      {
+        "id": "EB-Team_section-image_url",
+        "name": "image_url",
+        "value": "assets/images/team_section_image.png"
+      }
+    ],
+    "benefits_section": [
+      {
+        "id": "EB-Benefits_section-styling",
+        "name": "styling_default",
+        "value": "gradient"
+      },
+      {
+        "id": "EB-Benefits_section-headline",
+        "name": "headline",
+        "value": "Eine aussagekräftige Überschrift"
+      },
+      {
+        "id": "EB-Benefits_section-description",
+        "name": "description",
+        "value": "Ein beschreibender Text"
+      },
+      {
+        "id": "EB-Benefits_section-benefits_section.benefits_list",
+        "name": "benefits_list",
+        "type": "list",
+        "value": [
+          {
+            "title": "Beispielwert für title",
+            "text": "Beispielwert für text",
+            "icon": "Beispielwert für icon"
+          }
+        ]
+      }
+    ],
+    "career_cta_section": [
+      {
+        "id": "EB-Career_cta_section-styling",
+        "name": "styling_default",
+        "value": "pill-buttons"
+      },
+      {
+        "id": "EB-Career_cta_section-headline",
+        "name": "headline",
+        "value": "Eine aussagekräftige Überschrift"
+      },
+      {
+        "id": "EB-Career_cta_section-description",
+        "name": "description",
+        "value": "Ein beschreibender Text"
+      }
+    ],
+    "footer": [
+      {
+        "id": "EB-Footer-styling",
+        "name": "styling_default",
+        "value": "neutral"
+      },
+      {
+        "id": "EB-Footer-copyright_text",
+        "name": "copyright_text",
+        "value": "© 2025 BITTE HIER WERT ERGÄNZEN"
+      }
+    ]
+  }
+}

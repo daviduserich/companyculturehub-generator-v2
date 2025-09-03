@@ -1,0 +1,151 @@
+{
+  "design": {
+    "branding": {
+      "proposed_primary_color": "#006BDF",
+      "proposed_secondary_color": "#1D9BF0",
+      "proposed_text_color": "#000000",
+      "proposed_accent_color": "#DBDBDB",
+      "proposed_text_on_primary": "#FFFFFF",
+      "proposed_text_on_secondary": "#000000",
+      "font_family": "Merriweather",
+      "font_css_value": "Merriweather, Georgia, Times New Roman, serif",
+      "google_fonts_link": "https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&display=swap",
+      "font_metadata": {
+        "category": "serif",
+        "confidence": 0.8,
+        "source": "intelligent_fallback",
+        "fallback_fonts": [
+          "Georgia",
+          "Times New Roman",
+          "serif"
+        ]
+      },
+      "benefits_gradient": {
+        "type": "dynamic_fallback",
+        "css_value": "linear-gradient(135deg, #006BDF, #DBDBDB)"
+      }
+    },
+    "proposed_presentation_style": "classic",
+    "hero_style": "default"
+  },
+  "raw_extraction": {
+    "extracted_colors": {
+      "extracted_primary": "#006BDF",
+      "extracted_secondary": "#1D9BF0",
+      "extracted_accent": "#DBDBDB",
+      "extracted_background": "#F2F2F1",
+      "extracted_text": "#000000",
+      "all_website_colors": [
+        [
+          "#F2F2F1",
+          0.7095317258489199
+        ],
+        [
+          "#006BDF",
+          0.25374830261705766
+        ],
+        [
+          "#000000",
+          0.02479037972869388
+        ],
+        [
+          "#1D9BF0",
+          0.010714161879827452
+        ],
+        [
+          "#DBDBDB",
+          0.0012154299255010793
+        ]
+      ]
+    },
+    "full_most_frequent": [
+      [
+        "#F2F2F1",
+        0.7095317258489199
+      ],
+      [
+        "#006BDF",
+        0.25374830261705766
+      ],
+      [
+        "#000000",
+        0.02479037972869388
+      ],
+      [
+        "#1D9BF0",
+        0.010714161879827452
+      ],
+      [
+        "#DBDBDB",
+        0.0012154299255010793
+      ]
+    ],
+    "processing_steps": {
+      "schwarz_filter_needed": false,
+      "harmony_correction_needed": false,
+      "saturation_harmonization_needed": true,
+      "contrast_correction_needed": false
+    },
+    "decision_log": [
+      "🚀 Starte erweiterten Veredelungs-Prozess mit Schriftart-Intelligenz...",
+      "🎨 Starte vollständige Farb-Veredelung...",
+      "Stufe 1: Basis-Zuweisung: P=#006BDF, S=#1D9BF0, A=#DBDBDB",
+      "Stufe 2: Prüfe Helligkeit - Primary: 34.6%, Secondary: 49.8%",
+      "--> Schwellenwert: 15.0% (Fade-up aktiviert wenn BEIDE darunter)",
+      "--> Primary (34.6%) < Schwelle (15.0%): ❌",
+      "--> Secondary (49.8%) < Schwelle (15.0%): ❌",
+      "🎨 FADE-UP NICHT NÖTIG: Mindestens eine Farbe ist hell genug.",
+      "Stufe 3: Farben sind harmonisch.",
+      "Stufe 4: Prüfe Sättigungs-Harmonisierung...",
+      "--> Sättigungs-Differenz hoch (1.00). Empfehle Harmonisierung (Flag gesetzt, aber nicht angewendet).",
+      "Stufe 4.5: Prüfe visuellen Kontrast zwischen Button (Accent) und Sektions-Hintergrund (Secondary)...",
+      "--> ✅ Kontrast ist ausreichend (201.58620984581262).",
+      "Stufe 5: Berechne kontextsensitive Textfarben...",
+      "--> Ergebnis: Text auf Primary: #FFFFFF, Text auf Secondary: #000000",
+      "Stufe 6: Generiere `benefits`-Verlauf...",
+      "--> `benefits`-Verlauf erstellt (Typ: dynamic_fallback).",
+      "Stufe 7: Bestimme automatische Stil-Empfehlung...",
+      "--> Vorschlag: Palette ist 'Konservativ'. Empfehle Preset 'classic'.",
+      "Stufe 8: Farb-Veredelung abgeschlossen.",
+      "🚀 Starte erweiterten Veredelungs-Prozess mit Schriftart-Intelligenz...",
+      "🎨 Starte vollständige Farb-Veredelung...",
+      "Stufe 1: Basis-Zuweisung: P=#006BDF, S=#1D9BF0, A=#DBDBDB",
+      "Stufe 2: Prüfe Helligkeit - Primary: 34.6%, Secondary: 49.8%",
+      "--> Schwellenwert: 15.0% (Fade-up aktiviert wenn BEIDE darunter)",
+      "--> Primary (34.6%) < Schwelle (15.0%): ❌",
+      "--> Secondary (49.8%) < Schwelle (15.0%): ❌",
+      "🎨 FADE-UP NICHT NÖTIG: Mindestens eine Farbe ist hell genug.",
+      "Stufe 3: Farben sind harmonisch.",
+      "Stufe 4: Prüfe Sättigungs-Harmonisierung...",
+      "--> Sättigungs-Differenz hoch (1.00). Empfehle Harmonisierung (Flag gesetzt, aber nicht angewendet).",
+      "Stufe 4.5: Prüfe visuellen Kontrast zwischen Button (Accent) und Sektions-Hintergrund (Secondary)...",
+      "--> ✅ Kontrast ist ausreichend (201.58620984581262).",
+      "Stufe 5: Berechne kontextsensitive Textfarben...",
+      "--> Ergebnis: Text auf Primary: #FFFFFF, Text auf Secondary: #000000",
+      "Stufe 6: Generiere `benefits`-Verlauf...",
+      "--> `benefits`-Verlauf erstellt (Typ: dynamic_fallback).",
+      "Stufe 7: Bestimme automatische Stil-Empfehlung...",
+      "--> Vorschlag: Palette ist 'Konservativ'. Empfehle Preset 'classic'.",
+      "Stufe 8: Farb-Veredelung abgeschlossen.",
+      "🎉 Erweiterte Veredelung abgeschlossen - Farben UND Schriftarten optimiert!",
+      "📝 Verwende extrahierte Schriftart-Daten: Roboto",
+      "✅ Schriftart-Integration abgeschlossen: Merriweather (Stil: classic)"
+    ],
+    "extracted_fonts": {}
+  },
+  "extraction_metadata": {
+    "timestamp": "2025-09-01T07:58:53.625488",
+    "version": "v2.0_with_fonts_corrected_and_raw_data",
+    "features": [
+      "color_extraction",
+      "font_intelligence",
+      "google_fonts_integration",
+      "raw_data_inclusion"
+    ],
+    "confidence_scores": {
+      "colors": 0.8,
+      "fonts": 0.8
+    },
+    "note": "Raw data included for deferred decision-making. Use 'proposed_' fields as suggestions only, now based on raw colors."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "headline": {
+    "description": "Eine Überschrift, die die Vorteile klar als 'Gewinn' für den Mitarbeiter kommuniziert.",
+    "example_value": "Alles, was Du für Deinen Erfolg brauchst.",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein kurzer Text, der zusammenfasst, wie die Benefits den Mitarbeiter im Leben und bei der Arbeit unterstützen.",
+    "example_value": "Dein Wohlbefinden und Deine Entwicklung sind uns wichtig. Deshalb bieten wir Dir mehr als nur ein gutes Gehalt.",
+    "value": ""
+  },
+  "benefits_list": {
+    "description": "Eine Liste von konkreten Vorteilen.",
+    "icon": { "description": "Ein passendes Emoji oder Icon.", "example_value": "📚", "value": "" },
+    "title": {
+      "description": "Der Name des Benefits.",
+      "example_value": "Individuelles Weiterbildungsbudget",
+      "value": ""
+    },
+    "text": {
+      "description": "Eine detaillierte Erklärung des Nutzens für den Mitarbeiter.",
+      "example_value": "Du erhältst ein jährliches Budget, das Du frei für Konferenzen, Kurse oder Zertifizierungen nutzen kannst, um Deine Fähigkeiten gezielt zu erweitern.",
+      "value": ""
+    }
+  }
+}

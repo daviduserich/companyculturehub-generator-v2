@@ -1,0 +1,36 @@
+{
+  "headline": {
+    "description": "Überschrift, die das Thema 'Unternehmenskultur' aus der Perspektive des Bewerbers beleuchtet. Was hat er davon?",
+    "example_value": "Ein Umfeld, in dem Du wachsen kannst.",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein kurzer Einleitungstext, der erklärt, wie die Kultur den Mitarbeiter im Alltag unterstützt und fördert.",
+    "example_value": "Wir glauben, dass die besten Ideen in einem Umfeld entstehen, das auf Vertrauen, Freiheit und gegenseitiger Unterstützung basiert. So sieht Dein Arbeitsalltag bei uns aus:",
+    "value": ""
+  },
+  "values_list": {
+    "description": "Eine Liste von Kernwerten, die den Nutzen für den Mitarbeiter aufzeigen.",
+    "icon": { "description": "Ein passendes Emoji oder Icon.", "example_value": "💡", "value": "" },
+    "title": {
+      "description": "Der Name des Kernwerts, formuliert als Vorteil.",
+      "example_value": "Deine Ideen zählen",
+      "value": ""
+    },
+    "text": {
+      "description": "Eine konkrete Beschreibung, wie der Mitarbeiter diesen Wert im Alltag erlebt.",
+      "example_value": "Bei uns hat jeder eine Stimme. Deine Vorschläge werden gehört, diskutiert und oft auch umgesetzt – egal, welche Position Du hast.",
+      "value": ""
+    }
+  },
+  "image_url": {
+    "description": "URL zu einem Bild, das die Kultur in Aktion zeigt.",
+    "example_value": "assets/images/placeholder_culture.jpg",
+    "value": ""
+  },
+  "image_alt_text": {
+    "description": "Alternativtext, der das Bild beschreibt.",
+    "example_value": "Kollegen bei einem kreativen Brainstorming in unseren modernen Büroräumen.",
+    "value": ""
+  }
+}

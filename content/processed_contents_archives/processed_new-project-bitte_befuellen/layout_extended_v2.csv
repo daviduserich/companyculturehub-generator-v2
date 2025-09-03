@@ -1,7 +1,7 @@
 order,component,data_source,enabled,Must or Possibility,min_count,max_count,recommended_count,description,styling_default,position_constraints,integration_status
 10,header,global_settings,TRUE,M,1,1,,Technischer Header-Bereich inkl. Tracking-Infos etc.,neutral,,core
 20,logo_header_section,global_settings,TRUE,M,1,1,,Logo-Header-Bereich.,neutral,,core
-30,navigation_section,global_settings,FALSE,P,0,1,0 or 1,Optionale Navigation im Style der Firmenwebsite. Extraktion spaeter moeglich.,neutral,after:20 before:40,ausbau
+30,navigation,global_settings,FALSE,P,0,1,0 or 1,Optionale Navigation im Style der Firmenwebsite. Extraktion spaeter moeglich.,neutral,after:20 before:40,ausbau
 40,hero_section,hero_section,TRUE,M,1,1,,Einladender Einstiegsbereich.,fade-up,,core
 50,culture_section,culture_section,TRUE,M,1,2,1 max. 2,Unternehmenskultur-Beschreibung.,gradient,after:40 before:110,core
 55,values_section,values_section,FALSE,P,0,1,0 or 1,Kernwerte des Unternehmens mit Icons.,icon-grid,after:40 before:110,core

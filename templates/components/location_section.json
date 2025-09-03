@@ -1,0 +1,22 @@
+{
+  "headline": {
+    "description": "Eine Überschrift, die Dein zukünftiges Arbeitsumfeld vorstellt.",
+    "example_value": "Dein neuer Arbeitsplatz im Herzen der Stadt.",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein Text, der die Vorteile des Standorts und der Büroräumlichkeiten für Dich beschreibt (z.B. gute Anbindung, moderne Ausstattung).",
+    "example_value": "Genieße eine perfekte Anbindung an öffentliche Verkehrsmittel und eine Mittagspause in den besten Cafés der Stadt. Unsere modernen, ergonomisch ausgestatteten Büros bieten Dir alles, was Du für einen produktiven und angenehmen Arbeitstag brauchst.",
+    "value": ""
+  },
+  "map_url": {
+    "description": "URL zu einem Bild, das eine Karte des Standorts oder ein ansprechendes Foto der Büroräumlichkeiten zeigt.",
+    "example_value": "assets/images/placeholder_location.jpg",
+    "value": ""
+  },
+  "image_alt_text": {
+    "description": "Ein beschreibender Alternativtext.",
+    "example_value": "Die hellen und modernen Büroräume mit Blick über die Stadt.",
+    "value": ""
+  }
+}

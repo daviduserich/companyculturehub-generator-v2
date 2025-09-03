@@ -1,0 +1,22 @@
+{
+  "headline": {
+    "description": "Eine Überschrift, die kommuniziert, dass hier jeder so sein kann, wie er ist, und willkommen ist.",
+    "example_value": "Bring Deine ganze Persönlichkeit mit ein.",
+    "value": ""
+  },
+  "description": {
+    "description": "Ein Text, der erklärt, warum Vielfalt im Team zu besseren Ergebnissen führt und wie Du als Individuum davon profitierst.",
+    "example_value": "Wir sind überzeugt: Die besten Ideen entstehen, wenn unterschiedliche Perspektiven und Erfahrungen aufeinandertreffen. Bei uns wirst Du für Deine einzigartige Sichtweise geschätzt und bist Teil eines Teams, in dem jeder vom anderen lernt.",
+    "value": ""
+  },
+  "image_url": {
+    "description": "URL zu einem Bild, das ein diverses Team in einer positiven, kollaborativen Umgebung zeigt.",
+    "example_value": "assets/images/placeholder_diversity.jpg",
+    "value": ""
+  },
+  "image_alt_text": {
+    "description": "Ein Alternativtext, der die Vielfalt im Bild betont.",
+    "example_value": "Ein diverses Team von Kollegen unterschiedlicher Herkunft und Geschlechter arbeitet lachend an einem Projekt.",
+    "value": ""
+  }
+}

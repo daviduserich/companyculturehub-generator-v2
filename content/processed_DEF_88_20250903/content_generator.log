@@ -1,0 +1,15 @@
+2025-09-03 07:58:02,004 - INFO - Starte Content-Generierungsprozess für Projekt: /workspaces/companyculturehub-generator-v2/content/DEF_88
+2025-09-03 07:58:02,004 - INFO - Projekt-Layout-CSV '/workspaces/companyculturehub-generator-v2/content/DEF_88/layout_extended_v2.csv' erfolgreich geladen.
+2025-09-03 07:58:02,004 - INFO - Verarbeite Komponente: 'header'
+2025-09-03 07:58:02,004 - WARNING - Keine Definitionsdatei für 'header' unter '/workspaces/companyculturehub-generator-v2/templates/components/header.json' gefunden.
+2025-09-03 07:58:02,004 - WARNING - Kein HTML-Template für 'header' gefunden. Komponente wird übersprungen.
+2025-09-03 07:58:02,004 - INFO - Verarbeite Komponente: 'logo_header_section'
+2025-09-03 07:58:02,005 - INFO - Verarbeite Komponente: 'hero_section'
+2025-09-03 07:58:02,005 - INFO - Verarbeite Komponente: 'culture_section'
+2025-09-03 07:58:02,006 - INFO - Verarbeite Komponente: 'team_section'
+2025-09-03 07:58:02,006 - INFO - Verarbeite Komponente: 'benefits_section'
+2025-09-03 07:58:02,007 - INFO - Verarbeite Komponente: 'career_cta_section'
+2025-09-03 07:58:02,007 - INFO - Verarbeite Komponente: 'footer'
+2025-09-03 07:58:02,007 - WARNING - Keine Definitionsdatei für 'footer' unter '/workspaces/companyculturehub-generator-v2/templates/components/footer.json' gefunden.
+2025-09-03 07:58:02,007 - WARNING - Kein HTML-Template für 'footer' gefunden. Komponente wird übersprungen.
+2025-09-03 07:58:02,008 - INFO - Prozess abgeschlossen. Template wurde hier gespeichert: '/workspaces/companyculturehub-generator-v2/content/DEF_88/project_template_Stufe01_Anleitung_20250903_075802.json'

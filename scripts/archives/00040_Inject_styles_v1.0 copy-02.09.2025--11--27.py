@@ -1,8 +1,7 @@
 import json
 import os
 import argparse
-from datetime import datetime
-import copy  # Neu: Für deep copy
+from datetime import datetime  # Neu: Import für Timestamp
 
 def inject_styles(project_name):
     """Inject styles into content_template_max.json and generate content_color_injected_<variant>_<timestamp>.json."""
@@ -37,9 +36,8 @@ def inject_styles(project_name):
         except FileNotFoundError:
             continue
 
-        # Create output template with deep copy to avoid shared references
-        output = copy.deepcopy(template)  # Geändert: Deep copy statt shallow copy
-
+        # Create output template
+        output = template.copy()
         output["global_settings"] = output.get("global_settings", {})
         output["global_settings"]["design"] = output["global_settings"].get("design", {})
         output["global_settings"]["design"]["branding"] = {

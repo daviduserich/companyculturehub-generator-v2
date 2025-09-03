@@ -1,0 +1,585 @@
+{
+  "global_settings": {
+    "project_config": {
+      "project_id": "example_project_v1",
+      "primary_domain": "example.culture.localhost",
+      "canonical_url": "https://example.culture.localhost/employer-branding"
+    },
+    "identity": {
+      "company_name": "Example AG",
+      "company_slogan": "Innovation trifft Teamgeist"
+    },
+    "links": {
+      "imprint_url": "https://example.com/impressum",
+      "privacy_url": "https://example.com/datenschutz",
+      "contact_url": "https://example.com/kontakt",
+      "career_page_url": "https://example.com/karriere",
+      "application_form_url": "mailto:karriere@example.com"
+    },
+    "design": {
+      "branding": {
+        "primary_color": "#FF5733",
+        "secondary_color": "#C70039",
+        "accent_color": "#900C3F",
+        "gradient_type": "horizontal"
+      },
+      "logo": {
+        "url": "assets/images/example_logo.svg",
+        "favicon_url": "assets/images/example_favicon.png"
+      }
+    },
+    "labels": {
+      "imprint_text": "Impressum",
+      "privacy_text": "Datenschutz",
+      "contact_text": "Kontakt",
+      "career_button_text": "Aktuelle Stellen",
+      "application_button_text": "Initiativbewerbung"
+    },
+    "integrations": {
+      "meta_pixel_id": "YOUR_META_PIXEL_ID_HERE",
+      "tracking_script_url": ""
+    },
+    "text_colors": {
+      "header": {
+        "default": "#000000",
+        "heading": "#900C3F"
+      },
+      "logo_header_section": {
+        "default": "#000000",
+        "heading": "#000000"
+      },
+      "hero_section": {
+        "default": "#000000",
+        "heading": "#000000"
+      },
+      "culture_section": {
+        "default": "#000000",
+        "heading": "#900C3F"
+      },
+      "team_section": {
+        "default": "#000000",
+        "heading": "#900C3F"
+      },
+      "benefits_section": {
+        "default": "#000000",
+        "heading": "#900C3F"
+      },
+      "career_cta_section": {
+        "default": "#000000",
+        "heading": "#000000"
+      },
+      "footer": {
+        "default": "#000000",
+        "heading": "#000000"
+      }
+    }
+  },
+  "page_content": {
+    "meta_data": [
+      {
+        "id": "EB-Sec0-C1-E1",
+        "name": "page_title",
+        "value": "Entdecken Sie Example AG - Ihr zuk\u00fcnftiger Arbeitgeber"
+      },
+      {
+        "id": "EB-Sec0-C1-E2",
+        "name": "meta_description",
+        "value": "Erfahren Sie mehr \u00fcber unsere Kultur, Benefits und Karrierechancen bei Example AG."
+      }
+    ],
+    "header": [
+      {
+        "id": "EB-Header-C1-E1",
+        "name": "tracking_code",
+        "value": "<!-- Meta Pixel Code -->"
+      },
+      {
+        "name": "styling_default",
+        "value": "neutral"
+      },
+      {
+        "name": "background_color",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "card_style",
+        "value": "shadow"
+      },
+      {
+        "name": "image_frame",
+        "value": "solid"
+      },
+      {
+        "name": "button_style",
+        "value": "solid"
+      }
+    ],
+    "logo_header_section": [
+      {
+        "id": "EB-LogoHeader-C1-E1",
+        "name": "logo_alt",
+        "value": "Logo von {{identity.company_name}}"
+      },
+      {
+        "name": "styling_default",
+        "value": "neutral"
+      },
+      {
+        "name": "background_color",
+        "value": "#FF5733"
+      }
+    ],
+    "navigation": [
+      {
+        "id": "EB-Nav-C1-E1",
+        "name": "nav_items",
+        "type": "list",
+        "value": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Karriere",
+            "url": "{{links.career_page_url}}"
+          }
+        ]
+      }
+    ],
+    "hero_section": [
+      {
+        "id": "EB-Sec1-C1-E1",
+        "name": "headline",
+        "value": "Willkommen bei {{identity.company_name}}"
+      },
+      {
+        "id": "EB-Sec1-C1-E2",
+        "name": "subheadline",
+        "value": "Entdecken Sie unsere einzigartige Kultur"
+      },
+      {
+        "id": "EB-Sec1-C1-E3",
+        "name": "description",
+        "value": "Werden Sie Teil eines Teams, das Innovation und Zusammenhalt lebt."
+      },
+      {
+        "id": "EB-Sec1-C2-E1",
+        "name": "image_url",
+        "value": "assets/images/hero_image.png"
+      },
+      {
+        "id": "EB-Sec1-C2-E2",
+        "name": "image_alt_text",
+        "value": "Team bei der Arbeit"
+      },
+      {
+        "name": "styling_default",
+        "value": "fade-up"
+      },
+      {
+        "name": "background_color",
+        "value": "#FF5733"
+      }
+    ],
+    "culture_section": [
+      {
+        "id": "EB-Sec2-C1-E1",
+        "name": "headline",
+        "value": "Unsere Unternehmenskultur"
+      },
+      {
+        "id": "EB-Sec2-C1-E2",
+        "name": "description",
+        "value": "Bei {{identity.company_name}} steht der Mensch im Mittelpunkt."
+      },
+      {
+        "id": "EB-Sec2-C2",
+        "name": "values_list",
+        "type": "list",
+        "value": [
+          {
+            "id": "item1",
+            "elements": [
+              {
+                "name": "icon",
+                "value": "\ud83d\udca1"
+              },
+              {
+                "name": "title",
+                "value": "Innovation"
+              },
+              {
+                "name": "text",
+                "value": "Wir f\u00f6rdern kreative Ideen."
+              }
+            ]
+          },
+          {
+            "id": "item2",
+            "elements": [
+              {
+                "name": "icon",
+                "value": "\ud83e\udd1d"
+              },
+              {
+                "name": "title",
+                "value": "Teamgeist"
+              },
+              {
+                "name": "text",
+                "value": "Zusammenhalt ist unser Erfolg."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EB-Sec2-C5-E1",
+        "name": "image_url",
+        "value": "assets/images/culture_image.png"
+      },
+      {
+        "id": "EB-Sec2-C5-E2",
+        "name": "image_alt_text",
+        "value": "Arbeitsumfeld bei {{identity.company_name}}"
+      },
+      {
+        "name": "styling_default",
+        "value": "gradient"
+      },
+      {
+        "name": "background_color",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "card_style",
+        "value": "shadow"
+      },
+      {
+        "name": "image_frame",
+        "value": "solid"
+      },
+      {
+        "name": "button_style",
+        "value": "solid"
+      }
+    ],
+    "values_section": [
+      {
+        "id": "EB-SecValues-C1-E1",
+        "name": "headline",
+        "value": "Unsere Kernwerte"
+      },
+      {
+        "id": "EB-SecValues-C2",
+        "name": "values_list",
+        "type": "list",
+        "value": [
+          {
+            "id": "item1",
+            "elements": [
+              {
+                "name": "icon",
+                "value": "\ud83c\udf1f"
+              },
+              {
+                "name": "title",
+                "value": "Integrit\u00e4t"
+              },
+              {
+                "name": "text",
+                "value": "Ehrlichkeit in allem, was wir tun."
+              }
+            ]
+          },
+          {
+            "id": "item2",
+            "elements": [
+              {
+                "name": "icon",
+                "value": "\ud83d\ude80"
+              },
+              {
+                "name": "title",
+                "value": "Wachstum"
+              },
+              {
+                "name": "text",
+                "value": "Kontinuierliche Weiterentwicklung."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "team_section": [
+      {
+        "id": "EB-Sec3-C1-E1",
+        "name": "headline",
+        "value": "Stimmen aus unserem Team"
+      },
+      {
+        "id": "EB-Sec3-C1-E2",
+        "name": "description",
+        "value": "Was unsere Mitarbeiter sagen."
+      },
+      {
+        "id": "EB-Sec3-C2-E1",
+        "name": "testimonial_quote",
+        "value": "Hier f\u00fchle ich mich wertgesch\u00e4tzt."
+      },
+      {
+        "id": "EB-Sec3-C2-E2",
+        "name": "testimonial_author_name",
+        "value": "Hans Muster"
+      },
+      {
+        "id": "EB-Sec3-C2-E3",
+        "name": "testimonial_author_title",
+        "value": "Projektleiter"
+      },
+      {
+        "id": "EB-Sec3-C3-E1",
+        "name": "image_url",
+        "value": "assets/images/team_image.png"
+      },
+      {
+        "id": "EB-Sec3-C3-E2",
+        "name": "image_alt_text",
+        "value": "Teamfoto"
+      },
+      {
+        "name": "styling_default",
+        "value": "shadow"
+      },
+      {
+        "name": "background_color",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "card_style",
+        "value": "shadow"
+      },
+      {
+        "name": "image_frame",
+        "value": "solid"
+      },
+      {
+        "name": "button_style",
+        "value": "solid"
+      }
+    ],
+    "diversity_section": [
+      {
+        "id": "EB-SecDiversity-C1-E1",
+        "name": "headline",
+        "value": "Vielfalt und Inklusion"
+      },
+      {
+        "id": "EB-SecDiversity-C1-E2",
+        "name": "description",
+        "value": "Wir feiern Diversit\u00e4t in allen Formen."
+      },
+      {
+        "id": "EB-SecDiversity-C2-E1",
+        "name": "image_url",
+        "value": "assets/images/diversity_image.png"
+      },
+      {
+        "id": "EB-SecDiversity-C2-E2",
+        "name": "image_alt_text",
+        "value": "Diverses Team"
+      }
+    ],
+    "stolz_section": [
+      {
+        "id": "EB-SecStolz-C1-E1",
+        "name": "headline",
+        "value": "Worauf wir stolz sind"
+      },
+      {
+        "id": "EB-SecStolz-C1-E2",
+        "name": "description",
+        "value": "Unsere gr\u00f6\u00dften Erfolge."
+      },
+      {
+        "id": "EB-SecStolz-C2",
+        "name": "highlights_list",
+        "type": "list",
+        "value": [
+          {
+            "id": "item1",
+            "elements": [
+              {
+                "name": "title",
+                "value": "Projekt X"
+              },
+              {
+                "name": "text",
+                "value": "Erfolgreiche Markteinf\u00fchrung."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "story_telling_section": [
+      {
+        "instance": 1,
+        "id": "EB-SecStory1-C1-E1",
+        "name": "headline",
+        "value": "Eine Erfolgsgeschichte"
+      },
+      {
+        "instance": 1,
+        "id": "EB-SecStory1-C1-E2",
+        "name": "text",
+        "value": "Wie wir ein Team-Event meisterten."
+      },
+      {
+        "instance": 2,
+        "id": "EB-SecStory2-C1-E1",
+        "name": "headline",
+        "value": "Herausforderung Y"
+      },
+      {
+        "instance": 2,
+        "id": "EB-SecStory2-C1-E2",
+        "name": "text",
+        "value": "Unsere Reise zur Innovation."
+      }
+    ],
+    "location_section": [
+      {
+        "id": "EB-SecLocation-C1-E1",
+        "name": "headline",
+        "value": "Unsere Standorte"
+      },
+      {
+        "id": "EB-SecLocation-C1-E2",
+        "name": "description",
+        "value": "Moderne B\u00fcros in Top-Lagen."
+      },
+      {
+        "id": "EB-SecLocation-C2-E1",
+        "name": "map_url",
+        "value": "assets/images/location_map.png"
+      },
+      {
+        "id": "EB-SecLocation-C2-E2",
+        "name": "image_alt_text",
+        "value": "Karte der Standorte"
+      }
+    ],
+    "benefits_section": [
+      {
+        "id": "EB-Sec4-C1-E1",
+        "name": "headline",
+        "value": "Unsere Benefits"
+      },
+      {
+        "id": "EB-Sec4-C1-E2",
+        "name": "description",
+        "value": "Mehr als nur ein Job."
+      },
+      {
+        "id": "EB-Sec4-C2",
+        "name": "benefits_list",
+        "type": "list",
+        "value": [
+          {
+            "id": "item1",
+            "elements": [
+              {
+                "name": "icon",
+                "value": "\ud83d\udd50"
+              },
+              {
+                "name": "title",
+                "value": "Flexible Zeiten"
+              },
+              {
+                "name": "text",
+                "value": "Homeoffice inklusive."
+              }
+            ]
+          },
+          {
+            "id": "item2",
+            "elements": [
+              {
+                "name": "icon",
+                "value": "\ud83d\udcda"
+              },
+              {
+                "name": "title",
+                "value": "Weiterbildung"
+              },
+              {
+                "name": "text",
+                "value": "Schulungen und Konferenzen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "styling_default",
+        "value": "gradient"
+      },
+      {
+        "name": "background_color",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "card_style",
+        "value": "shadow"
+      },
+      {
+        "name": "image_frame",
+        "value": "solid"
+      },
+      {
+        "name": "button_style",
+        "value": "solid"
+      }
+    ],
+    "career_cta_section": [
+      {
+        "id": "EB-Sec5-C1-E1",
+        "name": "headline",
+        "value": "Bereit f\u00fcr den Einstieg?"
+      },
+      {
+        "id": "EB-Sec5-C1-E2",
+        "name": "description",
+        "value": "Werden Sie Teil von uns."
+      },
+      {
+        "name": "styling_default",
+        "value": "pill-buttons"
+      },
+      {
+        "name": "background_color",
+        "value": "#C70039"
+      }
+    ],
+    "footer_section": [
+      {
+        "id": "EB-Sec6-C4-E1",
+        "name": "copyright_text",
+        "value": "\u00a9 {{current_year}} {{identity.company_name}}. Alle Rechte vorbehalten."
+      }
+    ],
+    "footer": [
+      {
+        "name": "styling_default",
+        "value": "neutral"
+      },
+      {
+        "name": "background_color",
+        "value": "#FF5733"
+      }
+    ]
+  }
+}

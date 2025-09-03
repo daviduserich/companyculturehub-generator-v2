@@ -1,0 +1,817 @@
+{
+  "metadata": {
+    "generated_at": "2025-09-02T15:09:30.360165",
+    "generator_version": "v3.1-final-vollausbau",
+    "csv_source": "/workspaces/companyculturehub-generator-v2/content_template_new_project/layout_extended_v2.csv"
+  },
+  "global_settings": {
+    "benefits_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "career_cta_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "culture_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "design": {
+      "logo": {
+        "url": "BITTE HIER WERT ERGÄNZEN > fLUMMBERTA"
+      }
+    },
+    "footer_section": {
+      "copyright_text": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "hero_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN",
+      "subheadline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "identity": {
+      "company_name": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "labels": {
+      "application_button_text": "BITTE HIER WERT ERGÄNZEN",
+      "career_button_text": "BITTE HIER WERT ERGÄNZEN",
+      "contact_text": "BITTE HIER WERT ERGÄNZEN",
+      "imprint_text": "BITTE HIER WERT ERGÄNZEN",
+      "privacy_text": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "links": {
+      "application_form_url": "BITTE HIER WERT ERGÄNZEN",
+      "career_page_url": "BITTE HIER WERT ERGÄNZEN",
+      "contact_url": "BITTE HIER WERT ERGÄNZEN",
+      "imprint_url": "BITTE HIER WERT ERGÄNZEN",
+      "privacy_url": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "project_config": {
+      "canonical_url": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "team_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "image_alt_text": "BITTE HIER WERT ERGÄNZEN",
+      "image_url": "BITTE HIER WERT ERGÄNZEN",
+      "testimonial_author_name": "BITTE HIER WERT ERGÄNZEN",
+      "testimonial_author_title": "BITTE HIER WERT ERGÄNZEN",
+      "testimonial_quote": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "diversity_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "location_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "stolz_section": {
+      "description": "BITTE HIER WERT ERGÄNZEN",
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "story_telling_section": {
+      "headline": "BITTE HIER WERT ERGÄNZEN",
+      "text": "BITTE HIER WERT ERGÄNZEN"
+    },
+    "values_section": {
+      "headline": "BITTE HIER WERT ERGÄNZEN"
+    }
+  },
+  "page_content": {
+    "logo_header_section": [
+      [
+        {
+          "id": "EB-Logo_header_section1-styling",
+          "name": "styling_default",
+          "value": "neutral"
+        },
+        {
+          "id": "EB-Logo_header_section1-logo_alt",
+          "name": "logo_alt",
+          "value": "Logo von BITTE HIER WERT ERGÄNZEN"
+        }
+      ]
+    ],
+    "navigation_section": [
+      [
+        {
+          "id": "EB-Navigation_section1-styling",
+          "name": "styling_default",
+          "value": "neutral"
+        },
+        {
+          "id": "EB-Navigation_section1-navigation.nav_items",
+          "name": "nav_items",
+          "type": "list",
+          "value": [
+            {
+              "id": "nav_items1",
+              "elements": [
+                {
+                  "name": "url",
+                  "value": "Beispielwert für url (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "label",
+                  "value": "Beispielwert für label (Instanz 1, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "nav_items2",
+              "elements": [
+                {
+                  "name": "url",
+                  "value": "Beispielwert für url (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "label",
+                  "value": "Beispielwert für label (Instanz 1, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "nav_items3",
+              "elements": [
+                {
+                  "name": "url",
+                  "value": "Beispielwert für url (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "label",
+                  "value": "Beispielwert für label (Instanz 1, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "hero_section": [
+      [
+        {
+          "id": "EB-Hero_section1-styling",
+          "name": "styling_default",
+          "value": "fade-up"
+        },
+        {
+          "id": "EB-Hero_section1-image_alt_text",
+          "name": "image_alt_text",
+          "value": "Ein beschreibender Alternativtext für das Bild"
+        },
+        {
+          "id": "EB-Hero_section1-image_url",
+          "name": "image_url",
+          "value": "assets/images/hero_section_image1.png"
+        },
+        {
+          "id": "EB-Hero_section1-headline",
+          "name": "headline",
+          "value": "Eine aussagekräftige Überschrift"
+        },
+        {
+          "id": "EB-Hero_section1-description",
+          "name": "description",
+          "value": "Ein beschreibender Text"
+        },
+        {
+          "id": "EB-Hero_section1-subheadline",
+          "name": "subheadline",
+          "value": "Eine interessante Unterzeile"
+        }
+      ]
+    ],
+    "culture_section": [
+      [
+        {
+          "id": "EB-Culture_section1-styling",
+          "name": "styling_default",
+          "value": "gradient"
+        },
+        {
+          "id": "EB-Culture_section1-image_url",
+          "name": "image_url",
+          "value": "assets/images/culture_section_image1.png"
+        },
+        {
+          "id": "EB-Culture_section1-description",
+          "name": "description",
+          "value": "Ein beschreibender Text"
+        },
+        {
+          "id": "EB-Culture_section1-image_alt_text",
+          "name": "image_alt_text",
+          "value": "Ein beschreibender Alternativtext für das Bild"
+        },
+        {
+          "id": "EB-Culture_section1-headline",
+          "name": "headline",
+          "value": "Eine aussagekräftige Überschrift"
+        },
+        {
+          "id": "EB-Culture_section1-culture_section.values_list",
+          "name": "values_list",
+          "type": "list",
+          "value": [
+            {
+              "id": "values_list1",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "values_list2",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "values_list3",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EB-Culture_section2-styling",
+          "name": "styling_default",
+          "value": "gradient"
+        },
+        {
+          "id": "EB-Culture_section2-culture_section.values_list",
+          "name": "values_list",
+          "type": "list",
+          "value": [
+            {
+              "id": "values_list1",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 1)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 1)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 2, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "values_list2",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 2)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 2)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 2, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "values_list3",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 3)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 3)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 2, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "values_section": [
+      [
+        {
+          "id": "EB-Values_section1-styling",
+          "name": "styling_default",
+          "value": "icon-grid"
+        },
+        {
+          "id": "EB-Values_section1-values_section.values_list",
+          "name": "values_list",
+          "type": "list",
+          "value": [
+            {
+              "id": "values_list1",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "values_list2",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "values_list3",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "team_section": [
+      [
+        {
+          "id": "EB-Team_section1-styling",
+          "name": "styling_default",
+          "value": "shadow"
+        },
+        {
+          "id": "EB-Team_section1-testimonial_author_title",
+          "name": "testimonial_author_title",
+          "value": "Senior Entwickler"
+        },
+        {
+          "id": "EB-Team_section1-image_alt_text",
+          "name": "image_alt_text",
+          "value": "Ein beschreibender Alternativtext für das Bild"
+        },
+        {
+          "id": "EB-Team_section1-image_url",
+          "name": "image_url",
+          "value": "assets/images/team_section_image1.png"
+        },
+        {
+          "id": "EB-Team_section1-testimonial_author_name",
+          "name": "testimonial_author_name",
+          "value": "Max Mustermann"
+        },
+        {
+          "id": "EB-Team_section1-headline",
+          "name": "headline",
+          "value": "Eine aussagekräftige Überschrift"
+        },
+        {
+          "id": "EB-Team_section1-testimonial_quote",
+          "name": "testimonial_quote",
+          "value": "Ein inspirierendes Zitat eines Team-Mitglieds."
+        },
+        {
+          "id": "EB-Team_section1-description",
+          "name": "description",
+          "value": "Ein beschreibender Text"
+        }
+      ],
+      [
+        {
+          "id": "EB-Team_section2-styling",
+          "name": "styling_default",
+          "value": "shadow"
+        }
+      ],
+      [
+        {
+          "id": "EB-Team_section3-styling",
+          "name": "styling_default",
+          "value": "shadow"
+        }
+      ]
+    ],
+    "diversity_section": [
+      [
+        {
+          "id": "EB-Diversity_section1-styling",
+          "name": "styling_default",
+          "value": "neutral-with-accents"
+        },
+        {
+          "id": "EB-Diversity_section1-image_alt_text",
+          "name": "image_alt_text",
+          "value": "Beispielwert für image_alt_text"
+        }
+      ]
+    ],
+    "stolz_section": [
+      [
+        {
+          "id": "EB-Stolz_section1-styling",
+          "name": "styling_default",
+          "value": "glass"
+        },
+        {
+          "id": "EB-Stolz_section1-stolz_section.highlights_list",
+          "name": "highlights_list",
+          "type": "list",
+          "value": [
+            {
+              "id": "highlights_list1",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "highlights_list2",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "highlights_list3",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EB-Stolz_section2-styling",
+          "name": "styling_default",
+          "value": "glass"
+        },
+        {
+          "id": "EB-Stolz_section2-stolz_section.highlights_list",
+          "name": "highlights_list",
+          "type": "list",
+          "value": [
+            {
+              "id": "highlights_list1",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 1)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "highlights_list2",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 2)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "highlights_list3",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 3)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "story_telling_section": [
+      [
+        {
+          "id": "EB-Story_telling_section1-styling",
+          "name": "styling_default",
+          "value": "subtle"
+        },
+        {
+          "id": "EB-Story_telling_section1-image_url",
+          "name": "image_url",
+          "value": "assets/images/story_telling_section_image1.png"
+        },
+        {
+          "id": "EB-Story_telling_section1-image_alt_text",
+          "name": "image_alt_text",
+          "value": "Beispielwert für image_alt_text"
+        }
+      ],
+      [
+        {
+          "id": "EB-Story_telling_section2-styling",
+          "name": "styling_default",
+          "value": "subtle"
+        }
+      ],
+      [
+        {
+          "id": "EB-Story_telling_section3-styling",
+          "name": "styling_default",
+          "value": "subtle"
+        }
+      ]
+    ],
+    "location_section": [
+      [
+        {
+          "id": "EB-Location_section1-styling",
+          "name": "styling_default",
+          "value": "map-or-image"
+        },
+        {
+          "id": "EB-Location_section1-image_alt_text",
+          "name": "image_alt_text",
+          "value": "Beispielwert für image_alt_text"
+        },
+        {
+          "id": "EB-Location_section1-map_url",
+          "name": "map_url",
+          "value": "assets/images/location_section_map1.png"
+        }
+      ]
+    ],
+    "benefits_section": [
+      [
+        {
+          "id": "EB-Benefits_section1-styling",
+          "name": "styling_default",
+          "value": "gradient"
+        },
+        {
+          "id": "EB-Benefits_section1-description",
+          "name": "description",
+          "value": "Ein beschreibender Text"
+        },
+        {
+          "id": "EB-Benefits_section1-headline",
+          "name": "headline",
+          "value": "Eine aussagekräftige Überschrift"
+        },
+        {
+          "id": "EB-Benefits_section1-benefits_section.benefits_list",
+          "name": "benefits_list",
+          "type": "list",
+          "value": [
+            {
+              "id": "benefits_list1",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 1)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "benefits_list2",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 2)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "benefits_list3",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 1, Item 3)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 1, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EB-Benefits_section2-styling",
+          "name": "styling_default",
+          "value": "gradient"
+        },
+        {
+          "id": "EB-Benefits_section2-benefits_section.benefits_list",
+          "name": "benefits_list",
+          "type": "list",
+          "value": [
+            {
+              "id": "benefits_list1",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 1)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 1)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 2, Item 1)"
+                }
+              ]
+            },
+            {
+              "id": "benefits_list2",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 2)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 2)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 2, Item 2)"
+                }
+              ]
+            },
+            {
+              "id": "benefits_list3",
+              "elements": [
+                {
+                  "name": "title",
+                  "value": "Beispielwert für title (Instanz 2, Item 3)"
+                },
+                {
+                  "name": "text",
+                  "value": "Beispielwert für text (Instanz 2, Item 3)"
+                },
+                {
+                  "name": "icon",
+                  "value": "Beispielwert für icon (Instanz 2, Item 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "career_cta_section": [
+      [
+        {
+          "id": "EB-Career_cta_section1-styling",
+          "name": "styling_default",
+          "value": "pill-buttons"
+        },
+        {
+          "id": "EB-Career_cta_section1-description",
+          "name": "description",
+          "value": "Ein beschreibender Text"
+        },
+        {
+          "id": "EB-Career_cta_section1-headline",
+          "name": "headline",
+          "value": "Eine aussagekräftige Überschrift"
+        }
+      ]
+    ],
+    "footer": [
+      [
+        {
+          "id": "EB-Footer1-styling",
+          "name": "styling_default",
+          "value": "neutral"
+        },
+        {
+          "id": "EB-Footer1-copyright_text",
+          "name": "copyright_text",
+          "value": "© 2025 BITTE HIER WERT ERGÄNZENdiversity_section"
+        }
+      ]
+    ]
+  }
+}

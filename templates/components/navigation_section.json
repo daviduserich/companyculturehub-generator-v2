@@ -1,0 +1,15 @@
+{
+  "nav_items": {
+    "description": "Eine Liste von Navigationselementen, die Dir helfen, schnell zu finden, was Du suchst.",
+    "url": {
+      "description": "Die vollständige URL, zu der das Navigationselement verlinken soll.",
+      "example_value": "https://example.com/ueber-uns",
+      "value": ""
+    },
+    "label": {
+      "description": "Der sichtbare Text des Links. Kurz und eindeutig.",
+      "example_value": "Über uns",
+      "value": ""
+    }
+  }
+}

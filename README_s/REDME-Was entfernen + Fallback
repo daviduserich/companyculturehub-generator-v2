@@ -1,0 +1,55 @@
+Zusammenfassung: Was kann weg?
+Sie können die folgenden Dateien und die dazugehörige Logik aus dem alten Skript gedanklich und physisch aus dem Prozess entfernen:
+🗑️ global_variables.csv
+🗑️ local_variables.csv
+🗑️ Die alten Python-Funktionen load_global_variables, write_missing_global_variables, load_local_variables, und write_missing_local_variables.
+Wir haben diese simplen "Wert-Speicher" durch ein System ersetzt, das auf einer klaren Trennung von Struktur, Anleitung und Inhalt basiert. Das macht den gesamten Workflow robuster, skalierbarer und die Ergebnisse qualitativ hochwertiger.
+
+Die Lösung: Ein "Fallback"- oder "Beispielwert" im Definitions-JSON
+Wir können unsere .json-Definitionsdateien ganz einfach um ein Feld erweitern, das genau diesen Zweck erfüllt.
+Stellen Sie sich vor, unsere hero_section.json sieht so aus:
+JSON
+{
+  "headline": {
+    "description": "Die emotionale Hauptüberschrift der Seite...",
+    "example_value": "Willkommen in unserem innovativen Team",  // <-- NEU
+    "value": ""
+  },
+  "subheadline": {
+    "description": "Eine unterstützende Unterzeile...",
+    "example_value": "Entdecken Sie, was uns als Arbeitgeber auszeichnet", // <-- NEU
+    "value": ""
+  },
+  "description": {
+    "description": "Ein kurzer, einladender Absatz...",
+    "example_value": "Tauchen Sie ein in unseren Arbeitsalltag und erleben Sie, wie wir gemeinsam innovative Lösungen entwickeln und dabei eine familiäre Atmosphäre pflegen.", // <-- NEU
+    "value": ""
+  },
+  "image_url": {
+    "description": "URL zu einem hochwertigen, authentischen Bild...",
+    "example_value": "assets/images/placeholder_team.jpg", // <-- NEU
+    "value": ""
+  },
+  "image_alt_text": {
+    "description": "Ein beschreibender Alternativtext für das Bild...",
+    "example_value": "Ein diverses Team bei einem kreativen Meeting", // <-- NEU
+    "value": ""
+  }
+}
+Wie würde der Workflow dann funktionieren?
+Wir könnten unseren content_generator.py um einen optionalen "Test-Modus" oder "Vorschau-Modus" erweitern.
+Normaler Modus (Standard):
+Das Skript wird wie besprochen aufgerufen.
+Es generiert das Anleitungs-JSON und füllt die value-Felder mit einem leeren String "".
+Dieses JSON geht dann an Ihr großes Framework zur Befüllung.
+Vorschau-Modus (z.B. mit einem Flag --preview):
+Sie rufen das Skript mit einem zusätzlichen Schalter auf: python content_generator.py /pfad/zum/projekt --preview
+Das Skript erkennt dieses Flag.
+Anstatt die value-Felder leer zu lassen, füllt es sie mit den Werten aus den example_value-Feldern der .json-Definitionsdateien.
+Das Ergebnis: Sie erhalten ein sofort befülltes JSON mit sinnvollen, "echt klingenden" Beispieltexten.
+Dieses Vorschau-JSON könnten Sie dann direkt an den (zukünftigen) HTML-Generator weitergeben, um eine visuell vollständige Test-HTML-Seite zu erzeugen, ohne Ihr großes Content-Framework auch nur einmal gestartet zu haben.
+Vorteile dieser Lösung:
+Trennung von Belangen: Die "Anleitung" (description) und der "Beispieltext" (example_value) sind klar getrennt, aber logisch am selben Ort.
+Flexibilität: Sie können mit einem einfachen Schalter zwischen dem "Produktiv-Modus" (leeres Template für die KI) und dem "Test-Modus" (gefülltes Template für die Vorschau) wechseln.
+Effizienz: Layout-Tests werden extrem schnell und unkompliziert.
+Wir müssen das jetzt nicht sofort umsetzen, aber es ist gut zu wissen, dass unser neues System flexibel genug ist, um diesen wichtigen Anwendungsfall mit einer kleinen Erweiterung problemlos abzudecken. Wir haben uns damit keine Türen verschlossen, sondern nur eine bessere Grundlage geschaffen.

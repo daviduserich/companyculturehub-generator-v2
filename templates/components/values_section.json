@@ -1,0 +1,25 @@
+{
+  "headline": {
+    "description": "Eine klare Überschrift, die zeigt, nach welchen Prinzipien hier gearbeitet wird, damit Du erfolgreich sein kannst.",
+    "example_value": "Unsere Leitlinien für Deinen Erfolg.",
+    "value": ""
+  },
+  "values_list": {
+    "description": "Eine Liste von Kernwerten, die das Fundament der Zusammenarbeit bilden und Deinen Arbeitsalltag positiv prägen.",
+    "icon": {
+      "description": "Ein passendes Emoji oder Icon, das den Wert visuell repräsentiert.",
+      "example_value": "🚀",
+      "value": ""
+    },
+    "title": {
+      "description": "Der Name des Kernwerts, formuliert als ein Versprechen an Dich.",
+      "example_value": "Mut zur Lücke",
+      "value": ""
+    },
+    "text": {
+      "description": "Eine konkrete Beschreibung, wie Du diesen Wert im Arbeitsalltag erlebst und davon profitierst.",
+      "example_value": "Wir erwarten nicht, dass Du auf alles eine Antwort hast. Bei uns darfst Du experimentieren, Fragen stellen und aus Fehlern lernen, um zu wachsen.",
+      "value": ""
+    }
+  }
+}

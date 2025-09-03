@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "generated_at": "2025-09-03T07:58:02.004404",
+    "generator_version": "v2.0-structured-injector",
+    "layout_source": "/workspaces/companyculturehub-generator-v2/content/DEF_88/layout_extended_v2.csv",
+    "injected_style": "hyper_stylish"
+  },
+  "page_content": {
+    "logo_header_section": [
+      {
+        "url": {
+          "description": "FEHLER: Keine Definition für 'url' gefunden.",
+          "value": ""
+        },
+        "canonical_url": {
+          "description": "FEHLER: Keine Definition für 'canonical_url' gefunden.",
+          "value": ""
+        },
+        "company_name": {
+          "description": "FEHLER: Keine Definition für 'company_name' gefunden.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "neutral"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FF5733"
+        }
+      }
+    ],
+    "hero_section": [
+      {
+        "subheadline": {
+          "description": "Eine unterstützende Unterzeile, die das Versprechen der Headline konkretisiert und den Nutzen für den Bewerber hervorhebt.",
+          "value": ""
+        },
+        "image_url": {
+          "description": "URL zu einem hochwertigen, authentischen Bild, das Kollaboration und Erfolg zeigt. Sollte Energie und eine positive Atmosphäre ausstrahlen.",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer, einladender Absatz, der den Bewerber direkt anspricht und ihm zeigt, was er auf dieser Seite für sich entdecken kann.",
+          "value": ""
+        },
+        "headline": {
+          "description": "Die emotionale Hauptüberschrift. Soll den Bewerber als Held positionieren und sein Potenzial ansprechen. Fokus: Wirkung, nicht Beschreibung.",
+          "value": ""
+        },
+        "image_alt_text": {
+          "description": "Ein beschreibender Alternativtext, der den Bildinhalt aus der Perspektive von Teamarbeit und Erfolg beschreibt.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "fade-up"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FF5733"
+        }
+      }
+    ],
+    "culture_section": [
+      {
+        "values_list": [
+          {
+            "title": {
+              "description": "Der Name des Kernwerts, formuliert als Vorteil.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine konkrete Beschreibung, wie der Mitarbeiter diesen Wert im Alltag erlebt.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Kernwerts, formuliert als Vorteil.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine konkrete Beschreibung, wie der Mitarbeiter diesen Wert im Alltag erlebt.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Kernwerts, formuliert als Vorteil.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine konkrete Beschreibung, wie der Mitarbeiter diesen Wert im Alltag erlebt.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          }
+        ],
+        "headline": {
+          "description": "Überschrift, die das Thema 'Unternehmenskultur' aus der Perspektive des Bewerbers beleuchtet. Was hat er davon?",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer Einleitungstext, der erklärt, wie die Kultur den Mitarbeiter im Alltag unterstützt und fördert.",
+          "value": ""
+        },
+        "image_url": {
+          "description": "URL zu einem Bild, das die Kultur in Aktion zeigt.",
+          "value": ""
+        },
+        "image_alt_text": {
+          "description": "Alternativtext, der das Bild beschreibt.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "gradient"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FFFFFF"
+        },
+        "card_style": {
+          "description": "Styling-Typ für Karten innerhalb der Sektion.",
+          "value": "glass"
+        },
+        "image_frame": {
+          "description": "Rahmen-Stil für Bilder.",
+          "value": "accent-gradient"
+        },
+        "button_style": {
+          "description": "Styling für Buttons.",
+          "value": "gradient"
+        }
+      },
+      {
+        "values_list": [
+          {
+            "title": {
+              "description": "Der Name des Kernwerts, formuliert als Vorteil.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine konkrete Beschreibung, wie der Mitarbeiter diesen Wert im Alltag erlebt.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Kernwerts, formuliert als Vorteil.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine konkrete Beschreibung, wie der Mitarbeiter diesen Wert im Alltag erlebt.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Kernwerts, formuliert als Vorteil.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine konkrete Beschreibung, wie der Mitarbeiter diesen Wert im Alltag erlebt.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          }
+        ],
+        "headline": {
+          "description": "Überschrift, die das Thema 'Unternehmenskultur' aus der Perspektive des Bewerbers beleuchtet. Was hat er davon?",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer Einleitungstext, der erklärt, wie die Kultur den Mitarbeiter im Alltag unterstützt und fördert.",
+          "value": ""
+        },
+        "image_url": {
+          "description": "URL zu einem Bild, das die Kultur in Aktion zeigt.",
+          "value": ""
+        },
+        "image_alt_text": {
+          "description": "Alternativtext, der das Bild beschreibt.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "gradient"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FFFFFF"
+        },
+        "card_style": {
+          "description": "Styling-Typ für Karten innerhalb der Sektion.",
+          "value": "glass"
+        },
+        "image_frame": {
+          "description": "Rahmen-Stil für Bilder.",
+          "value": "accent-gradient"
+        },
+        "button_style": {
+          "description": "Styling für Buttons.",
+          "value": "gradient"
+        }
+      }
+    ],
+    "team_section": [
+      {
+        "image_alt_text": {
+          "description": "Alternativtext für das Bild.",
+          "value": ""
+        },
+        "testimonial_author_title": {
+          "description": "Die Berufsbezeichnung des Mitarbeiters.",
+          "value": ""
+        },
+        "headline": {
+          "description": "Überschrift, die ein authentisches Testimonial ankündigt.",
+          "value": ""
+        },
+        "testimonial_quote": {
+          "description": "Ein authentisches Zitat, das einen spezifischen Vorteil für den Mitarbeiter hervorhebt.",
+          "value": ""
+        },
+        "testimonial_author_name": {
+          "description": "Der vollständige Name des Mitarbeiters.",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer einleitender Satz, der den Kontext für das folgende Zitat gibt.",
+          "value": ""
+        },
+        "image_url": {
+          "description": "URL zu einem professionellen Foto des zitierten Mitarbeiters oder einem Team-Bild.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "shadow"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FFFFFF"
+        },
+        "card_style": {
+          "description": "Styling-Typ für Karten innerhalb der Sektion.",
+          "value": "glass"
+        },
+        "image_frame": {
+          "description": "Rahmen-Stil für Bilder.",
+          "value": "accent-gradient"
+        },
+        "button_style": {
+          "description": "Styling für Buttons.",
+          "value": "gradient"
+        }
+      },
+      {
+        "image_alt_text": {
+          "description": "Alternativtext für das Bild.",
+          "value": ""
+        },
+        "testimonial_author_title": {
+          "description": "Die Berufsbezeichnung des Mitarbeiters.",
+          "value": ""
+        },
+        "headline": {
+          "description": "Überschrift, die ein authentisches Testimonial ankündigt.",
+          "value": ""
+        },
+        "testimonial_quote": {
+          "description": "Ein authentisches Zitat, das einen spezifischen Vorteil für den Mitarbeiter hervorhebt.",
+          "value": ""
+        },
+        "testimonial_author_name": {
+          "description": "Der vollständige Name des Mitarbeiters.",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer einleitender Satz, der den Kontext für das folgende Zitat gibt.",
+          "value": ""
+        },
+        "image_url": {
+          "description": "URL zu einem professionellen Foto des zitierten Mitarbeiters oder einem Team-Bild.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "shadow"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FFFFFF"
+        },
+        "card_style": {
+          "description": "Styling-Typ für Karten innerhalb der Sektion.",
+          "value": "glass"
+        },
+        "image_frame": {
+          "description": "Rahmen-Stil für Bilder.",
+          "value": "accent-gradient"
+        },
+        "button_style": {
+          "description": "Styling für Buttons.",
+          "value": "gradient"
+        }
+      },
+      {
+        "image_alt_text": {
+          "description": "Alternativtext für das Bild.",
+          "value": ""
+        },
+        "testimonial_author_title": {
+          "description": "Die Berufsbezeichnung des Mitarbeiters.",
+          "value": ""
+        },
+        "headline": {
+          "description": "Überschrift, die ein authentisches Testimonial ankündigt.",
+          "value": ""
+        },
+        "testimonial_quote": {
+          "description": "Ein authentisches Zitat, das einen spezifischen Vorteil für den Mitarbeiter hervorhebt.",
+          "value": ""
+        },
+        "testimonial_author_name": {
+          "description": "Der vollständige Name des Mitarbeiters.",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer einleitender Satz, der den Kontext für das folgende Zitat gibt.",
+          "value": ""
+        },
+        "image_url": {
+          "description": "URL zu einem professionellen Foto des zitierten Mitarbeiters oder einem Team-Bild.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "shadow"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FFFFFF"
+        },
+        "card_style": {
+          "description": "Styling-Typ für Karten innerhalb der Sektion.",
+          "value": "glass"
+        },
+        "image_frame": {
+          "description": "Rahmen-Stil für Bilder.",
+          "value": "accent-gradient"
+        },
+        "button_style": {
+          "description": "Styling für Buttons.",
+          "value": "gradient"
+        }
+      }
+    ],
+    "benefits_section": [
+      {
+        "benefits_list": [
+          {
+            "title": {
+              "description": "Der Name des Benefits.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine detaillierte Erklärung des Nutzens für den Mitarbeiter.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Benefits.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine detaillierte Erklärung des Nutzens für den Mitarbeiter.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Benefits.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine detaillierte Erklärung des Nutzens für den Mitarbeiter.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          }
+        ],
+        "headline": {
+          "description": "Eine Überschrift, die die Vorteile klar als 'Gewinn' für den Mitarbeiter kommuniziert.",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer Text, der zusammenfasst, wie die Benefits den Mitarbeiter im Leben und bei der Arbeit unterstützen.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "gradient"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FFFFFF"
+        },
+        "card_style": {
+          "description": "Styling-Typ für Karten innerhalb der Sektion.",
+          "value": "glass"
+        },
+        "image_frame": {
+          "description": "Rahmen-Stil für Bilder.",
+          "value": "accent-gradient"
+        },
+        "button_style": {
+          "description": "Styling für Buttons.",
+          "value": "gradient"
+        }
+      },
+      {
+        "benefits_list": [
+          {
+            "title": {
+              "description": "Der Name des Benefits.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine detaillierte Erklärung des Nutzens für den Mitarbeiter.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Benefits.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine detaillierte Erklärung des Nutzens für den Mitarbeiter.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          },
+          {
+            "title": {
+              "description": "Der Name des Benefits.",
+              "value": ""
+            },
+            "text": {
+              "description": "Eine detaillierte Erklärung des Nutzens für den Mitarbeiter.",
+              "value": ""
+            },
+            "icon": {
+              "description": "Ein passendes Emoji oder Icon.",
+              "value": ""
+            }
+          }
+        ],
+        "headline": {
+          "description": "Eine Überschrift, die die Vorteile klar als 'Gewinn' für den Mitarbeiter kommuniziert.",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer Text, der zusammenfasst, wie die Benefits den Mitarbeiter im Leben und bei der Arbeit unterstützen.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "gradient"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#FFFFFF"
+        },
+        "card_style": {
+          "description": "Styling-Typ für Karten innerhalb der Sektion.",
+          "value": "glass"
+        },
+        "image_frame": {
+          "description": "Rahmen-Stil für Bilder.",
+          "value": "accent-gradient"
+        },
+        "button_style": {
+          "description": "Styling für Buttons.",
+          "value": "gradient"
+        }
+      }
+    ],
+    "career_cta_section": [
+      {
+        "career_button_text": {
+          "description": "FEHLER: Keine Definition für 'career_button_text' gefunden.",
+          "value": ""
+        },
+        "application_form_url": {
+          "description": "FEHLER: Keine Definition für 'application_form_url' gefunden.",
+          "value": ""
+        },
+        "headline": {
+          "description": "Die finale, aktivierende Überschrift, die Dich direkt anspricht.",
+          "value": ""
+        },
+        "application_button_text": {
+          "description": "FEHLER: Keine Definition für 'application_button_text' gefunden.",
+          "value": ""
+        },
+        "description": {
+          "description": "Ein kurzer, motivierender Satz, der Dich zum nächsten Schritt ermutigt.",
+          "value": ""
+        },
+        "career_page_url": {
+          "description": "FEHLER: Keine Definition für 'career_page_url' gefunden.",
+          "value": ""
+        },
+        "styling_default": {
+          "description": "CSS-Klasse für das Haupt-Styling.",
+          "value": "pill-buttons"
+        },
+        "background_color": {
+          "description": "Hintergrundfarbe der Sektion.",
+          "value": "#C70039"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "colors": {
+    "primary_color": "#FF5733",
+    "secondary_color": "#C70039",
+    "accent_color": "#900C3F",
+    "gradient_type": "horizontal",
+    "style_recommendation": "stylish",
+    "image_frame_gradient": "linear-gradient(to top, #900C3F, transparent)",
+    "accent_color_rgb": [
+      255,
+      87,
+      51
+    ]
+  }
+}

@@ -25,4 +25,10 @@ header,page_title,Karriereseite von {{identity.company_name}}
 header,meta_description,Werden Sie Teil unseres Teams.
 technik_header,page_title,Karriereseite von {{identity.company_name}}
 technik_header,meta_description,Werden Sie Teil unseres Teams.
-footer,copyright_text,© 2025 {{identity.company_name}}
+footer,copyright_text,© 2025 {{identity.company_name}}diversity_section,image_url,Beispielwert für image_url
+diversity_section,image_alt_text,Beispielwert für image_alt_text
+story_telling_section,image_url,Beispielwert für image_url
+story_telling_section,image_alt_text,Beispielwert für image_alt_text
+location_section,map_url,Beispielwert für map_url
+location_section,image_alt_text,Beispielwert für image_alt_text
+diversity_section,image_url,Beispielwert für image_url
