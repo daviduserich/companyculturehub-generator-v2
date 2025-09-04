@@ -1,0 +1,97 @@
+{
+  "meta_data": {
+    "page_title": {
+      "description": "Der vollständige Titel der Webseite, der in der Browser-Tab-Leiste und in Suchergebnissen angezeigt wird. Sollte prägnant und SEO-optimiert sein.",
+      "example_value": "Karriere bei [Firmenname] - Gestalte Deine Zukunft mit uns",
+      "value": ""
+    },
+    "meta_description": {
+      "description": "Eine kurze Beschreibung der Seite für Suchmaschinen (max. 160 Zeichen). Wichtig für SEO und wird in Google-Suchergebnissen angezeigt.",
+      "example_value": "Entdecke spannende Karrieremöglichkeiten bei [Firmenname]. Werde Teil eines innovativen Teams und gestalte die Zukunft mit.",
+      "value": ""
+    }
+  },
+  "project_config": {
+    "canonical_url": {
+      "description": "Die vollständige, kanonische URL dieser Seite. Wichtig für SEO, um Duplicate Content zu vermeiden.",
+      "example_value": "https://www.example.com/karriere",
+      "value": ""
+    }
+  },
+  "design": {
+    "logo": {
+      "favicon_url": {
+        "description": "Der Pfad zum Favicon (kleines Icon im Browser-Tab). Sollte eine .ico, .png oder .svg Datei sein.",
+        "example_value": "assets/images/favicon.ico",
+        "value": ""
+      }
+    },
+    "branding": {
+      "primary_color": {
+        "description": "Die Hauptfarbe des Corporate Designs als Hex-Code.",
+        "example_value": "#2563eb",
+        "value": ""
+      },
+      "secondary_color": {
+        "description": "Die Sekundärfarbe des Corporate Designs als Hex-Code.",
+        "example_value": "#1e40af",
+        "value": ""
+      },
+      "accent_color": {
+        "description": "Die Akzentfarbe für Highlights und Call-to-Action Elemente als Hex-Code.",
+        "example_value": "#f59e0b",
+        "value": ""
+      },
+      "text_color": {
+        "description": "Die Standardtextfarbe als Hex-Code.",
+        "example_value": "#374151",
+        "value": ""
+      },
+      "text_on_primary": {
+        "description": "Die Textfarbe, die auf der Primärfarbe verwendet wird (für Kontrast).",
+        "example_value": "#ffffff",
+        "value": ""
+      },
+      "text_on_secondary": {
+        "description": "Die Textfarbe, die auf der Sekundärfarbe verwendet wird (für Kontrast).",
+        "example_value": "#ffffff",
+        "value": ""
+      },
+      "font_family": {
+        "description": "Die Haupt-Schriftart der Website. Kann Google Fonts oder System-Fonts verwenden.",
+        "example_value": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+        "value": ""
+      },
+      "benefits_gradient": {
+        "css_value": {
+          "description": "Ein CSS-Gradient für die Benefits-Sektion. Vollständiger CSS linear-gradient Wert.",
+          "example_value": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+          "value": ""
+        }
+      }
+    }
+  },
+  "integrations": {
+    "meta_pixel_id": {
+      "description": "Die Facebook/Meta Pixel ID für Tracking und Remarketing. Nur numerische Zeichen.",
+      "example_value": "123456789012345",
+      "value": ""
+    },
+    "tracking_script_url": {
+      "description": "URL zu einem zusätzlichen Tracking-Script (z.B. Google Analytics, Matomo). Vollständige URL erforderlich.",
+      "example_value": "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID",
+      "value": ""
+    }
+  },
+  "theme_classes": {
+    "description": "CSS-Klassen, die das Design-Theme der Seite bestimmen. Kombiniert Hintergrund-, Karten- und Animations-Stile.",
+    "example_value": "bg-gradient card-glass anim-playful",
+    "available_options": {
+      "background": ["bg-solid", "bg-gradient"],
+      "cards": ["card-flat", "card-shadow", "card-glass"],
+      "animations": ["anim-subtle", "anim-playful"],
+      "buttons": ["btn-sharp", "btn-rounded", "btn-pill"]
+    },
+    "value": ""
+  }
+}

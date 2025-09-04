@@ -1,0 +1,53 @@
+{
+  "//": "Dies ist die Master-Datei für Placeholder-Bilder, basierend auf der Analyse der HTML-Module und der layout_extended_v2.csv. Sie wird bei Projekt-Initialisierung in den Projektordner kopiert und kann dort angepasst werden.",
+
+  "//": "==================================================",
+  "//": "== 1. Spezifische Bilder (für einmalige Module) ==",
+  "//": "==================================================",
+  "logo_header_section": {
+    "//": "Das Firmenlogo für den Header. Wird genau einmal benötigt.",
+    "urls": [
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/e1b7f5a3-8c8e-421b-6a58-7c83231a5700/public"
+    ]
+  },
+  "hero_section": {
+    "//": "Das große, einladende Bild für die Hero-Sektion. Wird genau einmal benötigt.",
+    "urls": [
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/d5509671-a99e-40dc-473e-31d3e8e67d00/public"
+    ]
+  },
+  "location_section": {
+    "//": "Eine Karte oder ein Bild des Bürogebäudes. Wird genau einmal benötigt.",
+    "urls": [
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/c1e9b099-31e4-4d2c-a667-335e33338300/public"
+    ]
+  },
+
+  "//": "====================================================================",
+  "//": "== 2. Bild-Pools (für Module, die mehrfach vorkommen können ) ==",
+  "//": "====================================================================",
+  "culture_section": {
+    "//": "Pool für Culture- und Diversity-Sektionen. Zeigt diverse Teams in kollaborativen Umgebungen. Bedarf: 2 (culture) + 1 (diversity) = 3 Bilder.",
+    "urls": [
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/887df05f-cbc8-4423-fa4b-1b4d1d546a00/public",
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/f4e9a433-5e69-4399-3e6f-1a14a3371800/public",
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/0e3a0e3a-0e3a-4b6c-8e3a-0e3e3e3e3e3e/public"
+    ]
+  },
+  "team_section": {
+    "//": "Pool für Team-Testimonials. Zeigt authentische Porträts oder Mitarbeiter in Aktion. Bedarf: 3 Bilder.",
+    "urls": [
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/a6e3b6b3-8c7a-4b6c-548a-0635339c1100/public",
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/b3f3b7e4-4a0a-4b6c-8e3a-0e3e3e3e3e3e/public",
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/c4d4d4d4-4b0b-4b6c-8e3a-0e3e3e3e3e3e/public"
+    ]
+  },
+  "story_telling_section": {
+    "//": "Pool für narrative Storytelling-Bilder. Können etwas abstrakter oder szenischer sein. Bedarf: 3 Bilder.",
+    "urls": [
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/d5e5e5e5-4c0c-4c6c-8e3a-0e3e3e3e3e3e/public",
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/e6f6f6f6-4d0d-4d6d-8e3a-0e3e3e3e3e3e/public",
+      "https://imagedelivery.net/5cjv6G6m9PtNEa4xZ5gOjQ/f7g7g7g7-4e0e-4e6e-8e3a-0e3e3e3e3e3e/public"
+    ]
+  }
+}

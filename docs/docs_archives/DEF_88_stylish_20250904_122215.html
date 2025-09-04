@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{meta_data.page_title}}</title>
+    <meta name="description" content="{{meta_data.meta_description}}">
+    <link rel="canonical" href="#" />
+    <link rel="icon" href="{{design.logo.favicon_url}}">
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js'  );
+        fbq('init', '{{integrations.meta_pixel_id}}');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{integrations.meta_pixel_id}}&ev=PageView&noscript=1"/></noscript>
+    <script src="{{integrations.tracking_script_url}}"></script>
+    <style>
+        :root {
+            --color-primary: {{design.branding.primary_color}};
+            --color-secondary: {{design.branding.secondary_color}};
+            --color-text: {{design.branding.text_color}};
+            --font-family-base: {{design.branding.font_family}};
+            --color-accent: {{design.branding.accent_color}};
+            --text-on-primary: {{design.branding.text_on_primary}};
+            --text-on-secondary: {{design.branding.text_on_secondary}};
+            --benefits-gradient: {{design.branding.benefits_gradient.css_value}};
+            --spacing-section-large: 100px;
+            --spacing-section-medium: 60px;
+            --border-radius-card: 15px;
+            --font-size-h1: 3.5rem;
+            --font-size-h2: 2.8rem;
+            --font-size-body: 1rem;
+        }
+        @media (max-width: 768px  ) {
+            :root { --font-size-h1: 2.5rem; --font-size-h2: 2.2rem; --spacing-section-large: 60px; }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-family-base); line-height: 1.6; color: var(--color-text); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    :root {
+    --primary-color: #FF5733;
+    --secondary-color: #C70039;
+    --accent-color: #900C3F;
+    --header-text-default: #000000;
+    --header-text-heading: #900C3F;
+    --logo-header-section-text-default: #000000;
+    --logo-header-section-text-heading: #000000;
+    --navigation-section-text-default: #000000;
+    --navigation-section-text-heading: #900C3F;
+    --hero-section-text-default: #000000;
+    --hero-section-text-heading: #000000;
+    --culture-section-text-default: #000000;
+    --culture-section-text-heading: #900C3F;
+    --values-section-text-default: #000000;
+    --values-section-text-heading: #000000;
+    --team-section-text-default: #000000;
+    --team-section-text-heading: #900C3F;
+    --diversity-section-text-default: #000000;
+    --diversity-section-text-heading: #000000;
+    --stolz-section-text-default: #000000;
+    --stolz-section-text-heading: #900C3F;
+    --story-telling-section-text-default: #000000;
+    --story-telling-section-text-heading: #900C3F;
+    --location-section-text-default: #000000;
+    --location-section-text-heading: #000000;
+    --benefits-section-text-default: #000000;
+    --benefits-section-text-heading: #900C3F;
+    --career-cta-section-text-default: #000000;
+    --career-cta-section-text-heading: #000000;
+    --footer-text-default: #000000;
+    --footer-text-heading: #000000;
+}
+</style>
+</head>
+<!-- KORREKTUR: Der Body-Tag wird dynamisch mit den Stil-Klassen befüllt -->
+<body class="">

@@ -71,58 +71,67 @@ def replace_placeholders(html, data_dict):
 # 3. KERNLOGIK DES HTML-GENERATORS
 # ==============================================================================
 
-# ==============================================================================
-# 3. KERNLOGIK DES HTML-GENERATORS (FINALE, KORRIGIERTE VERSION)
-# ==============================================================================
-
-# ==============================================================================
-# 3. KERNLOGIK DES HTML-GENERATORS (FINALE, REPARIERTE VERSION V5.3)
-# ==============================================================================
-
 def generate_site_for_style(project_dir, style_name, content_data, layout_plan, placeholder_assets, global_defaults):
     """Generiert eine einzelne HTML-Datei für einen bestimmten Style."""
     project_name = project_dir.name
     print(f"   - 🎨 Generiere Seite für Style: '{style_name}'")
 
-    # === Schritt A: Baue das globale Mapping für dieses Projekt und diesen Style ===
-    # Dieses Mapping enthält ALLE globalen Werte für die gesamte Seite.
-    global_mapping = {}
-    global_mapping.update(flatten_dict(global_defaults))
-    if "global_settings" in content_data:
-        global_mapping.update(flatten_dict(content_data["global_settings"]))
+    # === Schritt A: Baue das finale Mapping für Platzhalter ===
+    final_mapping = {}
     
+    # 1. Globale Defaults als Basis
+    final_mapping.update(flatten_dict(global_defaults))
+
+    # 2. Echte globale Daten aus dem Projekt überschreiben die Defaults
+    if "global_settings" in content_data:
+         final_mapping.update(flatten_dict(content_data["global_settings"]))
+
+    # 3. Style-spezifische Klassen hinzufügen
     style_file = find_newest_file(project_dir, f"interpreted_styles_{style_name}*.json")
     style_data = load_json(style_file)
-    global_mapping['theme_classes'] = style_data.get("theme_classes", "")
+    final_mapping['theme_classes'] = style_data.get("theme_classes", "")
     
+    # 4. Globale Farbdefinitionen für CSS-Variablen
     colors_file = find_newest_file(project_dir, "interpreted_colors*.json")
     colors_data = load_json(colors_file)
     if "colors" in colors_data:
-        global_mapping.update(flatten_dict(colors_data["colors"], parent_key="design.branding"))
+        final_mapping.update(flatten_dict(colors_data["colors"], parent_key="design.branding"))
 
-    # === Schritt B: Iteriere durch die Module und baue die HTML zusammen ===
     final_html = ""
     component_counters = {row['component']: 0 for row in layout_plan}
 
     for item in sorted(layout_plan, key=lambda x: int(x.get('order', 0))):
         component_name = item['component']
+        
         instance_index = component_counters[component_name]
         component_instances = content_data.get("page_content", {}).get(component_name, [])
         
-        if instance_index >= len(component_instances): continue
+        if instance_index >= len(component_instances):
+            continue
             
         instance_data = component_instances[instance_index]
         component_counters[component_name] += 1
 
         component_path = COMPONENTS_DIR / f"{component_name}.html"
-        if not component_path.exists(): continue
+        if not component_path.exists():
+            continue
         
-        # Lade das rohe HTML-Template für jede Instanz neu
         component_html = component_path.read_text(encoding='utf-8')
 
-        # === Schritt C: Ersetze Platzhalter ===
+        # === Schritt B: Ersetze Platzhalter im HTML-Template ===
 
-        # 1. Listen zuerst ersetzen, da sie eine eigene Logik haben
+        # 1. Lokale Platzhalter (headline, description, etc.)
+        # Wir erstellen ein Mapping nur für diese Instanz
+        local_mapping = {}
+        for key, data in instance_data.items():
+            if isinstance(data, dict) and "value" in data:
+                # Wenn der Wert leer ist, nutze den Beispielwert aus der Definition
+                value = data["value"] if data["value"] else data.get("example_value", "")
+                local_mapping[f"{component_name}.{key}"] = value
+        
+        component_html = replace_placeholders(component_html, local_mapping)
+
+        # 2. Listen-Platzhalter (values_list, etc.)
         for key, list_data in instance_data.items():
             if isinstance(list_data, list):
                 list_marker = f"{component_name}.{key}"
@@ -134,35 +143,31 @@ def generate_site_for_style(project_dir, style_name, content_data, layout_plan, 
                 generated_items_html = ""
                 for list_item in list_data:
                     item_html = item_template
-                    for sub_key, sub_data in list_item.items():
-                        # Vorschau-Logik: Nutze example_value, wenn value leer ist
-                        sub_value = sub_data.get("value") if sub_data.get("value") else sub_data.get("example_value", "")
-                        item_html = item_html.replace(f"{{{{{sub_key}}}}}", str(sub_value))
+                    item_mapping = {k: (v["value"] if v["value"] else v.get("example_value", "")) for k, v in list_item.items()}
+                    item_html = replace_placeholders(item_html, item_mapping)
                     generated_items_html += item_html
                 component_html = pattern.sub(generated_items_html, component_html)
 
-        # 2. Alle anderen Platzhalter (lokal und global) ersetzen
-        # Wir erstellen ein temporäres Mapping, das globale und lokale Werte kombiniert
-        combined_mapping = global_mapping.copy()
-        
-        # Füge lokale Werte hinzu
-        for key, data in instance_data.items():
-            if isinstance(data, dict) and "value" in data:
-                value = data.get("value") if data.get("value") else data.get("example_value", "")
-                combined_mapping[f"{component_name}.{key}"] = value
-
-        # Füge Bild-Fallbacks hinzu
-        for key in ["image_url", "map_url"]:
-            full_key = f"{component_name}.{key}"
-            if not combined_mapping.get(full_key): # Prüft, ob der Schlüssel fehlt oder der Wert leer ist
-                asset_key = component_name
+        # 3. Fallback für Bilder (Vorschau-Modus)
+        def image_fallback(match):
+            key = match.group(1) # Der Platzhalter-Name, z.B. "hero_section.image_url"
+            # Wenn der Platzhalter noch existiert (also nicht durch einen echten Wert ersetzt wurde)
+            if key in component_html:
+                asset_key = key.split('.')[0] # z.B. "hero_section"
                 urls = placeholder_assets.get(asset_key, {}).get("urls", [])
-                if urls:
-                    combined_mapping[full_key] = urls[instance_index % len(urls)]
-        
-        # Führe die finale Ersetzung durch
-        component_html = replace_placeholders(component_html, combined_mapping)
-        
+                if not urls: return "" # Kein Placeholder gefunden
+                
+                # Round-Robin-Prinzip
+                placeholder_url = urls[instance_index % len(urls)]
+                return placeholder_url
+            return "" # Sollte nicht passieren, aber als Sicherheit
+
+        component_html = re.sub(r'src="{{([^"]*image_url[^"]*)}}"', image_fallback, component_html)
+        component_html = re.sub(r'src="{{([^"]*map_url[^"]*)}}"', image_fallback, component_html)
+
+        # 4. Globale Platzhalter (letzter Schritt)
+        component_html = replace_placeholders(component_html, final_mapping)
+
         final_html += component_html + "\n"
 
     # Speichere die fertige HTML-Datei
@@ -173,21 +178,19 @@ def generate_site_for_style(project_dir, style_name, content_data, layout_plan, 
 
 def main():
     """Hauptfunktion zur Steuerung des gesamten Generierungsprozesses."""
-    print("--- STARTING HTML GENERATOR V5.2 (Final Corrected) ---")
+    print("--- STARTING HTML GENERATOR V5.1 (Final) ---")
 
     # === PHASE 1: AUFRÄUMEN ===
     print("\n[PHASE 1: AUFRÄUMEN]")
-    docs_archive_dir = OUTPUT_DIR / "docs_archives"
-    docs_archive_dir.mkdir(exist_ok=True)
+    # ... (Code für Phase 1 bleibt unverändert)
+    docs_archive_dir = OUTPUT_DIR / "docs_archives"; docs_archive_dir.mkdir(exist_ok=True)
     for f in OUTPUT_DIR.glob('*.html'):
         destination_path = docs_archive_dir / f.name
         if destination_path.exists():
             destination_path = destination_path.with_name(f"{f.stem}_{datetime.now().strftime('%Y%m%d_%H%M%S')}{f.suffix}")
         shutil.move(str(f), str(destination_path))
     print("   - ✅ Alte HTML-Dateien archiviert.")
-
-    content_archive_dir = CONTENT_DIR / "processed_contents_archives"
-    content_archive_dir.mkdir(exist_ok=True)
+    content_archive_dir = CONTENT_DIR / "processed_contents_archives"; content_archive_dir.mkdir(exist_ok=True)
     for folder in CONTENT_DIR.iterdir():
         if folder.is_dir() and folder.name.startswith('processed_'):
             if folder.name == content_archive_dir.name: continue
@@ -214,21 +217,29 @@ def main():
         print(f"🚀 Verarbeite Projekt: {project_name}")
 
         layout_file = project_dir / "layout_extended_v2.csv"
-        if not layout_file.exists():
-            logging.warning(f"Keine 'layout_extended_v2.csv' in {project_name} gefunden. Überspringe.")
-            continue
+        if not layout_file.exists(): continue
         layout_plan = [row for row in csv.DictReader(layout_file.open(encoding='utf-8')) if row.get('enabled', 'FALSE').upper() == 'TRUE']
 
         # Verarbeite jede gefundene Stufe02-Datei
         for content_file in project_dir.glob("project_template_Stufe02_Styled_*.json"):
             content_data = load_json(content_file)
-            if not content_data: continue
-            
+
+
             style_name_match = re.search(r"_Styled_(.+?)_\d+", content_file.name)
             if not style_name_match:
                 logging.warning(f"Konnte Style-Namen aus '{content_file.name}' nicht extrahieren. Überspringe.")
                 continue
             style_name = style_name_match.group(1)
+
+
+
+
+
+
+
+
+
+
 
             generate_site_for_style(project_dir, style_name, content_data, layout_plan, placeholder_assets, global_defaults)
 
@@ -237,7 +248,6 @@ def main():
         project_dir.rename(project_dir.parent / new_name)
         print(f"   - ✅ Projekt-Ordner markiert als: '{new_name}'")
         print("-" * 50)
-
 
 if __name__ == "__main__":
     # Wir fügen eine _defaults.json hinzu, falls sie nicht existiert, um Fehler zu vermeiden

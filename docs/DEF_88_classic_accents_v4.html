@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Karriere-Website - Classic_Accents Style</title>
+        <style>
+    :root {
+        --primary-color: #FF5733;
+    --secondary-color: #C70039;
+    --accent-color: #900C3F;
+    --header-bg: #FFFFFF;
+    --logo-header-section-bg: #FF5733;
+    --navigation-section-bg: #FFFFFF;
+    --hero-section-bg: #FF5733;
+    --culture-section-bg: #FFFFFF;
+    --values-section-bg: #F5F5F5;
+    --team-section-bg: #FFFFFF;
+    --diversity-section-bg: #F5F5F5;
+    --stolz-section-bg: #FFFFFF;
+    --story-telling-section-bg: #FFFFFF;
+    --location-section-bg: #F5F5F5;
+    --benefits-section-bg: #FFFFFF;
+    --career-cta-section-bg: #C70039;
+    --footer-bg: #FF5733;
+    --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-base: 16px;
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 2rem;
+    --spacing-section-large: 80px;
+    --spacing-section-medium: 60px;
+    --spacing-section-small: 40px;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Basis-Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-family);
+        font-size: var(--font-size-base);
+        line-height: 1.6;
+        color: var(--text-color, #333);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: var(--font-size-h2);
+        margin-bottom: 20px;
+        color: var(--primary-color, #333);
+    }
+
+    .section-header .description {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        color: var(--secondary-color, #666);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .section-header h2 {
+            font-size: 2rem;
+        }
+        
+        .container {
+            padding: 0 15px;
+        }
+    }
+
+    
+    /* header Styles */
+    .header {
+        background-color: #FFFFFF;
+    }
+
+    .header.neutral {
+        /* Stil-spezifische Anpassungen für neutral */
+    }
+    
+    /* logo_header_section Styles */
+    .logo_header_section {
+        background-color: #FF5733;
+    }
+
+    .logo_header_section.neutral {
+        /* Stil-spezifische Anpassungen für neutral */
+    }
+    
+    /* navigation_section Styles */
+    .navigation_section {
+        background-color: #FFFFFF;
+    }
+
+    .navigation_section.neutral {
+        /* Stil-spezifische Anpassungen für neutral */
+    }
+    
+    /* hero_section Styles */
+    .hero_section {
+        background-color: #FF5733;
+    }
+
+    .hero_section.fade-up {
+        /* Stil-spezifische Anpassungen für fade-up */
+    }
+    
+    /* culture_section Styles */
+    .culture_section {
+        background-color: #FFFFFF;
+    }
+
+    .culture_section.gradient {
+        /* Stil-spezifische Anpassungen für gradient */
+    }
+    
+    /* values_section Styles */
+    .values_section {
+        background-color: #F5F5F5;
+    }
+
+    .values_section.icon-grid {
+        /* Stil-spezifische Anpassungen für icon-grid */
+    }
+    
+    /* team_section Styles */
+    .team_section {
+        background-color: #FFFFFF;
+    }
+
+    .team_section.shadow {
+        /* Stil-spezifische Anpassungen für shadow */
+    }
+    
+    /* diversity_section Styles */
+    .diversity_section {
+        background-color: #F5F5F5;
+    }
+
+    .diversity_section.neutral-with-accents {
+        /* Stil-spezifische Anpassungen für neutral-with-accents */
+    }
+    
+    /* stolz_section Styles */
+    .stolz_section {
+        background-color: #FFFFFF;
+    }
+
+    .stolz_section.glass {
+        /* Stil-spezifische Anpassungen für glass */
+    }
+    
+    /* story_telling_section Styles */
+    .story_telling_section {
+        background-color: #FFFFFF;
+    }
+
+    .story_telling_section.subtle {
+        /* Stil-spezifische Anpassungen für subtle */
+    }
+    
+    /* location_section Styles */
+    .location_section {
+        background-color: #F5F5F5;
+    }
+
+    .location_section.map-or-image {
+        /* Stil-spezifische Anpassungen für map-or-image */
+    }
+    
+    /* benefits_section Styles */
+    .benefits_section {
+        background-color: #FFFFFF;
+    }
+
+    .benefits_section.gradient {
+        /* Stil-spezifische Anpassungen für gradient */
+    }
+    
+    /* career_cta_section Styles */
+    .career_cta_section {
+        background-color: #C70039;
+    }
+
+    .career_cta_section.pill-buttons {
+        /* Stil-spezifische Anpassungen für pill-buttons */
+    }
+    
+    /* footer Styles */
+    .footer {
+        background-color: #FF5733;
+    }
+
+    .footer.neutral {
+        /* Stil-spezifische Anpassungen für neutral */
+    }
+    
+    </style>
+    </head>
+    <body class="style-classic_accents">
+
+<!-- Modul header nicht gefunden -->
+
+<header class="logo-header-section">
+    <div class="container">
+        <div class="logo">
+            <a href="{{project_config.canonical_url}}">
+                <img src="{{design.logo.url}}" alt="{{identity.company_name}} Logo">
+            </a>
+        </div>
+    </div>
+</header>
+<style>
+    .logo-header-section {
+        padding: 20px 0;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: padding 0.3s ease;
+    }
+    .logo-header-section .logo img {
+        height: 50px; /* Standardhöhe */
+        width: auto;
+        transition: height 0.3s ease;
+    }
+    body.scrolled .logo-header-section {
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    body.scrolled .logo-header-section .logo img {
+        height: 40px; /* Kleinere Höhe beim Scrollen */
+    }
+</style>
+<script>
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            document.body.classList.add('scrolled');
+        } else {
+            document.body.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Gestalte Deine Zukunft. Und die unserer Branche.</h1>
+            <p class="subtitle">Bei uns findest Du die Werkzeuge, das Team und die Freiheit, um wirklich etwas zu bewegen.</p>
+            <p class="description">Bist Du bereit, Deine Ideen in die Tat umzusetzen? Entdecke hier, wie wir Dich dabei unterstützen, Deine beruflichen Ziele zu erreichen und über Dich hinauszuwachsen.</p>
+            <div class="hero-image">
+                <img src="assets/images/placeholder_hero.jpg" alt="Ein Team von Experten arbeitet gemeinsam an einer innovativen Lösung.">
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* --- Gemeinsame Basis-Stile für die Hero-Sektion --- */
+    .hero {
+        color: var(--text-on-primary); /* Dynamische Textfarbe für beide Stile */
+        padding: var(--spacing-section-large) 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.5s ease; /* Sanfter Übergang, falls sich Stile ändern */
+    }
+    
+    .hero-content { position: relative; z-index: 2; }
+    .hero h1 { font-size: var(--font-size-h1); font-weight: 700; margin-bottom: 20px; }
+    .hero .subtitle { font-size: 1.4rem; margin-bottom: 15px; opacity: 0.9; }
+    .hero .description { font-size: 1.1rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.8; }
+    .hero-image { margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .hero-image img { width: 100%; height: auto; display: block; }
+
+    /* --- Stil-spezifische Anpassungen (Der Baukasten) --- */
+
+    /* Hintergrund-Stile */
+    .bg-solid .hero {
+        background: var(--color-primary);
+    }
+    .bg-gradient .hero {
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    }
+
+    /* Karten-Stile (betrifft das Bild in der Hero-Sektion) */
+    .card-shadow .hero-image {
+        border-radius: var(--border-radius-card);
+        overflow: hidden;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .card-glass .hero-image {
+        border-radius: var(--border-radius-card);
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .card-flat .hero-image {
+        border-radius: 4px; /* Etwas eckiger für einen flachen Stil */
+        box-shadow: none;
+    }
+
+    /* Animations-Stile (subtile Effekte für den Text) */
+    .anim-subtle .hero h1, .anim-subtle .hero p {
+        /* Keine Animation für den klassischen Stil */
+    }
+    .anim-playful .hero h1 {
+        /* Beispiel: Leichter Schatten für mehr Tiefe im stylischen Modus */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .anim-playful .hero::before {
+        /* Der abdunkelnde Overlay-Effekt nur im stylischen Modus */
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+
+</style>
+
+<section class="culture">
+    <div class="container">
+        <div class="section-header">
+            <h2>Ein Umfeld, in dem Du wachsen kannst.</h2>
+            <p class="description">Wir glauben, dass die besten Ideen in einem Umfeld entstehen, das auf Vertrauen, Freiheit und gegenseitiger Unterstützung basiert. So sieht Dein Arbeitsalltag bei uns aus:</p>
+        </div>
+        <div class="values-grid">
+            <!-- BEGIN_LIST_ITEM:culture_section.values_list -->
+
+
+            <div class="value-card">
+                <div class="value-icon">{{icon}}</div>
+                <h3>{{title}}</h3>
+                <p>{{text}}</p>
+            </div>
+            <!-- END_LIST_ITEM:culture_section.values_list -->
+        </div>
+        <div class="culture-image">
+            <img src="assets/images/placeholder_culture.jpg" alt="Kollegen bei einem kreativen Brainstorming in unseren modernen Büroräumen.">
+        </div>
+    </div>
+</section>
+<style>
+    .culture { padding: var(--spacing-section-large) 0; background: #f8f9fa; }
+    .section-header { text-align: center; margin-bottom: var(--spacing-section-medium); }
+    .section-header h2 { font-size: var(--font-size-h2); color: var(--color-secondary); margin-bottom: 20px; font-weight: 600; }
+    .section-header .description { font-size: 1.2rem; color: #6c757d; max-width: 700px; margin: 0 auto; }
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: var(--spacing-section-medium); }
+    .value-card { background: white; padding: 40px 30px; border-radius: var(--border-radius-card); text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .value-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    .value-icon { font-size: 3rem; margin-bottom: 20px; color: var(--color-primary); }
+    .value-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--color-secondary); }
+    .value-card p { color: #6c757d; line-height: 1.6; }
+    .culture-image { text-align: center; margin-top: 40px; }
+    .culture-image img { max-width: 100%; border-radius: var(--border-radius-card); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+</style>
+
+<section class="team">
+    <div class="container">
+        <div class="section-header">
+            <h2>Was Deine zukünftigen Kollegen sagen.</h2>
+            <p class="description">Niemand kann besser beschreiben, wie es ist, bei uns zu arbeiten, als das Team selbst:</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-quote">Ich kam mit einer Idee und dachte, sie sei zu verrückt. Heute ist sie ein Kernprodukt. Diese Art von Vertrauen und Freiheit habe ich noch nirgends sonst erlebt.</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>Maria Schmidt</h4>
+                    <p>Senior Software Engineer</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-image">
+            <img src="assets/images/placeholder_testimonial.jpg" alt="Porträt von Maria Schmidt, einer erfahrenen Software-Entwicklerin in unserem Team.">
+        </div>
+    </div>
+</section>
+<style>
+    .team { padding: var(--spacing-section-large) 0; background: white; }
+    .testimonial { background: #f8f9fa; padding: 60px 40px; border-radius: 20px; text-align: center; margin-bottom: var(--spacing-section-medium); position: relative; }
+    .testimonial::before { content: '"'; font-size: 6rem; color: var(--color-primary); position: absolute; top: 10px; left: 40px; font-family: serif; opacity: 0.3; }
+    .testimonial-quote { font-size: 1.4rem; font-style: italic; color: var(--color-secondary); margin-bottom: 30px; position: relative; z-index: 1; }
+    .testimonial-author { display: flex; align-items: center; justify-content: center; gap: 20px; }
+    .author-info h4 { font-size: 1.2rem; color: var(--color-secondary); margin-bottom: 5px; }
+    .author-info p { color: #6c757d; font-size: 1rem; }
+    .team-image { text-align: center; }
+    .team-image img { max-width: 100%; border-radius: var(--border-radius-card); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+    @media (max-width: 768px) {
+        .testimonial { padding: 40px 20px; }
+        .testimonial::before { font-size: 4rem; top: 5px; left: 20px; }
+    }
+</style>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-header">
+            <h2>Alles, was Du für Deinen Erfolg brauchst.</h2>
+            <p class="description">Dein Wohlbefinden und Deine Entwicklung sind uns wichtig. Deshalb bieten wir Dir mehr als nur ein gutes Gehalt.</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <!-- BEGIN_LIST_ITEM:benefits_section.benefits_list -->
+            <div class="benefit-card">
+                <div class="benefit-icon">{{icon}}</div>
+                <h3>{{title}}</h3>
+                <p>{{text}}</p>
+            </div>
+            <!-- END_LIST_ITEM:benefits_section.benefits_list -->
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- Gemeinsame Basis-Stile für die Benefits-Sektion --- */
+    .benefits {
+        padding: var(--spacing-section-large) 0;
+        color: white; /* Text ist in beiden Varianten weiss */
+    }
+    
+    .benefits .section-header h2,
+    .benefits .section-header .description {
+        color: white;
+    }
+    
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+    }
+
+    .benefit-card {
+        padding: 40px 30px;
+        text-align: center;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .benefit-icon { font-size: 3.5rem; margin-bottom: 25px; opacity: 0.9; }
+    .benefit-card h3 { font-size: 1.6rem; margin-bottom: 20px; font-weight: 600; }
+    .benefit-card p { font-size: 1.1rem; line-height: 1.6; opacity: 0.9; }
+
+    /* --- Stil-spezifische Anpassungen (Der Baukasten) --- */
+
+    /* Hintergrund-Stile */
+    .bg-solid .benefits {
+        background: var(--color-primary); /* Klassisch: Einfarbiger Hintergrund */
+    }
+    .bg-gradient .benefits {
+        background: var(--benefits-gradient); /* Stylisch: Der coole Verlauf */
+    }
+
+    /* Karten-Stile */
+    .card-flat .benefit-card {
+        background: transparent;
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 4px;
+    }
+    .card-shadow .benefit-card {
+        background: rgba(0,0,0,0.15); /* Dunkelt den Hintergrund leicht ab */
+        border-radius: var(--border-radius-card);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+    .card-glass .benefit-card {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px); /* Der "Glass"-Effekt */
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Animations-Stile (betrifft den Hover-Effekt) */
+    .anim-subtle .benefit-card:hover {
+        background: rgba(0,0,0,0.25); /* Klassisch: Wird beim Hover einfach etwas dunkler */
+    }
+    .anim-playful .benefit-card:hover {
+        transform: translateY(-10px); /* Stylisch: Die "Schwebe"-Animation */
+        background: rgba(255,255,255,0.15);
+    }
+
+</style>
+
+<section class="career-cta">
+    <div class="container">
+        <div>
+            <h2>Bereit, Deine Karriere zu starten?</h2>
+            <p class="description">Wir sind immer auf der Suche nach talentierten Menschen wie Dir. Wir freuen uns darauf, von Dir zu hören.</p>
+            <div class="cta-buttons">
+                <a href="{{links.career_page_url}}" class="btn btn-primary">{{labels.career_button_text}}</a>
+                <a href="{{links.application_form_url}}" class="btn btn-secondary">{{labels.application_button_text}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* --- Gemeinsame Basis-Stile für die CTA-Sektion --- */
+    .career-cta {
+        padding: var(--spacing-section-large) 0;
+        background: var(--color-secondary);
+        color: var(--text-on-secondary);
+        text-align: center;
+    }
+    
+    .career-cta h2 { font-size: 3rem; margin-bottom: 25px; font-weight: 600; }
+    .career-cta .description { font-size: 1.3rem; margin-bottom: 50px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+
+    /* --- Gemeinsame Basis-Stile für ALLE Buttons --- */
+    .btn {
+        display: inline-block;
+        padding: 18px 40px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+
+    /* --- Stil-spezifische Anpassungen (Der Baukasten) --- */
+
+    /* Button-Formen */
+    .btn-sharp .btn { border-radius: 4px; }
+    .btn-rounded .btn { border-radius: 12px; }
+    .btn-pill .btn { border-radius: 50px; }
+
+    /* Primärer Button (Akzentfarbe) */
+    .btn-primary {
+        background: var(--color-accent, var(--color-primary));
+        color: var(--text-on-primary);
+    }
+
+    /* Sekundärer Button (Outline-Stil) */
+    .btn-secondary {
+        background: transparent;
+        color: var(--text-on-secondary);
+        border-color: var(--text-on-secondary);
+    }
+    .btn-secondary:hover {
+        background: var(--text-on-secondary);
+        color: var(--color-secondary);
+    }
+
+    /* Animations-Stile (Hover-Effekte) */
+    .anim-subtle .btn:hover {
+        filter: brightness(110%); /* Klassisch: Wird nur heller */
+    }
+    .anim-playful .btn:hover {
+        transform: translateY(-3px); /* Stylisch: "Schwebe"-Effekt */
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* Media Query für mobile Ansicht bleibt gleich */
+    @media (max-width: 768px) {
+        .cta-buttons { flex-direction: column; align-items: center; }
+        .career-cta h2 { font-size: 2.2rem; }
+    }
+</style>
+
+<!-- Modul footer nicht gefunden -->
+
+
+    </body>
+    </html>

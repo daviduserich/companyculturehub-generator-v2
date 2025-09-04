@@ -1,1 +1,25 @@
-2025-09-03 20:01:28,539 - WARNING - JSON-Datei nicht gefunden: /workspaces/companyculturehub-generator-v2/templates/components/_placeholder_assets.json
+2025-09-04 18:51:27,157 - WARNING - Datei fehlt: /workspaces/companyculturehub-generator-v2/templates/components/_placeholder_assets.json
+2025-09-04 18:51:27,159 - WARNING - Keine Daten für header[0]
+2025-09-04 18:51:27,159 - WARNING - Keine Daten für footer[0]
+2025-09-04 18:51:27,160 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{design.branding.text_color}}', '{{design.branding.font_family}}', '{{design.branding.text_on_primary}}', '{{design.branding.text_on_secondary}}', '{{design.branding.benefits_gradient.css_value}}', '{{theme_classes}}']
+2025-09-04 18:51:27,160 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/header.html
+2025-09-04 18:51:27,161 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/footer.html
+2025-09-04 18:51:27,162 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{colors.accent_color_rgb}}', '{{colors.accent_color_rgb}}', '{{colors.accent_color_rgb}}', '{{footer_section.copyright_text}}']
+2025-09-04 18:51:27,164 - WARNING - Keine Daten für header[0]
+2025-09-04 18:51:27,164 - WARNING - Keine Daten für footer[0]
+2025-09-04 18:51:27,165 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{design.branding.text_color}}', '{{design.branding.font_family}}', '{{design.branding.text_on_primary}}', '{{design.branding.text_on_secondary}}', '{{design.branding.benefits_gradient.css_value}}', '{{theme_classes}}']
+2025-09-04 18:51:27,165 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/header.html
+2025-09-04 18:51:27,166 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/footer.html
+2025-09-04 18:51:27,167 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{footer_section.copyright_text}}']
+2025-09-04 18:51:27,169 - WARNING - Keine Daten für header[0]
+2025-09-04 18:51:27,169 - WARNING - Keine Daten für footer[0]
+2025-09-04 18:51:27,169 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{design.branding.text_color}}', '{{design.branding.font_family}}', '{{design.branding.text_on_primary}}', '{{design.branding.text_on_secondary}}', '{{design.branding.benefits_gradient.css_value}}', '{{theme_classes}}']
+2025-09-04 18:51:27,169 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/header.html
+2025-09-04 18:51:27,170 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/footer.html
+2025-09-04 18:51:27,172 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{colors.accent_color_rgb}}', '{{colors.accent_color_rgb}}', '{{colors.accent_color_rgb}}', '{{footer_section.copyright_text}}']
+2025-09-04 18:51:27,174 - WARNING - Keine Daten für header[0]
+2025-09-04 18:51:27,174 - WARNING - Keine Daten für footer[0]
+2025-09-04 18:51:27,175 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{design.branding.text_color}}', '{{design.branding.font_family}}', '{{design.branding.text_on_primary}}', '{{design.branding.text_on_secondary}}', '{{design.branding.benefits_gradient.css_value}}', '{{theme_classes}}']
+2025-09-04 18:51:27,175 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/header.html
+2025-09-04 18:51:27,176 - WARNING - Komponente fehlt: /workspaces/companyculturehub-generator-v2/templates/components/footer.html
+2025-09-04 18:51:27,177 - WARNING - Unersetzte Platzhalter: ['{{meta_data.page_title}}', '{{meta_data.meta_description}}', '{{design.logo.favicon_url}}', '{{integrations.meta_pixel_id}}', '{{integrations.meta_pixel_id}}', '{{integrations.tracking_script_url}}', '{{footer_section.copyright_text}}']
