@@ -3,7 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Karriere-Website - Classic Style</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{meta_data.page_title}}</title>
+    <meta name="description" content="{{meta_data.meta_description}}">
+    <link rel="canonical" href="{{project_config.canonical_url}}" />
+    <link rel="icon" href="{{design.logo.favicon_url}}">
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js'  );
+        fbq('init', '{{integrations.meta_pixel_id}}');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{integrations.meta_pixel_id}}&ev=PageView&noscript=1"/></noscript>
+    <script src="{{integrations.tracking_script_url}}"></script>
+    <style>
+        :root {
+            --color-primary: {{design.branding.primary_color}};
+            --color-secondary: {{design.branding.secondary_color}};
+            --color-text: {{design.branding.text_color}};
+            --font-family-base: {{design.branding.font_family}};
+            --color-accent: {{design.branding.accent_color}};
+            --text-on-primary: {{design.branding.text_on_primary}};
+            --text-on-secondary: {{design.branding.text_on_secondary}};
+            --benefits-gradient: {{design.branding.benefits_gradient.css_value}};
+            --spacing-section-large: 100px;
+            --spacing-section-medium: 60px;
+            --border-radius-card: 15px;
+            --font-size-h1: 3.5rem;
+            --font-size-h2: 2.8rem;
+            --font-size-body: 1rem;
+        }
+        @media (max-width: 768px  ) {
+            :root { --font-size-h1: 2.5rem; --font-size-h2: 2.2rem; --spacing-section-large: 60px; }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-family-base); line-height: 1.6; color: var(--color-text); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    </style>
+
         <style>
     :root {
         --color-primary: #FF5733;
@@ -88,53 +129,6 @@
     </style>
     </head>
     <body class="bg-solid card-shadow anim-subtle">
-
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{meta_data.page_title}}</title>
-    <meta name="description" content="{{meta_data.meta_description}}">
-    <link rel="canonical" href="{{project_config.canonical_url}}" />
-    <link rel="icon" href="{{design.logo.favicon_url}}">
-    <script>
-        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js'  );
-        fbq('init', '{{integrations.meta_pixel_id}}');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{integrations.meta_pixel_id}}&ev=PageView&noscript=1"/></noscript>
-    <script src="{{integrations.tracking_script_url}}"></script>
-    <style>
-        :root {
-            --color-primary: {{design.branding.primary_color}};
-            --color-secondary: {{design.branding.secondary_color}};
-            --color-text: {{design.branding.text_color}};
-            --font-family-base: {{design.branding.font_family}};
-            --color-accent: {{design.branding.accent_color}};
-            --text-on-primary: {{design.branding.text_on_primary}};
-            --text-on-secondary: {{design.branding.text_on_secondary}};
-            --benefits-gradient: {{design.branding.benefits_gradient.css_value}};
-            --spacing-section-large: 100px;
-            --spacing-section-medium: 60px;
-            --border-radius-card: 15px;
-            --font-size-h1: 3.5rem;
-            --font-size-h2: 2.8rem;
-            --font-size-body: 1rem;
-        }
-        @media (max-width: 768px  ) {
-            :root { --font-size-h1: 2.5rem; --font-size-h2: 2.2rem; --spacing-section-large: 60px; }
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-family-base); line-height: 1.6; color: var(--color-text); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    </style>
-</head>
-<!-- KORREKTUR: Der Body-Tag wird dynamisch mit den Stil-Klassen befüllt -->
-<body class="{{theme_classes}}">
 
 <header class="logo-header-section">
     <div class="container">
