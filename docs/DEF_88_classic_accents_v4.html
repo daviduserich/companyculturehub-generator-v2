@@ -6,9 +6,12 @@
         <title>Karriere-Website - Classic_Accents Style</title>
         <style>
     :root {
-        --primary-color: #FF5733;
-    --secondary-color: #C70039;
-    --accent-color: #900C3F;
+        --color-primary: #FF5733;
+    --color-secondary: #C70039;
+    --color-accent: #900C3F;
+    --text-on-primary: white;
+    --text-on-secondary: white;
+    --text-on-accent: white;
     --header-bg: #FFFFFF;
     --logo-header-section-bg: #FF5733;
     --navigation-section-bg: #FFFFFF;
@@ -80,137 +83,58 @@
     }
 
     
-    /* header Styles */
-    .header {
-        background-color: #FFFFFF;
-    }
+    /* Modul-spezifische Styles werden automatisch generiert */
 
-    .header.neutral {
-        /* Stil-spezifische Anpassungen für neutral */
-    }
-    
-    /* logo_header_section Styles */
-    .logo_header_section {
-        background-color: #FF5733;
-    }
-
-    .logo_header_section.neutral {
-        /* Stil-spezifische Anpassungen für neutral */
-    }
-    
-    /* navigation_section Styles */
-    .navigation_section {
-        background-color: #FFFFFF;
-    }
-
-    .navigation_section.neutral {
-        /* Stil-spezifische Anpassungen für neutral */
-    }
-    
-    /* hero_section Styles */
-    .hero_section {
-        background-color: #FF5733;
-    }
-
-    .hero_section.fade-up {
-        /* Stil-spezifische Anpassungen für fade-up */
-    }
-    
-    /* culture_section Styles */
-    .culture_section {
-        background-color: #FFFFFF;
-    }
-
-    .culture_section.gradient {
-        /* Stil-spezifische Anpassungen für gradient */
-    }
-    
-    /* values_section Styles */
-    .values_section {
-        background-color: #F5F5F5;
-    }
-
-    .values_section.icon-grid {
-        /* Stil-spezifische Anpassungen für icon-grid */
-    }
-    
-    /* team_section Styles */
-    .team_section {
-        background-color: #FFFFFF;
-    }
-
-    .team_section.shadow {
-        /* Stil-spezifische Anpassungen für shadow */
-    }
-    
-    /* diversity_section Styles */
-    .diversity_section {
-        background-color: #F5F5F5;
-    }
-
-    .diversity_section.neutral-with-accents {
-        /* Stil-spezifische Anpassungen für neutral-with-accents */
-    }
-    
-    /* stolz_section Styles */
-    .stolz_section {
-        background-color: #FFFFFF;
-    }
-
-    .stolz_section.glass {
-        /* Stil-spezifische Anpassungen für glass */
-    }
-    
-    /* story_telling_section Styles */
-    .story_telling_section {
-        background-color: #FFFFFF;
-    }
-
-    .story_telling_section.subtle {
-        /* Stil-spezifische Anpassungen für subtle */
-    }
-    
-    /* location_section Styles */
-    .location_section {
-        background-color: #F5F5F5;
-    }
-
-    .location_section.map-or-image {
-        /* Stil-spezifische Anpassungen für map-or-image */
-    }
-    
-    /* benefits_section Styles */
-    .benefits_section {
-        background-color: #FFFFFF;
-    }
-
-    .benefits_section.gradient {
-        /* Stil-spezifische Anpassungen für gradient */
-    }
-    
-    /* career_cta_section Styles */
-    .career_cta_section {
-        background-color: #C70039;
-    }
-
-    .career_cta_section.pill-buttons {
-        /* Stil-spezifische Anpassungen für pill-buttons */
-    }
-    
-    /* footer Styles */
-    .footer {
-        background-color: #FF5733;
-    }
-
-    .footer.neutral {
-        /* Stil-spezifische Anpassungen für neutral */
-    }
-    
     </style>
     </head>
-    <body class="style-classic_accents">
+    <body class="bg-solid card-shadow anim-subtle">
 
-<!-- Modul header nicht gefunden -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{meta_data.page_title}}</title>
+    <meta name="description" content="{{meta_data.meta_description}}">
+    <link rel="canonical" href="{{project_config.canonical_url}}" />
+    <link rel="icon" href="{{design.logo.favicon_url}}">
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js'  );
+        fbq('init', '{{integrations.meta_pixel_id}}');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{integrations.meta_pixel_id}}&ev=PageView&noscript=1"/></noscript>
+    <script src="{{integrations.tracking_script_url}}"></script>
+    <style>
+        :root {
+            --color-primary: {{design.branding.primary_color}};
+            --color-secondary: {{design.branding.secondary_color}};
+            --color-text: {{design.branding.text_color}};
+            --font-family-base: {{design.branding.font_family}};
+            --color-accent: {{design.branding.accent_color}};
+            --text-on-primary: {{design.branding.text_on_primary}};
+            --text-on-secondary: {{design.branding.text_on_secondary}};
+            --benefits-gradient: {{design.branding.benefits_gradient.css_value}};
+            --spacing-section-large: 100px;
+            --spacing-section-medium: 60px;
+            --border-radius-card: 15px;
+            --font-size-h1: 3.5rem;
+            --font-size-h2: 2.8rem;
+            --font-size-body: 1rem;
+        }
+        @media (max-width: 768px  ) {
+            :root { --font-size-h1: 2.5rem; --font-size-h2: 2.2rem; --spacing-section-large: 60px; }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-family-base); line-height: 1.6; color: var(--color-text); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    </style>
+</head>
+<!-- KORREKTUR: Der Body-Tag wird dynamisch mit den Stil-Klassen befüllt -->
+<body class="{{theme_classes}}">
 
 <header class="logo-header-section">
     <div class="container">
@@ -566,7 +490,25 @@
     }
 </style>
 
-<!-- Modul footer nicht gefunden -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="{{links.imprint_url}}">{{labels.imprint_text}}</a>
+            <a href="{{links.privacy_url}}">{{labels.privacy_text}}</a>
+            <a href="{{links.contact_url}}">{{labels.contact_text}}</a>
+        </div>
+        <p>{{footer_section.copyright_text}}</p>
+    </div>
+</footer>
+</body>
+</html>
+<style>
+    .footer { background: #1a1a1a; color: #ccc; padding: 40px 0; text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 40px; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-links a { color: #ccc; text-decoration: none; transition: color 0.3s ease; }
+    .footer-links a:hover { color: var(--color-primary); }
+    .footer p { font-size: 0.9rem; opacity: 0.7; }
+</style>
 
 
     </body>

@@ -503,13 +503,20 @@ def main():
                     color_mapping = colors_data['colors']
                     print(f"   🎨 Verarbeite Farb-Palette: {list(color_mapping.keys())}")
                     
-                    # Konvertiere Farb-Daten zu CSS-Variablen
-                    for color_key, color_value in color_mapping.items():
-                        if isinstance(color_value, str) and color_value.startswith('#'):
-                            css_var_name = f"--{color_key.replace('_', '-')}"
-                            css_variables.append(f"    {css_var_name}: {color_value};")
-                            print(f"      ✓ Farb-Variable: {css_var_name} = {color_value}")
-                
+
+                    # Module-kompatible CSS-Variablen
+                    css_variables.extend([
+                        f"    --color-primary: {color_mapping.get('primary_color', '#FF5733')};",
+                        f"    --color-secondary: {color_mapping.get('secondary_color', '#C70039')};",
+                        f"    --color-accent: {color_mapping.get('accent_color', '#900C3F')};",
+                        f"    --text-on-primary: white;",
+                        f"    --text-on-secondary: white;",
+                        f"    --text-on-accent: white;"
+                    ])
+                    print(f"      ✓ Module-kompatible Farb-Variablen erstellt")
+
+
+
                 # **NEU: Modul-spezifische Farben aus styles_data extrahieren**
                 if styles_data and 'styles' in styles_data:
                     style_mapping = styles_data['styles']
@@ -541,26 +548,7 @@ def main():
                 
                 css_variables.extend(default_css_vars)
                 
-                # **NEU: Erweiterte CSS mit Modul-spezifischen Styles**
-                module_css = ""
-                if styles_data and 'styles' in styles_data:
-                    style_mapping = styles_data['styles']
-                    
-                    for module_name, module_styles in style_mapping.items():
-                        if isinstance(module_styles, dict) and 'background_color' in module_styles:
-                            bg_color = module_styles['background_color']
-                            css_class = module_styles.get('class', 'neutral')
-                            
-                            module_css += f"""
-    /* {module_name} Styles */
-    .{module_name} {{
-        background-color: {bg_color};
-    }}
 
-    .{module_name}.{css_class} {{
-        /* Stil-spezifische Anpassungen für {css_class} */
-    }}
-    """
                 
                 # Vollständiger CSS-Block
                 generated_style_block = f"""<style>
@@ -612,7 +600,9 @@ def main():
         }}
     }}
 
-    {module_css}
+    
+    /* Modul-spezifische Styles werden automatisch generiert */
+
     </style>"""
                 
                 # CSS-Block in final_mapping hinzufügen
@@ -622,12 +612,22 @@ def main():
                 if 'SITE_TITLE' not in final_mapping:
                     final_mapping['SITE_TITLE'] = f"Karriere-Website - {style_name.title()} Style"
                 
-                if 'BODY_CLASSES' not in final_mapping:
-                    final_mapping['BODY_CLASSES'] = f"style-{style_name}"
+
                 
+                # Stil-spezifische Body-Klassen für Module-Architektur
+                style_classes = {
+                    'classic': 'bg-solid card-shadow anim-subtle',
+                    'classic_accents': 'bg-solid card-shadow anim-subtle',
+                    'stylish': 'bg-gradient card-glass anim-playful',
+                    'hyper_stylish': 'bg-gradient card-glass anim-playful'
+                }
+                final_mapping['BODY_CLASSES'] = style_classes.get(style_name, 'bg-solid card-flat anim-subtle')
+
+
                 print(f"   ✅ CSS-Block generiert: {len(generated_style_block)} Zeichen")
                 print(f"   🎨 CSS-Variablen: {len(css_variables)}")
-                print(f"   🎨 Modul-CSS: {len(module_css)} Zeichen")
+
+                print(f"   🎨 Basis-CSS: Vollständig generiert")
                 
             except Exception as e:
                 print(f"💥 FEHLER in Schritt 5.5 für Stil '{style_name}': {e}")

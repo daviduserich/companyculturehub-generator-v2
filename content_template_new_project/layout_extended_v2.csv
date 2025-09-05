@@ -1,5 +1,5 @@
 order,component,data_source,enabled,Must or Possibility,min_count,max_count,recommended_count,list_type,max_list_items,image_count,module_purpose,description,styling_default,position_constraints,integration_status
-10,header,global_settings,TRUE,M,1,1,1,none,0,0,"Technischer Header für Metadaten und Tracking-Skripte. Keine textliche Relevanz.","Technischer Header-Bereich inkl. Tracking-Infos etc.",neutral,,core
+10,technik_header_section,global_settings,TRUE,M,1,1,1,none,0,0,"Technischer Header für Metadaten und Tracking-Skripte. Keine textliche Relevanz.","Technischer Header-Bereich inkl. Tracking-Infos etc.",neutral,,core
 20,logo_header_section,global_settings,TRUE,M,1,1,1,none,0,1,"Stellt die Firmenidentität durch das Logo sicher und schafft Vertrauen.","Logo-Header-Bereich.",neutral,,core
 30,navigation_section,global_settings,FALSE,P,0,1,1,Nav-Items,4?,0,"Bietet dem Nutzer Orientierung durch Verlinkung zu den wichtigsten Unterseiten (z.B. Über uns, Produkte).","Optionale Navigation im Style der Firmenwebsite.",neutral,after:20 before:40,ausbau
 40,hero_section,hero_section,TRUE,M,1,1,1,none,0,1,"Emotionaler Türöffner. Soll den Besucher fesseln und das zentrale Wertversprechen als Arbeitgeber auf den Punkt bringen.","Einladender Einstiegsbereich.",fade-up,,core
@@ -12,4 +12,4 @@ order,component,data_source,enabled,Must or Possibility,min_count,max_count,reco
 95,location_section,location_section,FALSE,P,0,1,1,none,0,1,"Präsentiert das Arbeitsumfeld und die Standorte. Soll die Attraktivität des physischen Arbeitsplatzes hervorheben.","Standorte und Arbeitsumfeld mit einer Karte/Bild.",map-or-image,after:40 before:110,core
 100,benefits_section,benefits_section,TRUE,M,1,2,1,Benefit-Karten,3,0,"Listet die konkreten, rationalen Vorteile (Perks) auf, die das Unternehmen bietet. Soll den Bewerber überzeugen.","Vorteile als Arbeitgeber (reine Text/Icon-Karten).",gradient,after:40 before:110,core
 110,career_cta_section,career_cta_section,TRUE,M,1,1,1,none,0,0,"Finaler Call-to-Action. Soll den Besucher zur nächsten Aktion bewegen (Bewerbung, Karriereseite besuchen).","Aufruf zum Bewerben.",pill-buttons,,core
-120,footer,global_settings,TRUE,M,1,1,1,none,0,0,"Stellt rechtliche Informationen (Impressum, Datenschutz) bereit und schliesst die Seite ab.","Footer-Bereich mit Links und Copyright.",neutral,,core
+120,footer_section,global_settings,TRUE,M,1,1,1,none,0,0,"Stellt rechtliche Informationen (Impressum, Datenschutz) bereit und schliesst die Seite ab.","Footer-Bereich mit Links und Copyright.",neutral,,core
